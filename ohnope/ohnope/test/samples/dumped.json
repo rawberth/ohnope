@@ -1,0 +1,251 @@
+{
+  "enconfig": null,
+  "enlogger": {
+    "stdo_level": "debug",
+    "file_level": null,
+    "file_path": null
+  },
+  "encrypts": null,
+  "database": "sqlite:///:memory:",
+  "printer": {
+    "message": false,
+    "command": false
+  },
+  "service": {
+    "respite": {
+      "health": 3
+    }
+  },
+  "clients": {
+    "eponho": {
+      "name": "eponho",
+      "kind": "client",
+      "params": {
+        "enable": true,
+        "client": {
+          "server": "localhost",
+          "port": 6697,
+          "timeout": 30,
+          "operate": "normal",
+          "nickname": "ircbot",
+          "username": "ircbot",
+          "realname": "Chatting Robie",
+          "password": null,
+          "servername": "services.invalid",
+          "serverid": "42X",
+          "ssl_enable": true,
+          "ssl_verify": true,
+          "queue_size": 10000
+        },
+        "delay": 2,
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      },
+      "family": "irc"
+    },
+    "ohnope": {
+      "name": "ohnope",
+      "kind": "client",
+      "params": {
+        "enable": true,
+        "client": {
+          "server": "localhost",
+          "port": 6900,
+          "timeout": 30,
+          "operate": "service",
+          "nickname": "ircbot",
+          "username": "ircbot",
+          "realname": "Chatting Robie",
+          "password": null,
+          "servername": "services.invalid",
+          "serverid": "42X",
+          "ssl_enable": true,
+          "ssl_verify": true,
+          "queue_size": 10000
+        },
+        "delay": 2,
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      },
+      "family": "irc"
+    }
+  },
+  "plugins": {
+    "status": {
+      "name": "status",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "reports": null,
+        "command": {
+          "irc": "!status",
+          "dsc": "!status",
+          "mtm": "!status"
+        },
+        "icons": {
+          "pending": {
+            "irc": null,
+            "dsc": null,
+            "mtm": null
+          },
+          "normal": {
+            "irc": null,
+            "dsc": null,
+            "mtm": null
+          },
+          "failure": {
+            "irc": null,
+            "dsc": null,
+            "mtm": null
+          },
+          "unknown": {
+            "irc": null,
+            "dsc": null,
+            "mtm": null
+          }
+        }
+      }
+    },
+    "rootserv": {
+      "name": "rootserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "RootServ",
+        "realname": "Network administration",
+        "unique": "ROOTS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "operserv": {
+      "name": "operserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "OperServ",
+        "realname": "Network administration",
+        "unique": "OPERS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "statserv": {
+      "name": "statserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "StatServ",
+        "realname": "Statistics and analysis",
+        "unique": "STATS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "nickserv": {
+      "name": "nickserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "NickServ",
+        "realname": "Nickname registration",
+        "unique": "NICKS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "chanserv": {
+      "name": "chanserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "ChanServ",
+        "realname": "Channel registration",
+        "unique": "CHANS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "memoserv": {
+      "name": "memoserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "MemoServ",
+        "realname": "Offline message sharing",
+        "unique": "MEMOS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "hostserv": {
+      "name": "hostserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "HostServ",
+        "realname": "Host cloak management",
+        "unique": "HOSTS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "helpserv": {
+      "name": "helpserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "HelpServ",
+        "realname": "Help about the services",
+        "unique": "HELPS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "chatserv": {
+      "name": "chatserv",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "nickname": "ChatServ",
+        "realname": "Invitable LLM chatting",
+        "unique": "CHATS0",
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    }
+  }
+}

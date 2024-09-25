@@ -1,0 +1,41 @@
+
+
+
+[project]
+
+name = "ohnope"
+description = "rawberth Oh-nope IRC Services"
+
+readme = "README.md"
+
+license.text = "MIT"
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"]
+
+requires-python = ">= 3.11"
+
+dynamic = ["version", "dependencies"]
+
+
+
+[project.urls]
+
+Source = "https://github.com/rawberth/ohnope"
+Documentation = "https://rawberth.github.io/ohnope/sphinx"
+
+
+
+[tool.setuptools.dynamic]
+
+version.attr = "ohnope.__version__"
+
+dependencies.file = ["require/install.txt"]
+
+
+
+[tool.setuptools.packages.find]
+
+include = ["ohnope", "ohnope.*"]

@@ -1,0 +1,184 @@
+{
+  "chanserv": {
+    "enable": true,
+    "nickname": "ChanServ",
+    "realname": "Channel registration",
+    "unique": "CHANS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "chatserv": {
+    "enable": true,
+    "nickname": "ChatServ",
+    "realname": "Invitable LLM chatting",
+    "unique": "CHATS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "client": {
+    "server": "localhost",
+    "port": 6697,
+    "timeout": 30,
+    "nickname": "ircbot",
+    "username": "ircbot",
+    "realname": "Chatting Robie",
+    "ssl_enable": true,
+    "ssl_verify": true,
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "database": "sqlite:///_/encommon_sample/TMPPATH/_/db",
+  "enconfig": {
+    "paths": [
+      "_/encommon_sample/TMPPATH/_/homie"
+    ]
+  },
+  "encrypts": null,
+  "enlogger": {
+    "stdo_level": "debug",
+    "file_level": null,
+    "file_path": null
+  },
+  "helpserv": {
+    "enable": true,
+    "nickname": "HelpServ",
+    "realname": "Help about the services",
+    "unique": "HELPS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "hostserv": {
+    "enable": true,
+    "nickname": "HostServ",
+    "realname": "Host cloak management",
+    "unique": "HOSTS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "memoserv": {
+    "enable": true,
+    "nickname": "MemoServ",
+    "realname": "Offline message sharing",
+    "unique": "MEMOS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "nickserv": {
+    "enable": true,
+    "nickname": "NickServ",
+    "realname": "Nickname registration",
+    "unique": "NICKS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "operserv": {
+    "enable": true,
+    "nickname": "OperServ",
+    "realname": "Network administration",
+    "unique": "OPERS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "peering": {
+    "server": "localhost",
+    "port": 6900,
+    "timeout": 30,
+    "password": null,
+    "name": "services.invalid",
+    "unique": "42X",
+    "about": "Chatting Robie",
+    "ssl_enable": true,
+    "ssl_verify": true,
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "printer": {
+    "message": false,
+    "command": false
+  },
+  "rootserv": {
+    "enable": true,
+    "nickname": "RootServ",
+    "realname": "Network administration",
+    "unique": "ROOTS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "service": {
+    "respite": {
+      "health": 3
+    }
+  },
+  "statserv": {
+    "enable": true,
+    "nickname": "StatServ",
+    "realname": "Statistics and analysis",
+    "unique": "STATS0",
+    "status": {
+      "irc": null,
+      "dsc": null,
+      "mtm": null
+    }
+  },
+  "status": {
+    "enable": true,
+    "reports": null,
+    "command": {
+      "irc": "!status",
+      "dsc": "!status",
+      "mtm": "!status"
+    },
+    "icons": {
+      "pending": {
+        "irc": null,
+        "dsc": null,
+        "mtm": null
+      },
+      "normal": {
+        "irc": null,
+        "dsc": null,
+        "mtm": null
+      },
+      "failure": {
+        "irc": null,
+        "dsc": null,
+        "mtm": null
+      },
+      "unknown": {
+        "irc": null,
+        "dsc": null,
+        "mtm": null
+      }
+    }
+  }
+}

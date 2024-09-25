@@ -1,0 +1,22 @@
+{
+  "client": {
+    "server": "localhost",
+    "port": 6697
+  },
+  "database": "sqlite:///_/encommon_sample/TMPPATH/_/db",
+  "enconfig": {
+    "paths": [
+      "_/encommon_sample/TMPPATH/_/homie"
+    ]
+  },
+  "enlogger": {
+    "stdo_level": "debug"
+  },
+  "peering": {
+    "server": "localhost",
+    "port": 6900
+  },
+  "status": {
+    "enable": true
+  }
+}
