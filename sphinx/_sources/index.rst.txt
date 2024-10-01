@@ -1,5 +1,8 @@
+Oh-nope IRC Services
+====================
+
 Configuration Container
-=======================
+-----------------------
 
 .. autoclass:: ohnope.ohnope.OhnopeConfig
    :members:
@@ -7,7 +10,7 @@ Configuration Container
    :noindex:
 
 Parameters Container
-====================
+--------------------
 
 .. autopydantic_model:: ohnope.ohnope.params.OhnopeParams
    :members:
