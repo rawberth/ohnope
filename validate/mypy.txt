@@ -1,12 +1,17 @@
->>> make cleanup-pycache
-  ● Removing Python cache files..
-    DONE
-  ● Remove package cache files..
-    DONE
->>> make cleanup-mypy
-  ● Removing mypy cache files..
-    DONE
->>> make mypy
-  ● Executing mypy in ohnope..
-    DONE
-  ● Executing mypy in docs..
+[0;95m>>>[0;0m [0;35mmake [0;95mcleanup-pycache[0;0m
+  [0;95m●[0;0m [0;37mRemoving [0;90mPython[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mRemove [0;90mpackage[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+[0;95m>>>[0;0m [0;35mmake [0;95mcleanup-mypy[0;0m
+  [0;95m●[0;0m [0;37mRemoving [0;90mmypy[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+[0;95m>>>[0;0m [0;35mmake [0;95mmypy[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90mmypy[0;37m in [0;90mohnope[0;37m..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90mmypy[0;37m in [0;90msphinx[0;37m..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90mmypy[0;37m on [0;90mmakefile.py[0;37m..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90mmypy[0;37m on [0;90mmakebadge.py[0;37m..[0;0m
+    [0;35mDONE[0;0m

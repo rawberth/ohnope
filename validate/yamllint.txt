@@ -1,7 +1,7 @@
->>> make yamllint
-  ● Executing yamllint in ohnope..
-    DONE
-  ● Executing yamllint on .yamllint..
-    DONE
-  ● Executing yamllint in .github..
-    DONE
+[0;95m>>>[0;0m [0;35mmake [0;95myamllint[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90myamllint[0;37m in [0;90mohnope[0;37m..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90myamllint[0;37m on [0;90m.yamllint[0;37m..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90myamllint[0;37m in [0;90m.github[0;37m..[0;0m
+    [0;35mDONE[0;0m
