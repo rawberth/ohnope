@@ -1,0 +1,72 @@
+[0;95m>>>[0;0m [0;35mmake [0;95mcleanup-pycache[0;0m
+  [0;95m●[0;0m [0;37mRemoving [0;90mPython[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mRemove [0;90mpackage[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+[0;95m>>>[0;0m [0;35mmake [0;95mcleanup-pytest[0;0m
+  [0;95m●[0;0m [0;37mRemoving [0;90mpytest[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+[0;95m>>>[0;0m [0;35mmake [0;95mcleanup-coveragepy[0;0m
+  [0;95m●[0;0m [0;37mRemoving [0;90mcoveragepy[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+[0;95m>>>[0;0m [0;35mmake [0;95mcleanup-mypy[0;0m
+  [0;95m●[0;0m [0;37mRemoving [0;90mmypy[0;37m cache files..[0;0m
+    [0;35mDONE[0;0m
+[0;95m>>>[0;0m [0;35mmake [0;95mpytest[0;0m
+  [0;95m●[0;0m [0;37mExecuting [0;90mpytest[0;37m in [0;90mohnope[0;37m..[0;0m
+============================= test session starts ==============================
+platform linux -- Python 3.12.6, pytest-8.3.3, pluggy-1.5.0 -- /home/runner/work/ohnope/ohnope/main/.venv-package/bin/python3
+cachedir: .pytest_cache
+Using --randomly-seed=4043818653
+rootdir: /home/runner/work/ohnope/ohnope/main
+configfile: pyproject.toml
+plugins: clarity-1.0.1, anyio-4.6.0, mypy-0.10.3, randomly-3.15.0, xdist-3.6.1, sphinx-0.6.3, cov-5.0.0
+created: 4/4 workers
+4 workers [10 items]
+
+scheduling tests via LoadScheduling
+
+ohnope/ohnope/config.py::mypy 
+ohnope/conftest.py::mypy 
+ohnope/ohnope/test/test_config.py::mypy 
+ohnope/__init__.py::mypy 
+[gw2] [ 10%] PASSED ohnope/ohnope/config.py::mypy 
+ohnope/__init__.py::mypy-status 
+[gw2] [ 20%] PASSED ohnope/__init__.py::mypy-status 
+ohnope/ohnope/params/__init__.py::mypy 
+[gw2] [ 30%] PASSED ohnope/ohnope/params/__init__.py::mypy 
+ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+[gw1] [ 40%] PASSED ohnope/ohnope/test/test_config.py::mypy 
+[gw3] [ 50%] PASSED ohnope/__init__.py::mypy 
+ohnope/ohnope/params/ohnope.py::mypy 
+[gw0] [ 60%] PASSED ohnope/conftest.py::mypy 
+ohnope/ohnope/test/__init__.py::mypy 
+[gw1] [ 70%] PASSED ohnope/ohnope/params/ohnope.py::mypy 
+ohnope/ohnope/__init__.py::mypy 
+[gw0] [ 80%] PASSED ohnope/ohnope/__init__.py::mypy 
+[gw3] [ 90%] PASSED ohnope/ohnope/test/__init__.py::mypy 
+[gw2] [100%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+
+---------- coverage: platform linux, python 3.12.6-final-0 -----------
+Name                                Stmts   Miss  Cover
+-------------------------------------------------------
+ohnope/__init__.py                      5      0   100%
+ohnope/conftest.py                     18      0   100%
+ohnope/ohnope/__init__.py               2      0   100%
+ohnope/ohnope/config.py                46      0   100%
+ohnope/ohnope/params/__init__.py        2      0   100%
+ohnope/ohnope/params/ohnope.py         17      0   100%
+ohnope/ohnope/test/__init__.py          2      0   100%
+ohnope/ohnope/test/test_config.py      20      0   100%
+-------------------------------------------------------
+TOTAL                                 112      0   100%
+
+===================================== mypy =====================================
+
+Success: no issues found in 8 source files
+============================= 10 passed in 28.05s ==============================
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mWrite [0;90mcoveragepy[0;37m output to [0;90mhtmlcov[0;37m..[0;0m
+    [0;35mDONE[0;0m
+  [0;95m●[0;0m [0;37mWrite [0;90mcoveragepy[0;37m output to [0;90mcoverage.json[0;37m..[0;0m
+    [0;35mDONE[0;0m
