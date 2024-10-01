@@ -1,0 +1,12 @@
+Name                                Stmts   Miss  Cover
+-------------------------------------------------------
+ohnope/__init__.py                      5      0   100%
+ohnope/conftest.py                     18      0   100%
+ohnope/ohnope/__init__.py               2      0   100%
+ohnope/ohnope/config.py                46      0   100%
+ohnope/ohnope/params/__init__.py        2      0   100%
+ohnope/ohnope/params/ohnope.py         17      0   100%
+ohnope/ohnope/test/__init__.py          2      0   100%
+ohnope/ohnope/test/test_config.py      20      0   100%
+-------------------------------------------------------
+TOTAL                                 112      0   100%
