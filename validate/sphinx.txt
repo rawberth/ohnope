@@ -56,7 +56,7 @@ postprocess html... [ 67%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohno
 postprocess html... [ 83%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.params.html
 postprocess html... [100%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.test.html
 
-build succeeded, 7 warnings.
+build succeeded, 16 warnings.
 
 The HTML pages are in sphinx/html.
     DONE
