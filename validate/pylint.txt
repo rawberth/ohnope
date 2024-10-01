@@ -7,8 +7,5 @@
   ● Executing pylint in ohnope..
     DONE
   ● Executing pylint in docs..
-    DONE
-  ● Executing pylint on makefile.py..
-    DONE
-  ● Executing pylint on makebadge.py..
-    DONE
+************* Module docs/*.py
+docs/*.py:1:0: F0001: No module named docs/*.py (fatal)

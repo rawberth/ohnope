@@ -10,8 +10,3 @@
   ● Executing mypy in ohnope..
     DONE
   ● Executing mypy in docs..
-    DONE
-  ● Executing mypy on makefile.py..
-    DONE
-  ● Executing mypy on makebadge.py..
-    DONE

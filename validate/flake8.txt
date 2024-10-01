@@ -7,6 +7,3 @@
   ● Executing flake8 in ohnope..
     DONE
   ● Executing flake8 in docs..
-docs/conf.py:35:4: Q000 Double quotes found but single quotes preferred
-docs/conf.py:35:4: LIT001 Use single quotes for string
-docs/conf.py:35:4: E121 continuation line under-indented for hanging indent
