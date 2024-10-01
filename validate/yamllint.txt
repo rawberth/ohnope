@@ -1,1 +1,7 @@
 >>> make yamllint
+  ● Executing yamllint in ohnope..
+    DONE
+  ● Executing yamllint on .yamllint..
+    DONE
+  ● Executing yamllint in .github..
+    DONE

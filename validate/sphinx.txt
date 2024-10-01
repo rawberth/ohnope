@@ -1,1 +1,62 @@
 >>> make cleanup-pycache
+  ● Removing Python cache files..
+    DONE
+  ● Remove package cache files..
+    DONE
+>>> make cleanup-sphinx
+  ● Removing Sphinx cache files..
+    DONE
+>>> make sphinx
+  ● Building Sphinx documentation..
+Running Sphinx v7.3.7
+making output directory... done
+loading intersphinx inventory from https://encommon.readthedocs.io/en/latest/objects.inv...
+loading intersphinx inventory from https://enconnect.readthedocs.io/en/latest/objects.inv...
+loading intersphinx inventory from https://enrobie.readthedocs.io/en/latest/objects.inv...
+loading intersphinx inventory from https://jinja.palletsprojects.com/en/latest/objects.inv...
+loading intersphinx inventory from https://netaddr.readthedocs.io/en/latest/objects.inv...
+loading intersphinx inventory from https://docs.pydantic.dev/latest/objects.inv...
+loading intersphinx inventory from https://docs.pytest.org/latest/objects.inv...
+loading intersphinx inventory from https://docs.python.org/3/objects.inv...
+loading intersphinx inventory from https://docs.sqlalchemy.org/en/20/objects.inv...
+intersphinx inventory has moved: https://docs.pytest.org/latest/objects.inv -> https://docs.pytest.org/en/7.4.x/objects.inv
+building [mo]: targets for 0 po files that are out of date
+writing output... 
+building [html]: targets for 6 source files that are out of date
+updating environment: [new config] 6 added, 0 changed, 0 removed
+reading sources... [ 17%] index
+reading sources... [ 33%] modules
+reading sources... [ 50%] ohnope
+reading sources... [ 67%] ohnope.ohnope
+reading sources... [ 83%] ohnope.ohnope.params
+reading sources... [100%] ohnope.ohnope.test
+
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+copying assets... copying static files... done
+copying extra files... done
+done
+writing output... [ 17%] index
+writing output... [ 33%] modules
+writing output... [ 50%] ohnope
+writing output... [ 67%] ohnope.ohnope
+writing output... [ 83%] ohnope.ohnope.params
+writing output... [100%] ohnope.ohnope.test
+
+generating indices... genindex py-modindex done
+writing additional pages... search done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+postprocess html... [ 17%] /home/runner/work/ohnope/ohnope/main/sphinx/html/index.html
+postprocess html... [ 33%] /home/runner/work/ohnope/ohnope/main/sphinx/html/modules.html
+postprocess html... [ 50%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.html
+postprocess html... [ 67%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.html
+postprocess html... [ 83%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.params.html
+postprocess html... [100%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.test.html
+
+build succeeded, 7 warnings.
+
+The HTML pages are in sphinx/html.
+    DONE
