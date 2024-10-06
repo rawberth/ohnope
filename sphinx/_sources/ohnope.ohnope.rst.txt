@@ -21,6 +21,14 @@ ohnope.ohnope.config module
    :undoc-members:
    :show-inheritance:
 
+ohnope.ohnope.ohnope module
+---------------------------
+
+.. automodule:: ohnope.ohnope.ohnope
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

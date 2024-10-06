@@ -12,6 +12,14 @@ ohnope.ohnope.test.test\_config module
    :undoc-members:
    :show-inheritance:
 
+ohnope.ohnope.test.test\_ohnope module
+--------------------------------------
+
+.. automodule:: ohnope.ohnope.test.test_ohnope
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

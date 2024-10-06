@@ -1,0 +1,29 @@
+ohnope.plugins.rootserv package
+===============================
+
+Submodules
+----------
+
+ohnope.plugins.rootserv.params module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.rootserv.params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ohnope.plugins.rootserv.plugin module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.rootserv.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ohnope.plugins.rootserv
+   :members:
+   :undoc-members:
+   :show-inheritance:

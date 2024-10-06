@@ -1,0 +1,29 @@
+ohnope.plugins.hostserv package
+===============================
+
+Submodules
+----------
+
+ohnope.plugins.hostserv.params module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.hostserv.params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ohnope.plugins.hostserv.plugin module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.hostserv.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ohnope.plugins.hostserv
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -1,0 +1,29 @@
+ohnope.plugins.helpserv package
+===============================
+
+Submodules
+----------
+
+ohnope.plugins.helpserv.params module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.helpserv.params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ohnope.plugins.helpserv.plugin module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.helpserv.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ohnope.plugins.helpserv
+   :members:
+   :undoc-members:
+   :show-inheritance:

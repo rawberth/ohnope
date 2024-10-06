@@ -1,0 +1,29 @@
+ohnope.plugins.chanserv package
+===============================
+
+Submodules
+----------
+
+ohnope.plugins.chanserv.params module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.chanserv.params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ohnope.plugins.chanserv.plugin module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.chanserv.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ohnope.plugins.chanserv
+   :members:
+   :undoc-members:
+   :show-inheritance:

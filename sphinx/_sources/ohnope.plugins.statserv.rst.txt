@@ -1,0 +1,29 @@
+ohnope.plugins.statserv package
+===============================
+
+Submodules
+----------
+
+ohnope.plugins.statserv.params module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.statserv.params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ohnope.plugins.statserv.plugin module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.statserv.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ohnope.plugins.statserv
+   :members:
+   :undoc-members:
+   :show-inheritance:

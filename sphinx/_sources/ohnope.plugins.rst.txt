@@ -1,0 +1,26 @@
+ohnope.plugins package
+======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   ohnope.plugins.chanserv
+   ohnope.plugins.chatserv
+   ohnope.plugins.helpserv
+   ohnope.plugins.hostserv
+   ohnope.plugins.memoserv
+   ohnope.plugins.nickserv
+   ohnope.plugins.operserv
+   ohnope.plugins.rootserv
+   ohnope.plugins.statserv
+
+Module contents
+---------------
+
+.. automodule:: ohnope.plugins
+   :members:
+   :undoc-members:
+   :show-inheritance:

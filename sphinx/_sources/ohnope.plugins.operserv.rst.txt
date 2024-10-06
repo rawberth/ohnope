@@ -1,0 +1,29 @@
+ohnope.plugins.operserv package
+===============================
+
+Submodules
+----------
+
+ohnope.plugins.operserv.params module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.operserv.params
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+ohnope.plugins.operserv.plugin module
+-------------------------------------
+
+.. automodule:: ohnope.plugins.operserv.plugin
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: ohnope.plugins.operserv
+   :members:
+   :undoc-members:
+   :show-inheritance:
