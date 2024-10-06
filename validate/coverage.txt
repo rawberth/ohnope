@@ -10,7 +10,7 @@ ohnope/execution/test/test_crypts.py        4      0   100%
 ohnope/execution/test/test_service.py       4      0   100%
 ohnope/ohnope/__init__.py                   4      0   100%
 ohnope/ohnope/config.py                    56      0   100%
-ohnope/ohnope/ohnope.py                   115      6    95%
+ohnope/ohnope/ohnope.py                   116      6    95%
 ohnope/ohnope/params/__init__.py            2      0   100%
 ohnope/ohnope/params/ohnope.py             42      0   100%
 ohnope/ohnope/test/__init__.py              2      0   100%
@@ -45,4 +45,4 @@ ohnope/plugins/statserv/__init__.py         3      0   100%
 ohnope/plugins/statserv/params.py          11      0   100%
 ohnope/plugins/statserv/plugin.py          21     14    33%
 -----------------------------------------------------------
-TOTAL                                     675    132    80%
+TOTAL                                     676    132    80%
