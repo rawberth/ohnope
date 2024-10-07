@@ -5,6 +5,6 @@
   "mypy": "passing",
   "yamllint": "passing",
   "pytest": "passing",
-  "coverage": "80",
+  "coverage": "81",
   "sphinx": "passing"
 }
