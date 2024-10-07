@@ -94,7 +94,7 @@ postprocess html... [ 89%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohno
 postprocess html... [ 94%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.rootserv.html
 postprocess html... [100%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.statserv.html
 
-build succeeded, 776 warnings.
+build succeeded, 779 warnings.
 
 The HTML pages are in sphinx/html.
     DONE
