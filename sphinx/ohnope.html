@@ -133,6 +133,7 @@
 <li class="toctree-l4"><a class="reference internal" href="ohnope.ohnope.test.html#submodules">Submodules</a></li>
 <li class="toctree-l4"><a class="reference internal" href="ohnope.ohnope.test.html#module-ohnope.ohnope.test.test_config">ohnope.ohnope.test.test_config module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="ohnope.ohnope.test.html#module-ohnope.ohnope.test.test_ohnope">ohnope.ohnope.test.test_ohnope module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ohnope.ohnope.test.html#module-ohnope.ohnope.test.test_service">ohnope.ohnope.test.test_service module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="ohnope.ohnope.test.html#module-ohnope.ohnope.test">Module contents</a></li>
 </ul>
 </li>
@@ -391,67 +392,15 @@
 <p>This file is part of Enasis Network software eco-system. Distribution
 is permitted, for more information consult the project license file.</p>
 <dl class="py function">
-<dt class="sig sig-object py" id="ohnope.conftest.config">
-<span class="sig-prename descclassname"><span class="pre">ohnope.conftest.</span></span><span class="sig-name descname"><span class="pre">config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.config.OhnopeConfig" title="ohnope.ohnope.config.OhnopeConfig"><span class="pre">OhnopeConfig</span></a></span></span><a class="headerlink" href="#ohnope.conftest.config" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.conftest.config'">¶</a></dt>
+<dt class="sig sig-object py" id="ohnope.conftest.client_ircsock">
+<span class="sig-prename descclassname"><span class="pre">ohnope.conftest.</span></span><span class="sig-name descname"><span class="pre">client_ircsock</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mocker</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">MockerFixture</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">IRCClientSocket</span></span></span><a class="headerlink" href="#ohnope.conftest.client_ircsock" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.conftest.client_ircsock'">¶</a></dt>
 <dd><p>Construct the instance for use in the downstream tests.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>tmp_path</strong> – pytest object for temporal filesystem.</p>
+<dd class="field-odd"><p><strong>mocker</strong> – Object for mocking the Python routines.</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>Newly constructed instance of related class.</p>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py function">
-<dt class="sig sig-object py" id="ohnope.conftest.config_factory">
-<span class="sig-prename descclassname"><span class="pre">ohnope.conftest.</span></span><span class="sig-name descname"><span class="pre">config_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.config.OhnopeConfig" title="ohnope.ohnope.config.OhnopeConfig"><span class="pre">OhnopeConfig</span></a></span></span><a class="headerlink" href="#ohnope.conftest.config_factory" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.conftest.config_factory'">¶</a></dt>
-<dd><p>Construct the instance for use in the downstream tests.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>tmp_path</strong> – pytest object for temporal filesystem.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Newly constructed instance of related class.</p>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py function">
-<dt class="sig sig-object py" id="ohnope.conftest.ohnope">
-<span class="sig-prename descclassname"><span class="pre">ohnope.conftest.</span></span><span class="sig-name descname"><span class="pre">ohnope</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.config.OhnopeConfig" title="ohnope.ohnope.config.OhnopeConfig"><span class="pre">OhnopeConfig</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.ohnope.Ohnope" title="ohnope.ohnope.ohnope.Ohnope"><span class="pre">Ohnope</span></a></span></span><a class="headerlink" href="#ohnope.conftest.ohnope" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.conftest.ohnope'">¶</a></dt>
-<dd><p>Construct the instance for use in the downstream tests.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>config</strong> – Primary class instance for configuration.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Newly constructed instance of related class.</p>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py function">
-<dt class="sig sig-object py" id="ohnope.conftest.ohnope_factory">
-<span class="sig-prename descclassname"><span class="pre">ohnope.conftest.</span></span><span class="sig-name descname"><span class="pre">ohnope_factory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.config.OhnopeConfig" title="ohnope.ohnope.config.OhnopeConfig"><span class="pre">OhnopeConfig</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.ohnope.Ohnope" title="ohnope.ohnope.ohnope.Ohnope"><span class="pre">Ohnope</span></a></span></span><a class="headerlink" href="#ohnope.conftest.ohnope_factory" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.conftest.ohnope_factory'">¶</a></dt>
-<dd><p>Construct the instance for use in the downstream tests.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>config</strong> – Primary class instance for configuration.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Newly constructed instance of related class.</p>
-</dd>
-</dl>
-</dd></dl>
-<dl class="py function">
-<dt class="sig sig-object py" id="ohnope.conftest.replaces">
-<span class="sig-prename descclassname"><span class="pre">ohnope.conftest.</span></span><span class="sig-name descname"><span class="pre">replaces</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/pathlib.html#pathlib.Path" title="(in Python v3.12)"><span class="pre">Path</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.12)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Any" title="(in Python v3.12)"><span class="pre">Any</span></a><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#ohnope.conftest.replaces" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.conftest.replaces'">¶</a></dt>
-<dd><p>Return the complete mapping of what replaced in sample.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>tmp_path</strong> – pytest object for temporal filesystem.</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p>Complete mapping of what replaced in sample.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -469,11 +418,7 @@ is permitted, for more information consult the project license file.</p>
 <li><a :data-current="activeSection === '#subpackages'" class="reference internal" href="#subpackages">Subpackages</a></li>
 <li><a :data-current="activeSection === '#submodules'" class="reference internal" href="#submodules">Submodules</a></li>
 <li><a :data-current="activeSection === '#module-ohnope.conftest'" class="reference internal" href="#module-ohnope.conftest">ohnope.conftest module</a><ul>
-<li><a :data-current="activeSection === '#ohnope.conftest.config'" class="reference internal" href="#ohnope.conftest.config"><code class="docutils literal notranslate"><span class="pre">config()</span></code></a></li>
-<li><a :data-current="activeSection === '#ohnope.conftest.config_factory'" class="reference internal" href="#ohnope.conftest.config_factory"><code class="docutils literal notranslate"><span class="pre">config_factory()</span></code></a></li>
-<li><a :data-current="activeSection === '#ohnope.conftest.ohnope'" class="reference internal" href="#ohnope.conftest.ohnope"><code class="docutils literal notranslate"><span class="pre">ohnope()</span></code></a></li>
-<li><a :data-current="activeSection === '#ohnope.conftest.ohnope_factory'" class="reference internal" href="#ohnope.conftest.ohnope_factory"><code class="docutils literal notranslate"><span class="pre">ohnope_factory()</span></code></a></li>
-<li><a :data-current="activeSection === '#ohnope.conftest.replaces'" class="reference internal" href="#ohnope.conftest.replaces"><code class="docutils literal notranslate"><span class="pre">replaces()</span></code></a></li>
+<li><a :data-current="activeSection === '#ohnope.conftest.client_ircsock'" class="reference internal" href="#ohnope.conftest.client_ircsock"><code class="docutils literal notranslate"><span class="pre">client_ircsock()</span></code></a></li>
 </ul>
 </li>
 <li><a :data-current="activeSection === '#module-ohnope'" class="reference internal" href="#module-ohnope">Module contents</a></li>
