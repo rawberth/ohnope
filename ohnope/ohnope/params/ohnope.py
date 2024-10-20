@@ -59,19 +59,19 @@ class OhnopeIRCParams(BaseModel, extra='forbid'):
 
     nickname: Annotated[
         str,
-        Field('ircbot',
+        Field('ohnope',
               description='Parameter for the integration',
               min_length=1)]
 
     username: Annotated[
         str,
-        Field('ircbot',
+        Field('ohnope',
               description='Parameter for the integration',
               min_length=1)]
 
     realname: Annotated[
         str,
-        Field('Chatting Robie',
+        Field('Oh-nope IRC Services',
               description='Parameter for the integration',
               min_length=1)]
 

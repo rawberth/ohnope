@@ -15,6 +15,10 @@ from encommon.types import clsname
 
 from enrobie.clients import IRCClient
 from enrobie.clients import IRCClientParams
+from enrobie.plugins import AutoNickPlugin
+from enrobie.plugins import AutoNickPluginParams
+from enrobie.plugins import AutoJoinPlugin
+from enrobie.plugins import AutoJoinPluginParams
 from enrobie.plugins import StatusPlugin
 from enrobie.plugins import StatusPluginParams
 from enrobie.robie import Robie as _Robie
@@ -183,6 +187,30 @@ class Ohnope:
             source=source)
 
 
+        channels = [
+            {'channel': '#opers',
+             'client': 'eponho'}]
+
+        source = {
+            'enable': bool(client),
+            'channels': channels}
+
+        config.robie.register(
+            name='autojoin',
+            plugin=AutoJoinPluginParams,
+            source=source)
+
+
+        source = {
+            'enable': bool(client),
+            'clients': 'eponho'}
+
+        config.robie.register(
+            name='autonick',
+            plugin=AutoNickPluginParams,
+            source=source)
+
+
         status = (
             params.status
             .endumped)
@@ -296,6 +324,15 @@ class Ohnope:
         self.robie.register(
             name='ohnope',
             client=IRCClient)
+
+
+        self.robie.register(
+            name='autojoin',
+            plugin=AutoJoinPlugin)
+
+        self.robie.register(
+            name='autonick',
+            plugin=AutoNickPlugin)
 
         self.robie.register(
             name='status',
