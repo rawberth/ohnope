@@ -193,7 +193,8 @@ class Ohnope:
 
         source = {
             'enable': bool(client),
-            'channels': channels}
+            'channels': channels,
+            'status': client.status}
 
         config.robie.register(
             name='autojoin',
@@ -203,7 +204,8 @@ class Ohnope:
 
         source = {
             'enable': bool(client),
-            'clients': 'eponho'}
+            'clients': 'eponho',
+            'status': client.status}
 
         config.robie.register(
             name='autonick',
