@@ -28,6 +28,7 @@
     "nickname": "ohnope",
     "username": "ohnope",
     "realname": "Oh-nope IRC Services",
+    "channel": "#opers",
     "ssl_enable": true,
     "ssl_verify": true,
     "status": {
