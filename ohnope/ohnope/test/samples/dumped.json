@@ -56,9 +56,9 @@
           "port": 6900,
           "timeout": 30,
           "operate": "service",
-          "nickname": "ohnope",
-          "username": "ohnope",
-          "realname": "Oh-nope IRC Services",
+          "nickname": "ircbot",
+          "username": "ircbot",
+          "realname": "Chatting Robie",
           "password": null,
           "servername": "services.invalid",
           "serverid": "42X",
@@ -77,6 +77,39 @@
     }
   },
   "plugins": {
+    "autojoin": {
+      "name": "autojoin",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "channels": [
+          {
+            "client": "eponho",
+            "channel": "#opers"
+          }
+        ],
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
+    "autonick": {
+      "name": "autonick",
+      "kind": "plugin",
+      "params": {
+        "enable": true,
+        "clients": [
+          "eponho"
+        ],
+        "status": {
+          "irc": null,
+          "dsc": null,
+          "mtm": null
+        }
+      }
+    },
     "status": {
       "name": "status",
       "kind": "plugin",

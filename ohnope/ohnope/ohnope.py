@@ -15,10 +15,10 @@ from encommon.types import clsname
 
 from enrobie.clients import IRCClient
 from enrobie.clients import IRCClientParams
-from enrobie.plugins import AutoNickPlugin
-from enrobie.plugins import AutoNickPluginParams
 from enrobie.plugins import AutoJoinPlugin
 from enrobie.plugins import AutoJoinPluginParams
+from enrobie.plugins import AutoNickPlugin
+from enrobie.plugins import AutoNickPluginParams
 from enrobie.plugins import StatusPlugin
 from enrobie.plugins import StatusPluginParams
 from enrobie.robie import Robie as _Robie
