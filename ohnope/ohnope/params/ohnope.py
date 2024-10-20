@@ -75,6 +75,12 @@ class OhnopeIRCParams(BaseModel, extra='forbid'):
               description='Parameter for the integration',
               min_length=1)]
 
+    channel: Annotated[
+        str,
+        Field('#opers',
+              description='Channel where client will join',
+              min_length=1)]
+
     ssl_enable: Annotated[
         bool,
         Field(True,

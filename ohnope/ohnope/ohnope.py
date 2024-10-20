@@ -176,6 +176,9 @@ class Ohnope:
         if 'status' in dumped:
             del dumped['status']
 
+        if 'channel' in dumped:
+            del dumped['channel']
+
         source = {
             'enable': True,
             'client': dumped,
@@ -187,8 +190,10 @@ class Ohnope:
             source=source)
 
 
+        channel = client.channel
+
         channels = [
-            {'channel': '#opers',
+            {'channel': channel,
              'client': 'eponho'}]
 
         source = {
