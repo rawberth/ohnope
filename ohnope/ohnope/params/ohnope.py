@@ -94,7 +94,7 @@ class OhnopeIRCParams(BaseModel, extra='forbid'):
     status: Annotated[
         StatusPluginIconParams,
         Field(default_factory=StatusPluginIconParams,
-              description='Icon used per the chat platform')]
+              description='Icon used per chat platform')]
 
 
 
@@ -158,7 +158,7 @@ class OhnopeIRCSParams(BaseModel, extra='forbid'):
     status: Annotated[
         StatusPluginIconParams,
         Field(default_factory=StatusPluginIconParams,
-              description='Icon used per the chat platform')]
+              description='Icon used per chat platform')]
 
 
 
