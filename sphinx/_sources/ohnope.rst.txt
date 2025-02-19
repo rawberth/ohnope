@@ -19,13 +19,13 @@ ohnope.conftest module
 
 .. automodule:: ohnope.conftest
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

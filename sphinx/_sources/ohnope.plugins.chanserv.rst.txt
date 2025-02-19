@@ -9,21 +9,21 @@ ohnope.plugins.chanserv.params module
 
 .. automodule:: ohnope.plugins.chanserv.params
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.plugins.chanserv.plugin module
 -------------------------------------
 
 .. automodule:: ohnope.plugins.chanserv.plugin
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.plugins.chanserv
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

@@ -9,21 +9,21 @@ ohnope.plugins.chatserv.params module
 
 .. automodule:: ohnope.plugins.chatserv.params
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.plugins.chatserv.plugin module
 -------------------------------------
 
 .. automodule:: ohnope.plugins.chatserv.plugin
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.plugins.chatserv
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

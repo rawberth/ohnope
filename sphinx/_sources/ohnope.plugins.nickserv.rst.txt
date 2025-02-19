@@ -9,21 +9,21 @@ ohnope.plugins.nickserv.params module
 
 .. automodule:: ohnope.plugins.nickserv.params
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.plugins.nickserv.plugin module
 -------------------------------------
 
 .. automodule:: ohnope.plugins.nickserv.plugin
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.plugins.nickserv
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

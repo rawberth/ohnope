@@ -9,21 +9,21 @@ ohnope.plugins.statserv.params module
 
 .. automodule:: ohnope.plugins.statserv.params
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.plugins.statserv.plugin module
 -------------------------------------
 
 .. automodule:: ohnope.plugins.statserv.plugin
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.plugins.statserv
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

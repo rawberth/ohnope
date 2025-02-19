@@ -9,29 +9,29 @@ ohnope.ohnope.test.test\_config module
 
 .. automodule:: ohnope.ohnope.test.test_config
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.ohnope.test.test\_ohnope module
 --------------------------------------
 
 .. automodule:: ohnope.ohnope.test.test_ohnope
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.ohnope.test.test\_service module
 ---------------------------------------
 
 .. automodule:: ohnope.ohnope.test.test_service
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.ohnope.test
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

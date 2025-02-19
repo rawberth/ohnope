@@ -9,21 +9,21 @@ ohnope.plugins.memoserv.params module
 
 .. automodule:: ohnope.plugins.memoserv.params
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.plugins.memoserv.plugin module
 -------------------------------------
 
 .. automodule:: ohnope.plugins.memoserv.plugin
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.plugins.memoserv
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

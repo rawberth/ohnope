@@ -17,21 +17,21 @@ ohnope.execution.crypts module
 
 .. automodule:: ohnope.execution.crypts
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.execution.service module
 -------------------------------
 
 .. automodule:: ohnope.execution.service
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.execution
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

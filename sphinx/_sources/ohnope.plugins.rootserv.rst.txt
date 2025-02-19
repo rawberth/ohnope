@@ -9,21 +9,21 @@ ohnope.plugins.rootserv.params module
 
 .. automodule:: ohnope.plugins.rootserv.params
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.plugins.rootserv.plugin module
 -------------------------------------
 
 .. automodule:: ohnope.plugins.rootserv.plugin
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.plugins.rootserv
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:

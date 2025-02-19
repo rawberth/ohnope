@@ -18,21 +18,21 @@ ohnope.ohnope.config module
 
 .. automodule:: ohnope.ohnope.config
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 ohnope.ohnope.ohnope module
 ---------------------------
 
 .. automodule:: ohnope.ohnope.ohnope
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
 
 Module contents
 ---------------
 
 .. automodule:: ohnope.ohnope
    :members:
-   :undoc-members:
    :show-inheritance:
+   :undoc-members:
