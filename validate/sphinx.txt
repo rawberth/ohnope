@@ -8,7 +8,7 @@
     DONE
 >>> make sphinx
   ● Building Sphinx documentation..
-Running Sphinx v8.1.3
+Running Sphinx v8.2.0
 loading translations [en]... done
 making output directory... done
 loading intersphinx inventory 'encommon' from https://encommon.readthedocs.io/en/latest/objects.inv ...
@@ -25,25 +25,7 @@ building [mo]: targets for 0 po files that are out of date
 writing output... 
 building [html]: targets for 18 source files that are out of date
 updating environment: [new config] 18 added, 0 changed, 0 removed
-reading sources... [  6%] index
-reading sources... [ 11%] modules
-reading sources... [ 17%] ohnope
-reading sources... [ 22%] ohnope.execution
-reading sources... [ 28%] ohnope.execution.test
-reading sources... [ 33%] ohnope.ohnope
-reading sources... [ 39%] ohnope.ohnope.params
-reading sources... [ 44%] ohnope.ohnope.test
-reading sources... [ 50%] ohnope.plugins
-reading sources... [ 56%] ohnope.plugins.chanserv
-reading sources... [ 61%] ohnope.plugins.chatserv
-reading sources... [ 67%] ohnope.plugins.helpserv
-reading sources... [ 72%] ohnope.plugins.hostserv
-reading sources... [ 78%] ohnope.plugins.memoserv
-reading sources... [ 83%] ohnope.plugins.nickserv
-reading sources... [ 89%] ohnope.plugins.operserv
-reading sources... [ 94%] ohnope.plugins.rootserv
-reading sources... [100%] ohnope.plugins.statserv
-
+reading sources... [  6%] indexreading sources... [ 11%] modulesreading sources... [ 17%] ohnopereading sources... [ 22%] ohnope.executionreading sources... [ 28%] ohnope.execution.testreading sources... [ 33%] ohnope.ohnopereading sources... [ 39%] ohnope.ohnope.paramsreading sources... [ 44%] ohnope.ohnope.testreading sources... [ 50%] ohnope.pluginsreading sources... [ 56%] ohnope.plugins.chanservreading sources... [ 61%] ohnope.plugins.chatservreading sources... [ 67%] ohnope.plugins.helpservreading sources... [ 72%] ohnope.plugins.hostservreading sources... [ 78%] ohnope.plugins.memoservreading sources... [ 83%] ohnope.plugins.nickservreading sources... [ 89%] ohnope.plugins.operservreading sources... [ 94%] ohnope.plugins.rootservreading sources... [100%] ohnope.plugins.statserv
 looking for now-outdated files... none found
 pickling environment... done
 checking consistency... done
@@ -57,48 +39,12 @@ copying static files: done
 copying extra files... 
 copying extra files: done
 copying assets: done
-writing output... [  6%] index
-writing output... [ 11%] modules
-writing output... [ 17%] ohnope
-writing output... [ 22%] ohnope.execution
-writing output... [ 28%] ohnope.execution.test
-writing output... [ 33%] ohnope.ohnope
-writing output... [ 39%] ohnope.ohnope.params
-writing output... [ 44%] ohnope.ohnope.test
-writing output... [ 50%] ohnope.plugins
-writing output... [ 56%] ohnope.plugins.chanserv
-writing output... [ 61%] ohnope.plugins.chatserv
-writing output... [ 67%] ohnope.plugins.helpserv
-writing output... [ 72%] ohnope.plugins.hostserv
-writing output... [ 78%] ohnope.plugins.memoserv
-writing output... [ 83%] ohnope.plugins.nickserv
-writing output... [ 89%] ohnope.plugins.operserv
-writing output... [ 94%] ohnope.plugins.rootserv
-writing output... [100%] ohnope.plugins.statserv
-
+writing output... [  6%] indexwriting output... [ 11%] moduleswriting output... [ 17%] ohnopewriting output... [ 22%] ohnope.executionwriting output... [ 28%] ohnope.execution.testwriting output... [ 33%] ohnope.ohnopewriting output... [ 39%] ohnope.ohnope.paramswriting output... [ 44%] ohnope.ohnope.testwriting output... [ 50%] ohnope.pluginswriting output... [ 56%] ohnope.plugins.chanservwriting output... [ 61%] ohnope.plugins.chatservwriting output... [ 67%] ohnope.plugins.helpservwriting output... [ 72%] ohnope.plugins.hostservwriting output... [ 78%] ohnope.plugins.memoservwriting output... [ 83%] ohnope.plugins.nickservwriting output... [ 89%] ohnope.plugins.operservwriting output... [ 94%] ohnope.plugins.rootservwriting output... [100%] ohnope.plugins.statserv
 generating indices... genindex py-modindex done
 writing additional pages... search done
 dumping search index in English (code: en)... done
 dumping object inventory... done
-postprocess html... [  6%] /home/runner/work/ohnope/ohnope/main/sphinx/html/index.html
-postprocess html... [ 11%] /home/runner/work/ohnope/ohnope/main/sphinx/html/modules.html
-postprocess html... [ 17%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.html
-postprocess html... [ 22%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.execution.html
-postprocess html... [ 28%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.execution.test.html
-postprocess html... [ 33%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.html
-postprocess html... [ 39%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.params.html
-postprocess html... [ 44%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.test.html
-postprocess html... [ 50%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.html
-postprocess html... [ 56%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.chanserv.html
-postprocess html... [ 61%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.chatserv.html
-postprocess html... [ 67%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.helpserv.html
-postprocess html... [ 72%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.hostserv.html
-postprocess html... [ 78%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.memoserv.html
-postprocess html... [ 83%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.nickserv.html
-postprocess html... [ 89%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.operserv.html
-postprocess html... [ 94%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.rootserv.html
-postprocess html... [100%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.statserv.html
-
+postprocess html... [  6%] /home/runner/work/ohnope/ohnope/main/sphinx/html/index.htmlpostprocess html... [ 11%] /home/runner/work/ohnope/ohnope/main/sphinx/html/modules.htmlpostprocess html... [ 17%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.htmlpostprocess html... [ 22%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.execution.htmlpostprocess html... [ 28%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.execution.test.htmlpostprocess html... [ 33%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.htmlpostprocess html... [ 39%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.params.htmlpostprocess html... [ 44%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.ohnope.test.htmlpostprocess html... [ 50%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.htmlpostprocess html... [ 56%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.chanserv.htmlpostprocess html... [ 61%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.chatserv.htmlpostprocess html... [ 67%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.helpserv.htmlpostprocess html... [ 72%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.hostserv.htmlpostprocess html... [ 78%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.memoserv.htmlpostprocess html... [ 83%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.nickserv.htmlpostprocess html... [ 89%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.operserv.htmlpostprocess html... [ 94%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.rootserv.htmlpostprocess html... [100%] /home/runner/work/ohnope/ohnope/main/sphinx/html/ohnope.plugins.statserv.html
 build succeeded, 786 warnings.
 
 The HTML pages are in sphinx/html.
