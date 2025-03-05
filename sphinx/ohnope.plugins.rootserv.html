@@ -101,7 +101,7 @@ is permitted, for more information consult the project license file.</p>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.params.RootServParams">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ohnope.plugins.rootserv.params.</span></span><span class="sig-name descname"><span class="pre">RootServParams</span></span><a class="headerlink" href="#ohnope.plugins.rootserv.params.RootServParams" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.params.RootServParams'">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.plugin.RobiePluginParams" title="(in enrobie v0.10.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePluginParams</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.plugin.RobiePluginParams" title="(in enrobie v0.11.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePluginParams</span></code></a></p>
 <p>Process and validate the core configuration parameters.</p>
 <p><details class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="p">{</span>
@@ -115,86 +115,106 @@ is permitted, for more information consult the project license file.</p>
 </span><span id="line-9"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Enable"</span><span class="p">,</span>
 </span><span id="line-10"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span>
 </span><span id="line-11"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-12"><span class="w">      </span><span class="nt">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-13"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RootServ"</span><span class="p">,</span>
-</span><span id="line-14"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What nickname for the service"</span><span class="p">,</span>
-</span><span id="line-15"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-16"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nickname"</span><span class="p">,</span>
-</span><span id="line-17"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-18"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-19"><span class="w">      </span><span class="nt">"realname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-20"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Network administration"</span><span class="p">,</span>
-</span><span id="line-21"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What realname for the service"</span><span class="p">,</span>
-</span><span id="line-22"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-23"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Realname"</span><span class="p">,</span>
-</span><span id="line-24"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-25"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-26"><span class="w">      </span><span class="nt">"unique"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-27"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ROOTS0"</span><span class="p">,</span>
-</span><span id="line-28"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique identifier for service"</span><span class="p">,</span>
-</span><span id="line-29"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-30"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique"</span><span class="p">,</span>
-</span><span id="line-31"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-32"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-33"><span class="w">      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-34"><span class="w">         </span><span class="nt">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/$defs/StatusPluginIconParams"</span><span class="p">,</span>
-</span><span id="line-35"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used per chat platform"</span>
-</span><span id="line-36"><span class="w">      </span><span class="p">}</span>
-</span><span id="line-37"><span class="w">   </span><span class="p">},</span>
-</span><span id="line-38"><span class="w">   </span><span class="nt">"$defs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-39"><span class="w">      </span><span class="nt">"StatusPluginIconParams"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-40"><span class="w">         </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span><span id="line-41"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contain information for constructing the chat messages."</span><span class="p">,</span>
-</span><span id="line-42"><span class="w">         </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-43"><span class="w">            </span><span class="nt">"irc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-44"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-45"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-46"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-47"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-48"><span class="w">                  </span><span class="p">},</span>
-</span><span id="line-49"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-50"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
-</span><span id="line-51"><span class="w">                  </span><span class="p">}</span>
-</span><span id="line-52"><span class="w">               </span><span class="p">],</span>
-</span><span id="line-53"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="line-54"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
-</span><span id="line-55"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Irc"</span>
-</span><span id="line-56"><span class="w">            </span><span class="p">},</span>
-</span><span id="line-57"><span class="w">            </span><span class="nt">"dsc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-58"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-59"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-60"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-61"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-62"><span class="w">                  </span><span class="p">},</span>
-</span><span id="line-63"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-64"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
-</span><span id="line-65"><span class="w">                  </span><span class="p">}</span>
-</span><span id="line-66"><span class="w">               </span><span class="p">],</span>
-</span><span id="line-67"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="line-68"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
-</span><span id="line-69"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsc"</span>
-</span><span id="line-70"><span class="w">            </span><span class="p">},</span>
-</span><span id="line-71"><span class="w">            </span><span class="nt">"mtm"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-72"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-73"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-74"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-75"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-76"><span class="w">                  </span><span class="p">},</span>
-</span><span id="line-77"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-78"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
-</span><span id="line-79"><span class="w">                  </span><span class="p">}</span>
-</span><span id="line-80"><span class="w">               </span><span class="p">],</span>
-</span><span id="line-81"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="line-82"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
-</span><span id="line-83"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mtm"</span>
-</span><span id="line-84"><span class="w">            </span><span class="p">}</span>
-</span><span id="line-85"><span class="w">         </span><span class="p">},</span>
-</span><span id="line-86"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginIconParams"</span><span class="p">,</span>
-</span><span id="line-87"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
-</span><span id="line-88"><span class="w">      </span><span class="p">}</span>
-</span><span id="line-89"><span class="w">   </span><span class="p">},</span>
-</span><span id="line-90"><span class="w">   </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-</span><span id="line-91"><span class="p">}</span>
+</span><span id="line-12"><span class="w">      </span><span class="nt">"locate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-13"><span class="w">         </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-14"><span class="w">            </span><span class="p">{</span>
+</span><span id="line-15"><span class="w">               </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-16"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-17"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-18"><span class="w">            </span><span class="p">{</span>
+</span><span id="line-19"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-20"><span class="w">            </span><span class="p">}</span>
+</span><span id="line-21"><span class="w">         </span><span class="p">],</span>
+</span><span id="line-22"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-23"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"For which plugin are parameters"</span><span class="p">,</span>
+</span><span id="line-24"><span class="w">         </span><span class="nt">"examples"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-25"><span class="w">            </span><span class="s2">"enrobie.plugins.AinswerPlugin"</span><span class="p">,</span>
+</span><span id="line-26"><span class="w">            </span><span class="s2">"enrobie.plugins.AutoJoinPlugin"</span><span class="p">,</span>
+</span><span id="line-27"><span class="w">            </span><span class="s2">"enrobie.plugins.AutoNickPlugin"</span><span class="p">,</span>
+</span><span id="line-28"><span class="w">            </span><span class="s2">"enrobie.plugins.StatusPlugin"</span>
+</span><span id="line-29"><span class="w">         </span><span class="p">],</span>
+</span><span id="line-30"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Locate"</span>
+</span><span id="line-31"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-32"><span class="w">      </span><span class="nt">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-33"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RootServ"</span><span class="p">,</span>
+</span><span id="line-34"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What nickname for the service"</span><span class="p">,</span>
+</span><span id="line-35"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-36"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nickname"</span><span class="p">,</span>
+</span><span id="line-37"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-38"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-39"><span class="w">      </span><span class="nt">"realname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-40"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Network administration"</span><span class="p">,</span>
+</span><span id="line-41"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What realname for the service"</span><span class="p">,</span>
+</span><span id="line-42"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-43"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Realname"</span><span class="p">,</span>
+</span><span id="line-44"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-45"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-46"><span class="w">      </span><span class="nt">"unique"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-47"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ROOTS0"</span><span class="p">,</span>
+</span><span id="line-48"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique identifier for service"</span><span class="p">,</span>
+</span><span id="line-49"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-50"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique"</span><span class="p">,</span>
+</span><span id="line-51"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-52"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-53"><span class="w">      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-54"><span class="w">         </span><span class="nt">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/$defs/StatusPluginIconParams"</span><span class="p">,</span>
+</span><span id="line-55"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used per chat platform"</span>
+</span><span id="line-56"><span class="w">      </span><span class="p">}</span>
+</span><span id="line-57"><span class="w">   </span><span class="p">},</span>
+</span><span id="line-58"><span class="w">   </span><span class="nt">"$defs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-59"><span class="w">      </span><span class="nt">"StatusPluginIconParams"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-60"><span class="w">         </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="line-61"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contain information for constructing the chat messages."</span><span class="p">,</span>
+</span><span id="line-62"><span class="w">         </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-63"><span class="w">            </span><span class="nt">"irc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-64"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-65"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-66"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-67"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-68"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-69"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-70"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-71"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-72"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-73"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-74"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
+</span><span id="line-75"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Irc"</span>
+</span><span id="line-76"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-77"><span class="w">            </span><span class="nt">"dsc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-78"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-79"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-80"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-81"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-82"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-83"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-84"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-85"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-86"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-87"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-88"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
+</span><span id="line-89"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsc"</span>
+</span><span id="line-90"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-91"><span class="w">            </span><span class="nt">"mtm"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-92"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-93"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-94"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-95"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-96"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-97"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-98"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-99"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-100"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-101"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-102"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
+</span><span id="line-103"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mtm"</span>
+</span><span id="line-104"><span class="w">            </span><span class="p">}</span>
+</span><span id="line-105"><span class="w">         </span><span class="p">},</span>
+</span><span id="line-106"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginIconParams"</span><span class="p">,</span>
+</span><span id="line-107"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
+</span><span id="line-108"><span class="w">      </span><span class="p">}</span>
+</span><span id="line-109"><span class="w">   </span><span class="p">},</span>
+</span><span id="line-110"><span class="w">   </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="line-111"><span class="p">}</span>
 </span></code></pre></div>
 </div>
 </details></p><dl class="field-list simple">
@@ -206,6 +226,7 @@ is permitted, for more information consult the project license file.</p>
 <dt class="field-even">Fields<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.enable" title="ohnope.plugins.rootserv.params.RootServParams.enable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enable</span> <span class="pre">(Annotated[bool,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default=True,</span> <span class="pre">description='Determine</span> <span class="pre">if</span> <span class="pre">service</span> <span class="pre">enabled')])</span></code></a></p></li>
+<li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.locate" title="ohnope.plugins.rootserv.params.RootServParams.locate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">locate</span> <span class="pre">(Annotated[Optional[str],</span> <span class="pre">Field(None,</span> <span class="pre">description='For</span> <span class="pre">which</span> <span class="pre">plugin</span> <span class="pre">are</span> <span class="pre">parameters',</span> <span class="pre">examples=['enrobie.plugins.AinswerPlugin',</span> <span class="pre">'enrobie.plugins.AutoJoinPlugin',</span> <span class="pre">'enrobie.plugins.AutoNickPlugin',</span> <span class="pre">'enrobie.plugins.StatusPlugin'],</span> <span class="pre">min_length=1)])</span></code></a></p></li>
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.nickname" title="ohnope.plugins.rootserv.params.RootServParams.nickname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nickname</span> <span class="pre">(Annotated[str,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default='RootServ',</span> <span class="pre">description='What</span> <span class="pre">nickname</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">service',</span> <span class="pre">metadata=[MinLen(min_length=1)])])</span></code></a></p></li>
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.realname" title="ohnope.plugins.rootserv.params.RootServParams.realname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">realname</span> <span class="pre">(Annotated[str,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default='Network</span> <span class="pre">administration',</span> <span class="pre">description='What</span> <span class="pre">realname</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">service',</span> <span class="pre">metadata=[MinLen(min_length=1)])])</span></code></a></p></li>
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.status" title="ohnope.plugins.rootserv.params.RootServParams.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span> <span class="pre">(Annotated[enrobie.plugins.status.params.StatusPluginIconParams,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default_factory=StatusPluginIconParams,</span> <span class="pre">description='Icon</span> <span class="pre">used</span> <span class="pre">per</span> <span class="pre">chat</span> <span class="pre">platform')])</span></code></a></p></li>
@@ -217,6 +238,18 @@ is permitted, for more information consult the project license file.</p>
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.params.RootServParams.enable">
 <em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">True</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Determine</span> <span class="pre">if</span> <span class="pre">service</span> <span class="pre">enabled'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.params.RootServParams.enable" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.params.RootServParams.enable'">¶</a></dt>
 <dd><p>Determine if service enabled</p>
+</dd></dl>
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="ohnope.plugins.rootserv.params.RootServParams.locate">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">locate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Annotated</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Field</span><span class="p"><span class="pre">(</span></span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'For</span> <span class="pre">which</span> <span class="pre">plugin</span> <span class="pre">are</span> <span class="pre">parameters'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">examples</span></span><span class="o"><span class="pre">=</span></span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'enrobie.plugins.AinswerPlugin'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'enrobie.plugins.AutoJoinPlugin'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'enrobie.plugins.AutoNickPlugin'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'enrobie.plugins.StatusPlugin'</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">min_length</span></span><span class="o"><span class="pre">=</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.params.RootServParams.locate" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.params.RootServParams.locate'">¶</a></dt>
+<dd><p>For which plugin are parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_length</strong> = 1</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.params.RootServParams.nickname">
@@ -244,7 +277,7 @@ is permitted, for more information consult the project license file.</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.params.RootServParams.status">
-<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.plugins.status.html#enrobie.plugins.status.params.StatusPluginIconParams" title="(in enrobie v0.10.4)"><span class="pre">StatusPluginIconParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">StatusPluginIconParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Icon</span> <span class="pre">used</span> <span class="pre">per</span> <span class="pre">chat</span> <span class="pre">platform'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.params.RootServParams.status" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.params.RootServParams.status'">¶</a></dt>
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.plugins.status.html#enrobie.plugins.status.params.StatusPluginIconParams" title="(in enrobie v0.11.0)"><span class="pre">StatusPluginIconParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">StatusPluginIconParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Icon</span> <span class="pre">used</span> <span class="pre">per</span> <span class="pre">chat</span> <span class="pre">platform'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.params.RootServParams.status" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.params.RootServParams.status'">¶</a></dt>
 <dd><p>Icon used per chat platform</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
@@ -269,11 +302,11 @@ is permitted, for more information consult the project license file.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.plugin.RootServ">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ohnope.plugins.rootserv.plugin.</span></span><span class="sig-name descname"><span class="pre">RootServ</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robie</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.ohnope.Robie" title="ohnope.ohnope.ohnope.Robie"><span class="pre">Robie</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RobieChildParams</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ohnope.plugins.rootserv.plugin.RootServ" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.plugin.RootServ'">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.childs.html#enrobie.robie.childs.plugin.RobiePlugin" title="(in enrobie v0.10.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePlugin</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.childs.html#enrobie.robie.childs.plugin.RobiePlugin" title="(in enrobie v0.11.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePlugin</span></code></a></p>
 <p>Integrate with the Robie routine and perform operations.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.plugin.RootServ.operate">
-<span class="sig-name descname"><span class="pre">operate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.threads.html#enrobie.robie.threads.thread.RobieThread" title="(in enrobie v0.10.4)"><span class="pre">RobieThread</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#ohnope.plugins.rootserv.plugin.RootServ.operate" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.plugin.RootServ.operate'">¶</a></dt>
+<span class="sig-name descname"><span class="pre">operate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.threads.html#enrobie.robie.threads.thread.RobieThread" title="(in enrobie v0.11.0)"><span class="pre">RobieThread</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#ohnope.plugins.rootserv.plugin.RootServ.operate" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.plugin.RootServ.operate'">¶</a></dt>
 <dd><p>Perform the operation related to Homie service threads.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -296,11 +329,11 @@ is permitted, for more information consult the project license file.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.RootServ">
 <em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ohnope.plugins.rootserv.</span></span><span class="sig-name descname"><span class="pre">RootServ</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">robie</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="ohnope.ohnope.html#ohnope.ohnope.ohnope.Robie" title="ohnope.ohnope.ohnope.Robie"><span class="pre">Robie</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">RobieChildParams</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ohnope.plugins.rootserv.RootServ" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServ'">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.childs.html#enrobie.robie.childs.plugin.RobiePlugin" title="(in enrobie v0.10.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePlugin</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.childs.html#enrobie.robie.childs.plugin.RobiePlugin" title="(in enrobie v0.11.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePlugin</span></code></a></p>
 <p>Integrate with the Robie routine and perform operations.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.RootServ.operate">
-<span class="sig-name descname"><span class="pre">operate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.threads.html#enrobie.robie.threads.thread.RobieThread" title="(in enrobie v0.10.4)"><span class="pre">RobieThread</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#ohnope.plugins.rootserv.RootServ.operate" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServ.operate'">¶</a></dt>
+<span class="sig-name descname"><span class="pre">operate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">thread</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.threads.html#enrobie.robie.threads.thread.RobieThread" title="(in enrobie v0.11.0)"><span class="pre">RobieThread</span></a></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#ohnope.plugins.rootserv.RootServ.operate" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServ.operate'">¶</a></dt>
 <dd><p>Perform the operation related to Homie service threads.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -317,7 +350,7 @@ is permitted, for more information consult the project license file.</p>
 <dl class="py class pydantic_model">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.RootServParams">
 <em class="property"><span class="pre">pydantic</span> <span class="pre">model</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ohnope.plugins.rootserv.</span></span><span class="sig-name descname"><span class="pre">RootServParams</span></span><a class="headerlink" href="#ohnope.plugins.rootserv.RootServParams" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServParams'">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.plugin.RobiePluginParams" title="(in enrobie v0.10.4)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePluginParams</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.plugin.RobiePluginParams" title="(in enrobie v0.11.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">RobiePluginParams</span></code></a></p>
 <p>Process and validate the core configuration parameters.</p>
 <p><details class="autodoc_pydantic_collapsable_json">
 <summary>Show JSON schema</summary><div class="highlight-json notranslate"><div class="highlight"><pre><span></span><code><span id="line-1"><span class="p">{</span>
@@ -331,86 +364,106 @@ is permitted, for more information consult the project license file.</p>
 </span><span id="line-9"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Enable"</span><span class="p">,</span>
 </span><span id="line-10"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"boolean"</span>
 </span><span id="line-11"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-12"><span class="w">      </span><span class="nt">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-13"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RootServ"</span><span class="p">,</span>
-</span><span id="line-14"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What nickname for the service"</span><span class="p">,</span>
-</span><span id="line-15"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-16"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nickname"</span><span class="p">,</span>
-</span><span id="line-17"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-18"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-19"><span class="w">      </span><span class="nt">"realname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-20"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Network administration"</span><span class="p">,</span>
-</span><span id="line-21"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What realname for the service"</span><span class="p">,</span>
-</span><span id="line-22"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-23"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Realname"</span><span class="p">,</span>
-</span><span id="line-24"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-25"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-26"><span class="w">      </span><span class="nt">"unique"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-27"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ROOTS0"</span><span class="p">,</span>
-</span><span id="line-28"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique identifier for service"</span><span class="p">,</span>
-</span><span id="line-29"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-30"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique"</span><span class="p">,</span>
-</span><span id="line-31"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-32"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-33"><span class="w">      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-34"><span class="w">         </span><span class="nt">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/$defs/StatusPluginIconParams"</span><span class="p">,</span>
-</span><span id="line-35"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used per chat platform"</span>
-</span><span id="line-36"><span class="w">      </span><span class="p">}</span>
-</span><span id="line-37"><span class="w">   </span><span class="p">},</span>
-</span><span id="line-38"><span class="w">   </span><span class="nt">"$defs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-39"><span class="w">      </span><span class="nt">"StatusPluginIconParams"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-40"><span class="w">         </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span><span id="line-41"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contain information for constructing the chat messages."</span><span class="p">,</span>
-</span><span id="line-42"><span class="w">         </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-43"><span class="w">            </span><span class="nt">"irc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-44"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-45"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-46"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-47"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-48"><span class="w">                  </span><span class="p">},</span>
-</span><span id="line-49"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-50"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
-</span><span id="line-51"><span class="w">                  </span><span class="p">}</span>
-</span><span id="line-52"><span class="w">               </span><span class="p">],</span>
-</span><span id="line-53"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="line-54"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
-</span><span id="line-55"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Irc"</span>
-</span><span id="line-56"><span class="w">            </span><span class="p">},</span>
-</span><span id="line-57"><span class="w">            </span><span class="nt">"dsc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-58"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-59"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-60"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-61"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-62"><span class="w">                  </span><span class="p">},</span>
-</span><span id="line-63"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-64"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
-</span><span id="line-65"><span class="w">                  </span><span class="p">}</span>
-</span><span id="line-66"><span class="w">               </span><span class="p">],</span>
-</span><span id="line-67"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="line-68"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
-</span><span id="line-69"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsc"</span>
-</span><span id="line-70"><span class="w">            </span><span class="p">},</span>
-</span><span id="line-71"><span class="w">            </span><span class="nt">"mtm"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-72"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-73"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-74"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-75"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-76"><span class="w">                  </span><span class="p">},</span>
-</span><span id="line-77"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-78"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
-</span><span id="line-79"><span class="w">                  </span><span class="p">}</span>
-</span><span id="line-80"><span class="w">               </span><span class="p">],</span>
-</span><span id="line-81"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="line-82"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
-</span><span id="line-83"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mtm"</span>
-</span><span id="line-84"><span class="w">            </span><span class="p">}</span>
-</span><span id="line-85"><span class="w">         </span><span class="p">},</span>
-</span><span id="line-86"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginIconParams"</span><span class="p">,</span>
-</span><span id="line-87"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
-</span><span id="line-88"><span class="w">      </span><span class="p">}</span>
-</span><span id="line-89"><span class="w">   </span><span class="p">},</span>
-</span><span id="line-90"><span class="w">   </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-</span><span id="line-91"><span class="p">}</span>
+</span><span id="line-12"><span class="w">      </span><span class="nt">"locate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-13"><span class="w">         </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-14"><span class="w">            </span><span class="p">{</span>
+</span><span id="line-15"><span class="w">               </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-16"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-17"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-18"><span class="w">            </span><span class="p">{</span>
+</span><span id="line-19"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-20"><span class="w">            </span><span class="p">}</span>
+</span><span id="line-21"><span class="w">         </span><span class="p">],</span>
+</span><span id="line-22"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-23"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"For which plugin are parameters"</span><span class="p">,</span>
+</span><span id="line-24"><span class="w">         </span><span class="nt">"examples"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-25"><span class="w">            </span><span class="s2">"enrobie.plugins.AinswerPlugin"</span><span class="p">,</span>
+</span><span id="line-26"><span class="w">            </span><span class="s2">"enrobie.plugins.AutoJoinPlugin"</span><span class="p">,</span>
+</span><span id="line-27"><span class="w">            </span><span class="s2">"enrobie.plugins.AutoNickPlugin"</span><span class="p">,</span>
+</span><span id="line-28"><span class="w">            </span><span class="s2">"enrobie.plugins.StatusPlugin"</span>
+</span><span id="line-29"><span class="w">         </span><span class="p">],</span>
+</span><span id="line-30"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Locate"</span>
+</span><span id="line-31"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-32"><span class="w">      </span><span class="nt">"nickname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-33"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RootServ"</span><span class="p">,</span>
+</span><span id="line-34"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What nickname for the service"</span><span class="p">,</span>
+</span><span id="line-35"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-36"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Nickname"</span><span class="p">,</span>
+</span><span id="line-37"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-38"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-39"><span class="w">      </span><span class="nt">"realname"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-40"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Network administration"</span><span class="p">,</span>
+</span><span id="line-41"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"What realname for the service"</span><span class="p">,</span>
+</span><span id="line-42"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-43"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Realname"</span><span class="p">,</span>
+</span><span id="line-44"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-45"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-46"><span class="w">      </span><span class="nt">"unique"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-47"><span class="w">         </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ROOTS0"</span><span class="p">,</span>
+</span><span id="line-48"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique identifier for service"</span><span class="p">,</span>
+</span><span id="line-49"><span class="w">         </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-50"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Unique"</span><span class="p">,</span>
+</span><span id="line-51"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-52"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-53"><span class="w">      </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-54"><span class="w">         </span><span class="nt">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/$defs/StatusPluginIconParams"</span><span class="p">,</span>
+</span><span id="line-55"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used per chat platform"</span>
+</span><span id="line-56"><span class="w">      </span><span class="p">}</span>
+</span><span id="line-57"><span class="w">   </span><span class="p">},</span>
+</span><span id="line-58"><span class="w">   </span><span class="nt">"$defs"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-59"><span class="w">      </span><span class="nt">"StatusPluginIconParams"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-60"><span class="w">         </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="line-61"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contain information for constructing the chat messages."</span><span class="p">,</span>
+</span><span id="line-62"><span class="w">         </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-63"><span class="w">            </span><span class="nt">"irc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-64"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-65"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-66"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-67"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-68"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-69"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-70"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-71"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-72"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-73"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-74"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
+</span><span id="line-75"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Irc"</span>
+</span><span id="line-76"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-77"><span class="w">            </span><span class="nt">"dsc"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-78"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-79"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-80"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-81"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-82"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-83"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-84"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-85"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-86"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-87"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-88"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
+</span><span id="line-89"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Dsc"</span>
+</span><span id="line-90"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-91"><span class="w">            </span><span class="nt">"mtm"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-92"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-93"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-94"><span class="w">                     </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-95"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-96"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-97"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-98"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-99"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-100"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-101"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-102"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used for the chat platform"</span><span class="p">,</span>
+</span><span id="line-103"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Mtm"</span>
+</span><span id="line-104"><span class="w">            </span><span class="p">}</span>
+</span><span id="line-105"><span class="w">         </span><span class="p">},</span>
+</span><span id="line-106"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginIconParams"</span><span class="p">,</span>
+</span><span id="line-107"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
+</span><span id="line-108"><span class="w">      </span><span class="p">}</span>
+</span><span id="line-109"><span class="w">   </span><span class="p">},</span>
+</span><span id="line-110"><span class="w">   </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="line-111"><span class="p">}</span>
 </span></code></pre></div>
 </div>
 </details></p><dl class="field-list simple">
@@ -422,6 +475,7 @@ is permitted, for more information consult the project license file.</p>
 <dt class="field-even">Fields<span class="colon">:</span></dt>
 <dd class="field-even"><ul class="simple">
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.enable" title="ohnope.plugins.rootserv.params.RootServParams.enable"><code class="xref py py-obj docutils literal notranslate"><span class="pre">enable</span> <span class="pre">(Annotated[bool,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default=True,</span> <span class="pre">description='Determine</span> <span class="pre">if</span> <span class="pre">service</span> <span class="pre">enabled')])</span></code></a></p></li>
+<li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.locate" title="ohnope.plugins.rootserv.params.RootServParams.locate"><code class="xref py py-obj docutils literal notranslate"><span class="pre">locate</span> <span class="pre">(Annotated[Optional[str],</span> <span class="pre">Field(None,</span> <span class="pre">description='For</span> <span class="pre">which</span> <span class="pre">plugin</span> <span class="pre">are</span> <span class="pre">parameters',</span> <span class="pre">examples=['enrobie.plugins.AinswerPlugin',</span> <span class="pre">'enrobie.plugins.AutoJoinPlugin',</span> <span class="pre">'enrobie.plugins.AutoNickPlugin',</span> <span class="pre">'enrobie.plugins.StatusPlugin'],</span> <span class="pre">min_length=1)])</span></code></a></p></li>
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.nickname" title="ohnope.plugins.rootserv.params.RootServParams.nickname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">nickname</span> <span class="pre">(Annotated[str,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default='RootServ',</span> <span class="pre">description='What</span> <span class="pre">nickname</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">service',</span> <span class="pre">metadata=[MinLen(min_length=1)])])</span></code></a></p></li>
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.realname" title="ohnope.plugins.rootserv.params.RootServParams.realname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">realname</span> <span class="pre">(Annotated[str,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default='Network</span> <span class="pre">administration',</span> <span class="pre">description='What</span> <span class="pre">realname</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">service',</span> <span class="pre">metadata=[MinLen(min_length=1)])])</span></code></a></p></li>
 <li><p><a class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.status" title="ohnope.plugins.rootserv.params.RootServParams.status"><code class="xref py py-obj docutils literal notranslate"><span class="pre">status</span> <span class="pre">(Annotated[enrobie.plugins.status.params.StatusPluginIconParams,</span> <span class="pre">FieldInfo(annotation=NoneType,</span> <span class="pre">required=False,</span> <span class="pre">default_factory=StatusPluginIconParams,</span> <span class="pre">description='Icon</span> <span class="pre">used</span> <span class="pre">per</span> <span class="pre">chat</span> <span class="pre">platform')])</span></code></a></p></li>
@@ -433,6 +487,18 @@ is permitted, for more information consult the project license file.</p>
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.RootServParams.enable">
 <em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">enable</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.13)"><span class="pre">bool</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">True</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Determine</span> <span class="pre">if</span> <span class="pre">service</span> <span class="pre">enabled'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">True</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.RootServParams.enable" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServParams.enable'">¶</a></dt>
 <dd><p>Determine if service enabled</p>
+</dd></dl>
+<dl class="py attribute pydantic_field">
+<dt class="sig sig-object py" id="ohnope.plugins.rootserv.RootServParams.locate">
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">locate</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Annotated</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)"><span class="pre">str</span></a><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Field</span><span class="p"><span class="pre">(</span></span><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.13)"><span class="pre">None</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'For</span> <span class="pre">which</span> <span class="pre">plugin</span> <span class="pre">are</span> <span class="pre">parameters'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">examples</span></span><span class="o"><span class="pre">=</span></span><span class="p"><span class="pre">[</span></span><span class="s"><span class="pre">'enrobie.plugins.AinswerPlugin'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'enrobie.plugins.AutoJoinPlugin'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'enrobie.plugins.AutoNickPlugin'</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="s"><span class="pre">'enrobie.plugins.StatusPlugin'</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">min_length</span></span><span class="o"><span class="pre">=</span></span><span class="m"><span class="pre">1</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.RootServParams.locate" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServParams.locate'">¶</a></dt>
+<dd><p>For which plugin are parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Constraints<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_length</strong> = 1</p></li>
+</ul>
+</dd>
+</dl>
 </dd></dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.RootServParams.nickname">
@@ -460,7 +526,7 @@ is permitted, for more information consult the project license file.</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py" id="ohnope.plugins.rootserv.RootServParams.status">
-<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.plugins.status.html#enrobie.plugins.status.params.StatusPluginIconParams" title="(in enrobie v0.10.4)"><span class="pre">StatusPluginIconParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">StatusPluginIconParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Icon</span> <span class="pre">used</span> <span class="pre">per</span> <span class="pre">chat</span> <span class="pre">platform'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.RootServParams.status" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServParams.status'">¶</a></dt>
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.plugins.status.html#enrobie.plugins.status.params.StatusPluginIconParams" title="(in enrobie v0.11.0)"><span class="pre">StatusPluginIconParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">StatusPluginIconParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Icon</span> <span class="pre">used</span> <span class="pre">per</span> <span class="pre">chat</span> <span class="pre">platform'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em><a class="headerlink" href="#ohnope.plugins.rootserv.RootServParams.status" title="Link to this definition" x-intersect.margin.0%.0%.-70%.0%="activeSection = '#ohnope.plugins.rootserv.RootServParams.status'">¶</a></dt>
 <dd><p>Icon used per chat platform</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
@@ -485,6 +551,7 @@ is permitted, for more information consult the project license file.</p>
 <li><a :data-current="activeSection === '#module-ohnope.plugins.rootserv.params'" class="reference internal" href="#module-ohnope.plugins.rootserv.params">ohnope.plugins.rootserv.params module</a><ul>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.params.RootServParams'" class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams"><code class="docutils literal notranslate"><span class="pre">RootServParams</span></code></a><ul>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.params.RootServParams.enable'" class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.enable"><code class="docutils literal notranslate"><span class="pre">RootServParams.enable</span></code></a></li>
+<li><a :data-current="activeSection === '#ohnope.plugins.rootserv.params.RootServParams.locate'" class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.locate"><code class="docutils literal notranslate"><span class="pre">RootServParams.locate</span></code></a></li>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.params.RootServParams.nickname'" class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.nickname"><code class="docutils literal notranslate"><span class="pre">RootServParams.nickname</span></code></a></li>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.params.RootServParams.realname'" class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.realname"><code class="docutils literal notranslate"><span class="pre">RootServParams.realname</span></code></a></li>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.params.RootServParams.status'" class="reference internal" href="#ohnope.plugins.rootserv.params.RootServParams.status"><code class="docutils literal notranslate"><span class="pre">RootServParams.status</span></code></a></li>
@@ -509,6 +576,7 @@ is permitted, for more information consult the project license file.</p>
 </li>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.RootServParams'" class="reference internal" href="#ohnope.plugins.rootserv.RootServParams"><code class="docutils literal notranslate"><span class="pre">RootServParams</span></code></a><ul>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.RootServParams.enable'" class="reference internal" href="#ohnope.plugins.rootserv.RootServParams.enable"><code class="docutils literal notranslate"><span class="pre">RootServParams.enable</span></code></a></li>
+<li><a :data-current="activeSection === '#ohnope.plugins.rootserv.RootServParams.locate'" class="reference internal" href="#ohnope.plugins.rootserv.RootServParams.locate"><code class="docutils literal notranslate"><span class="pre">RootServParams.locate</span></code></a></li>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.RootServParams.nickname'" class="reference internal" href="#ohnope.plugins.rootserv.RootServParams.nickname"><code class="docutils literal notranslate"><span class="pre">RootServParams.nickname</span></code></a></li>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.RootServParams.realname'" class="reference internal" href="#ohnope.plugins.rootserv.RootServParams.realname"><code class="docutils literal notranslate"><span class="pre">RootServParams.realname</span></code></a></li>
 <li><a :data-current="activeSection === '#ohnope.plugins.rootserv.RootServParams.status'" class="reference internal" href="#ohnope.plugins.rootserv.RootServParams.status"><code class="docutils literal notranslate"><span class="pre">RootServParams.status</span></code></a></li>
