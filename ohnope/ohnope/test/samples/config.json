@@ -1,6 +1,7 @@
 {
   "chanserv": {
     "enable": true,
+    "locate": null,
     "nickname": "ChanServ",
     "realname": "Channel registration",
     "unique": "CHANS0",
@@ -12,6 +13,7 @@
   },
   "chatserv": {
     "enable": true,
+    "locate": null,
     "nickname": "ChatServ",
     "realname": "Invitable LLM chatting",
     "unique": "CHATS0",
@@ -51,6 +53,7 @@
   },
   "helpserv": {
     "enable": true,
+    "locate": null,
     "nickname": "HelpServ",
     "realname": "Help about the services",
     "unique": "HELPS0",
@@ -62,6 +65,7 @@
   },
   "hostserv": {
     "enable": true,
+    "locate": null,
     "nickname": "HostServ",
     "realname": "Host cloak management",
     "unique": "HOSTS0",
@@ -73,6 +77,7 @@
   },
   "memoserv": {
     "enable": true,
+    "locate": null,
     "nickname": "MemoServ",
     "realname": "Offline message sharing",
     "unique": "MEMOS0",
@@ -84,6 +89,7 @@
   },
   "nickserv": {
     "enable": true,
+    "locate": null,
     "nickname": "NickServ",
     "realname": "Nickname registration",
     "unique": "NICKS0",
@@ -95,6 +101,7 @@
   },
   "operserv": {
     "enable": true,
+    "locate": null,
     "nickname": "OperServ",
     "realname": "Network administration",
     "unique": "OPERS0",
@@ -126,6 +133,7 @@
   },
   "rootserv": {
     "enable": true,
+    "locate": null,
     "nickname": "RootServ",
     "realname": "Network administration",
     "unique": "ROOTS0",
@@ -142,6 +150,7 @@
   },
   "statserv": {
     "enable": true,
+    "locate": null,
     "nickname": "StatServ",
     "realname": "Statistics and analysis",
     "unique": "STATS0",
@@ -153,6 +162,7 @@
   },
   "status": {
     "enable": true,
+    "locate": null,
     "reports": null,
     "command": {
       "irc": "!status",
