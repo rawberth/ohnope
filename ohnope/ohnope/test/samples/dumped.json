@@ -22,6 +22,7 @@
       "kind": "client",
       "params": {
         "enable": true,
+        "locate": null,
         "client": {
           "server": "localhost",
           "port": 6697,
@@ -51,6 +52,7 @@
       "kind": "client",
       "params": {
         "enable": true,
+        "locate": null,
         "client": {
           "server": "localhost",
           "port": 6900,
@@ -82,6 +84,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "channels": [
           {
             "client": "eponho",
@@ -100,6 +103,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "clients": [
           "eponho"
         ],
@@ -115,6 +119,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "reports": null,
         "command": {
           "irc": "!status",
@@ -150,6 +155,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "RootServ",
         "realname": "Network administration",
         "unique": "ROOTS0",
@@ -165,6 +171,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "OperServ",
         "realname": "Network administration",
         "unique": "OPERS0",
@@ -180,6 +187,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "StatServ",
         "realname": "Statistics and analysis",
         "unique": "STATS0",
@@ -195,6 +203,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "NickServ",
         "realname": "Nickname registration",
         "unique": "NICKS0",
@@ -210,6 +219,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "ChanServ",
         "realname": "Channel registration",
         "unique": "CHANS0",
@@ -225,6 +235,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "MemoServ",
         "realname": "Offline message sharing",
         "unique": "MEMOS0",
@@ -240,6 +251,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "HostServ",
         "realname": "Host cloak management",
         "unique": "HOSTS0",
@@ -255,6 +267,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "HelpServ",
         "realname": "Help about the services",
         "unique": "HELPS0",
@@ -270,6 +283,7 @@
       "kind": "plugin",
       "params": {
         "enable": true,
+        "locate": null,
         "nickname": "ChatServ",
         "realname": "Invitable LLM chatting",
         "unique": "CHATS0",

@@ -1,1 +1,1 @@
-enrobie>=0.10.2
+enrobie>=0.11.0
