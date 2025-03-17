@@ -13,7 +13,6 @@ from enrobie.clients.irc.message import IRCMessage
 from enrobie.plugins import StatusPlugin
 from enrobie.plugins import StatusPluginStates
 from enrobie.robie.childs import RobiePlugin
-from enrobie.robie.threads import RobieThread
 
 from .params import OperServParams
 
@@ -24,6 +23,8 @@ class OperServ(RobiePlugin):
     Integrate with the Robie routine and perform operations.
     """
 
+    __started: bool
+
 
     def __post__(
         self,
@@ -32,7 +33,9 @@ class OperServ(RobiePlugin):
         Initialize instance for class using provided parameters.
         """
 
-        self.__status('normal')
+        self.__started = False
+
+        self.__status('pending')
 
 
     def validate(
@@ -47,20 +50,19 @@ class OperServ(RobiePlugin):
 
     def operate(
         self,
-        thread: RobieThread,
     ) -> None:
         """
         Perform the operation related to Homie service threads.
-
-        :param thread: Child class instance for Chatting Robie.
         """
 
         from ...ohnope import Robie
 
-        assert isinstance(
-            thread.robie, Robie)
+        assert self.thread
 
+        thread = self.thread
         robie = thread.robie
+
+        assert isinstance(robie, Robie)
 
         ohnope = robie.ohnope
         member = thread.member
@@ -69,6 +71,12 @@ class OperServ(RobiePlugin):
 
         assert isinstance(
             params, OperServParams)
+
+
+        if not self.__started:
+            self.__started = True
+            self.__status('normal')
+
 
         while not mqueue.empty:
 
