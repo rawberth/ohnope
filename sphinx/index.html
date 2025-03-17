@@ -121,7 +121,7 @@ changes meant this breaks or breaks something else.</p>
 </dd></dl>
 <dl class="py property">
 <dt class="sig sig-object py">
-<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">robie</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.html#enrobie.robie.config.RobieConfig" title="(in enrobie v0.12.2)"><span class="pre">RobieConfig</span></a></em></dt>
+<em class="property"><span class="k"><span class="pre">property</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">robie</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.html#enrobie.robie.config.RobieConfig" title="(in enrobie v0.13.0)"><span class="pre">RobieConfig</span></a></em></dt>
 <dd><p>Return the Config instance containing the configuration.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns<span class="colon">:</span></dt>
@@ -1284,69 +1284,86 @@ changes meant this breaks or breaks something else.</p>
 </span><span id="line-1143"><span class="w">            </span><span class="nt">"icons"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 </span><span id="line-1144"><span class="w">               </span><span class="nt">"$ref"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#/$defs/StatusPluginIconsParams"</span><span class="p">,</span>
 </span><span id="line-1145"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Icon used per the chat platform"</span>
-</span><span id="line-1146"><span class="w">            </span><span class="p">}</span>
-</span><span id="line-1147"><span class="w">         </span><span class="p">},</span>
-</span><span id="line-1148"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginParams"</span><span class="p">,</span>
-</span><span id="line-1149"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
-</span><span id="line-1150"><span class="w">      </span><span class="p">},</span>
-</span><span id="line-1151"><span class="w">      </span><span class="nt">"StatusPluginReportParams"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-1152"><span class="w">         </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
-</span><span id="line-1153"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contain information for constructing the chat messages."</span><span class="p">,</span>
-</span><span id="line-1154"><span class="w">         </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-1155"><span class="w">            </span><span class="nt">"client"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-1156"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Client where channel exists"</span><span class="p">,</span>
-</span><span id="line-1157"><span class="w">               </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-1158"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Client"</span><span class="p">,</span>
-</span><span id="line-1159"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-1160"><span class="w">            </span><span class="p">},</span>
-</span><span id="line-1161"><span class="w">            </span><span class="nt">"target"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-1162"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Where the message will be sent"</span><span class="p">,</span>
-</span><span id="line-1163"><span class="w">               </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-1164"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Target"</span><span class="p">,</span>
-</span><span id="line-1165"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-1166"><span class="w">            </span><span class="p">},</span>
-</span><span id="line-1167"><span class="w">            </span><span class="nt">"states"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-1168"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-1169"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-1170"><span class="w">                     </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-1171"><span class="w">                        </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-1172"><span class="w">                           </span><span class="s2">"pending"</span><span class="p">,</span>
-</span><span id="line-1173"><span class="w">                           </span><span class="s2">"normal"</span><span class="p">,</span>
-</span><span id="line-1174"><span class="w">                           </span><span class="s2">"failure"</span><span class="p">,</span>
-</span><span id="line-1175"><span class="w">                           </span><span class="s2">"unknown"</span>
-</span><span id="line-1176"><span class="w">                        </span><span class="p">],</span>
-</span><span id="line-1177"><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
-</span><span id="line-1178"><span class="w">                     </span><span class="p">},</span>
-</span><span id="line-1179"><span class="w">                     </span><span class="nt">"minItems"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
-</span><span id="line-1180"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span>
-</span><span id="line-1181"><span class="w">                  </span><span class="p">},</span>
-</span><span id="line-1182"><span class="w">                  </span><span class="p">{</span>
-</span><span id="line-1183"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
-</span><span id="line-1184"><span class="w">                  </span><span class="p">}</span>
-</span><span id="line-1185"><span class="w">               </span><span class="p">],</span>
-</span><span id="line-1186"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="line-1187"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Which status value are related"</span><span class="p">,</span>
-</span><span id="line-1188"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"States"</span>
-</span><span id="line-1189"><span class="w">            </span><span class="p">},</span>
-</span><span id="line-1190"><span class="w">            </span><span class="nt">"delay"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="line-1191"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
-</span><span id="line-1192"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Period between status reports"</span><span class="p">,</span>
-</span><span id="line-1193"><span class="w">               </span><span class="nt">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="mi">864000</span><span class="p">,</span>
-</span><span id="line-1194"><span class="w">               </span><span class="nt">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
-</span><span id="line-1195"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Delay"</span><span class="p">,</span>
-</span><span id="line-1196"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span>
-</span><span id="line-1197"><span class="w">            </span><span class="p">}</span>
-</span><span id="line-1198"><span class="w">         </span><span class="p">},</span>
-</span><span id="line-1199"><span class="w">         </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="line-1200"><span class="w">            </span><span class="s2">"client"</span><span class="p">,</span>
-</span><span id="line-1201"><span class="w">            </span><span class="s2">"target"</span>
-</span><span id="line-1202"><span class="w">         </span><span class="p">],</span>
-</span><span id="line-1203"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginReportParams"</span><span class="p">,</span>
-</span><span id="line-1204"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
-</span><span id="line-1205"><span class="w">      </span><span class="p">}</span>
-</span><span id="line-1206"><span class="w">   </span><span class="p">},</span>
-</span><span id="line-1207"><span class="w">   </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
-</span><span id="line-1208"><span class="p">}</span>
+</span><span id="line-1146"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-1147"><span class="w">            </span><span class="nt">"trusted"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1148"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-1149"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-1150"><span class="w">                     </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1151"><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-1152"><span class="w">                     </span><span class="p">},</span>
+</span><span id="line-1153"><span class="w">                     </span><span class="nt">"minItems"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-1154"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span>
+</span><span id="line-1155"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-1156"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-1157"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-1158"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-1159"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-1160"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-1161"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Users are trusted by the plugin"</span><span class="p">,</span>
+</span><span id="line-1162"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Trusted"</span>
+</span><span id="line-1163"><span class="w">            </span><span class="p">}</span>
+</span><span id="line-1164"><span class="w">         </span><span class="p">},</span>
+</span><span id="line-1165"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginParams"</span><span class="p">,</span>
+</span><span id="line-1166"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
+</span><span id="line-1167"><span class="w">      </span><span class="p">},</span>
+</span><span id="line-1168"><span class="w">      </span><span class="nt">"StatusPluginReportParams"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1169"><span class="w">         </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+</span><span id="line-1170"><span class="w">         </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Contain information for constructing the chat messages."</span><span class="p">,</span>
+</span><span id="line-1171"><span class="w">         </span><span class="nt">"properties"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1172"><span class="w">            </span><span class="nt">"client"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1173"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Client where channel exists"</span><span class="p">,</span>
+</span><span id="line-1174"><span class="w">               </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-1175"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Client"</span><span class="p">,</span>
+</span><span id="line-1176"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-1177"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-1178"><span class="w">            </span><span class="nt">"target"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1179"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Where the message will be sent"</span><span class="p">,</span>
+</span><span id="line-1180"><span class="w">               </span><span class="nt">"minLength"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-1181"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Target"</span><span class="p">,</span>
+</span><span id="line-1182"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-1183"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-1184"><span class="w">            </span><span class="nt">"states"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1185"><span class="w">               </span><span class="nt">"anyOf"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-1186"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-1187"><span class="w">                     </span><span class="nt">"items"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1188"><span class="w">                        </span><span class="nt">"enum"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-1189"><span class="w">                           </span><span class="s2">"pending"</span><span class="p">,</span>
+</span><span id="line-1190"><span class="w">                           </span><span class="s2">"normal"</span><span class="p">,</span>
+</span><span id="line-1191"><span class="w">                           </span><span class="s2">"failure"</span><span class="p">,</span>
+</span><span id="line-1192"><span class="w">                           </span><span class="s2">"unknown"</span>
+</span><span id="line-1193"><span class="w">                        </span><span class="p">],</span>
+</span><span id="line-1194"><span class="w">                        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span>
+</span><span id="line-1195"><span class="w">                     </span><span class="p">},</span>
+</span><span id="line-1196"><span class="w">                     </span><span class="nt">"minItems"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+</span><span id="line-1197"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"array"</span>
+</span><span id="line-1198"><span class="w">                  </span><span class="p">},</span>
+</span><span id="line-1199"><span class="w">                  </span><span class="p">{</span>
+</span><span id="line-1200"><span class="w">                     </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"null"</span>
+</span><span id="line-1201"><span class="w">                  </span><span class="p">}</span>
+</span><span id="line-1202"><span class="w">               </span><span class="p">],</span>
+</span><span id="line-1203"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+</span><span id="line-1204"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Which status value are related"</span><span class="p">,</span>
+</span><span id="line-1205"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"States"</span>
+</span><span id="line-1206"><span class="w">            </span><span class="p">},</span>
+</span><span id="line-1207"><span class="w">            </span><span class="nt">"delay"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</span><span id="line-1208"><span class="w">               </span><span class="nt">"default"</span><span class="p">:</span><span class="w"> </span><span class="mi">15</span><span class="p">,</span>
+</span><span id="line-1209"><span class="w">               </span><span class="nt">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Period between status reports"</span><span class="p">,</span>
+</span><span id="line-1210"><span class="w">               </span><span class="nt">"maximum"</span><span class="p">:</span><span class="w"> </span><span class="mi">864000</span><span class="p">,</span>
+</span><span id="line-1211"><span class="w">               </span><span class="nt">"minimum"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="line-1212"><span class="w">               </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Delay"</span><span class="p">,</span>
+</span><span id="line-1213"><span class="w">               </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"integer"</span>
+</span><span id="line-1214"><span class="w">            </span><span class="p">}</span>
+</span><span id="line-1215"><span class="w">         </span><span class="p">},</span>
+</span><span id="line-1216"><span class="w">         </span><span class="nt">"required"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="line-1217"><span class="w">            </span><span class="s2">"client"</span><span class="p">,</span>
+</span><span id="line-1218"><span class="w">            </span><span class="s2">"target"</span>
+</span><span id="line-1219"><span class="w">         </span><span class="p">],</span>
+</span><span id="line-1220"><span class="w">         </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"StatusPluginReportParams"</span><span class="p">,</span>
+</span><span id="line-1221"><span class="w">         </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"object"</span>
+</span><span id="line-1222"><span class="w">      </span><span class="p">}</span>
+</span><span id="line-1223"><span class="w">   </span><span class="p">},</span>
+</span><span id="line-1224"><span class="w">   </span><span class="nt">"additionalProperties"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+</span><span id="line-1225"><span class="p">}</span>
 </span></code></pre></div>
 </div>
 </details></p><dl class="field-list simple">
@@ -1434,7 +1451,7 @@ changes meant this breaks or breaks something else.</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">printer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.robie.RobiePrinterParams" title="(in enrobie v0.12.2)"><span class="pre">RobiePrinterParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">RobiePrinterParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Print</span> <span class="pre">messages</span> <span class="pre">to</span> <span class="pre">console'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em></dt>
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">printer</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.robie.RobiePrinterParams" title="(in enrobie v0.13.0)"><span class="pre">RobiePrinterParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">RobiePrinterParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Print</span> <span class="pre">messages</span> <span class="pre">to</span> <span class="pre">console'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em></dt>
 <dd><p>Print messages to console</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
@@ -1444,7 +1461,7 @@ changes meant this breaks or breaks something else.</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">service</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.service.RobieServiceParams" title="(in enrobie v0.12.2)"><span class="pre">RobieServiceParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">RobieServiceParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Parameters</span> <span class="pre">for</span> <span class="pre">Robie</span> <span class="pre">Service'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em></dt>
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">service</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.robie.params.html#enrobie.robie.params.service.RobieServiceParams" title="(in enrobie v0.13.0)"><span class="pre">RobieServiceParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">RobieServiceParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Parameters</span> <span class="pre">for</span> <span class="pre">Robie</span> <span class="pre">Service'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em></dt>
 <dd><p>Parameters for Robie Service</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
@@ -1454,7 +1471,7 @@ changes meant this breaks or breaks something else.</p>
 </dd></dl>
 <dl class="py attribute pydantic_field">
 <dt class="sig sig-object py">
-<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.plugins.status.html#enrobie.plugins.status.params.StatusPluginParams" title="(in enrobie v0.12.2)"><span class="pre">StatusPluginParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">StatusPluginParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Parameters</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">plugin'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em></dt>
+<em class="property"><span class="pre">field</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">status</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Annotated" title="(in Python v3.13)"><span class="pre">Annotated</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://enasisnetwork.github.io/enrobie/sphinx/enrobie.plugins.status.html#enrobie.plugins.status.params.StatusPluginParams" title="(in enrobie v0.13.0)"><span class="pre">StatusPluginParams</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">FieldInfo</span><span class="p"><span class="pre">(</span></span><span class="n"><span class="pre">annotation</span></span><span class="o"><span class="pre">=</span></span><span class="pre">NoneType</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">required</span></span><span class="o"><span class="pre">=</span></span><span class="k"><span class="pre">False</span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">default_factory</span></span><span class="o"><span class="pre">=</span></span><span class="pre">StatusPluginParams</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="s"><span class="pre">'Parameters</span> <span class="pre">for</span> <span class="pre">the</span> <span class="pre">plugin'</span></span><span class="p"><span class="pre">)</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"> <span class="pre">[Optional]</span></em></dt>
 <dd><p>Parameters for the plugin</p>
 </dd></dl>
 </dd></dl>
