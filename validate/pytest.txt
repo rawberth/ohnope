@@ -3,7 +3,7 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0 -- /home/runner/work/ohnope/ohnope/main/.venv-package/bin/python3
 cachedir: .pytest_cache
-Using --randomly-seed=1824775167
+Using --randomly-seed=1312599982
 rootdir: /home/runner/work/ohnope/ohnope/main
 configfile: pyproject.toml
 plugins: respx-0.22.0, sphinx-0.6.3, clarity-1.0.1, cov-6.0.0, mypy-0.10.3, randomly-3.16.0, anyio-4.9.0, xdist-3.6.1, mock-3.14.0
@@ -12,483 +12,108 @@ created: 4/4 workers
 
 scheduling tests via LoadScheduling
 
-ohnope/execution/test/test_service.py::test_arguments 
-ohnope/execution/test/test_crypts.py::test_arguments 
-ohnope/__init__.py::mypy 
-ohnope/execution/__init__.py::mypy 
-[gw1] [  1%] PASSED ohnope/execution/test/test_service.py::test_arguments 
-ohnope/execution/crypts.py::mypy 
-[gw0] [  3%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
 ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-[gw0] [  5%] FAILED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-[gw0] [  7%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-ohnope/execution/test/test_service.py::mypy 
-[gw3] [  9%] PASSED ohnope/__init__.py::mypy 
 ohnope/conftest.py::mypy 
-[gw3] [ 11%] PASSED ohnope/conftest.py::mypy 
-ohnope/__init__.py::mypy-status 
-[gw3] [ 13%] PASSED ohnope/__init__.py::mypy-status 
-ohnope/ohnope/__init__.py::mypy 
-[gw3] [ 15%] PASSED ohnope/ohnope/__init__.py::mypy 
-ohnope/ohnope/ohnope.py::mypy 
-[gw3] [ 17%] PASSED ohnope/ohnope/ohnope.py::mypy 
-ohnope/ohnope/test/__init__.py::mypy 
-[gw3] [ 19%] PASSED ohnope/ohnope/test/__init__.py::mypy 
-ohnope/ohnope/params/__init__.py::mypy 
-[gw3] [ 21%] PASSED ohnope/ohnope/params/__init__.py::mypy 
-ohnope/ohnope/params/ohnope.py::mypy 
-[gw3] [ 23%] PASSED ohnope/ohnope/params/ohnope.py::mypy 
-ohnope/ohnope/test/test_ohnope.py::mypy 
-[gw3] [ 25%] PASSED ohnope/ohnope/test/test_ohnope.py::mypy 
-ohnope/ohnope/test/test_service.py::mypy 
-[gw3] [ 27%] PASSED ohnope/ohnope/test/test_service.py::mypy 
-ohnope/plugins/operserv/__init__.py::mypy 
-[gw3] [ 29%] PASSED ohnope/plugins/operserv/__init__.py::mypy 
-ohnope/plugins/helpserv/plugin.py::mypy 
-[gw3] [ 31%] PASSED ohnope/plugins/helpserv/plugin.py::mypy 
-[gw2] [ 33%] PASSED ohnope/execution/__init__.py::mypy 
-ohnope/plugins/chanserv/params.py::mypy 
-ohnope/execution/service.py::mypy 
-[gw3] [ 35%] PASSED ohnope/plugins/chanserv/params.py::mypy 
-[gw2] [ 37%] PASSED ohnope/execution/service.py::mypy 
-ohnope/plugins/statserv/plugin.py::mypy 
-[gw1] [ 39%] PASSED ohnope/execution/crypts.py::mypy 
-[gw3] [ 41%] PASSED ohnope/plugins/statserv/plugin.py::mypy 
-[gw0] [ 43%] PASSED ohnope/execution/test/test_service.py::mypy 
-ohnope/ohnope/test/test_config.py::mypy 
+ohnope/execution/test/test_crypts.py::test_arguments 
+ohnope/execution/__init__.py::mypy 
+[gw1] [  1%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
 ohnope/execution/test/__init__.py::mypy 
-[gw2] [ 45%] PASSED ohnope/execution/test/__init__.py::mypy 
-ohnope/plugins/hostserv/plugin.py::mypy 
-ohnope/plugins/memoserv/params.py::mypy 
-ohnope/execution/test/test_crypts.py::mypy 
-[gw0] [ 47%] PASSED ohnope/ohnope/test/test_config.py::mypy 
-[gw3] [ 49%] PASSED ohnope/plugins/memoserv/params.py::mypy 
-[gw1] [ 50%] PASSED ohnope/execution/test/test_crypts.py::mypy 
-[gw2] [ 52%] PASSED ohnope/plugins/hostserv/plugin.py::mypy 
-ohnope/ohnope/config.py::mypy 
-[gw0] [ 54%] PASSED ohnope/ohnope/config.py::mypy 
-ohnope/plugins/hostserv/__init__.py::mypy 
-ohnope/plugins/statserv/__init__.py::mypy 
-ohnope/plugins/chanserv/plugin.py::mypy 
-[gw2] [ 56%] PASSED ohnope/plugins/hostserv/__init__.py::mypy 
-[gw3] [ 58%] PASSED ohnope/plugins/chanserv/plugin.py::mypy 
-ohnope/plugins/operserv/params.py::mypy 
-[gw0] [ 60%] PASSED ohnope/plugins/operserv/params.py::mypy 
-[gw1] [ 62%] PASSED ohnope/plugins/statserv/__init__.py::mypy 
-ohnope/plugins/nickserv/plugin.py::mypy 
-ohnope/plugins/chatserv/params.py::mypy 
-[gw2] [ 64%] PASSED ohnope/plugins/chatserv/params.py::mypy 
-[gw3] [ 66%] PASSED ohnope/plugins/nickserv/plugin.py::mypy 
-ohnope/plugins/rootserv/plugin.py::mypy 
-ohnope/plugins/memoserv/plugin.py::mypy 
-[gw0] [ 68%] PASSED ohnope/plugins/rootserv/plugin.py::mypy 
-ohnope/plugins/__init__.py::mypy 
-ohnope/plugins/nickserv/params.py::mypy 
-[gw3] [ 70%] PASSED ohnope/plugins/nickserv/params.py::mypy 
-[gw1] [ 72%] PASSED ohnope/plugins/memoserv/plugin.py::mypy 
-ohnope/plugins/nickserv/__init__.py::mypy 
-[gw2] [ 74%] PASSED ohnope/plugins/__init__.py::mypy 
-[gw0] [ 76%] PASSED ohnope/plugins/nickserv/__init__.py::mypy 
-ohnope/plugins/memoserv/__init__.py::mypy 
-ohnope/plugins/rootserv/params.py::mypy 
-ohnope/plugins/chatserv/__init__.py::mypy 
-[gw1] [ 78%] PASSED ohnope/plugins/memoserv/__init__.py::mypy 
-ohnope/plugins/helpserv/params.py::mypy 
-[gw3] [ 80%] PASSED ohnope/plugins/rootserv/params.py::mypy 
-[gw0] [ 82%] PASSED ohnope/plugins/chatserv/__init__.py::mypy 
-ohnope/plugins/chatserv/plugin.py::mypy 
-[gw2] [ 84%] PASSED ohnope/plugins/helpserv/params.py::mypy 
-ohnope/plugins/chanserv/__init__.py::mypy 
-ohnope/plugins/rootserv/__init__.py::mypy 
-ohnope/plugins/hostserv/params.py::mypy 
-[gw0] [ 86%] PASSED ohnope/plugins/chatserv/plugin.py::mypy 
-[gw1] [ 88%] PASSED ohnope/plugins/chanserv/__init__.py::mypy 
-[gw3] [ 90%] PASSED ohnope/plugins/rootserv/__init__.py::mypy 
-ohnope/plugins/helpserv/__init__.py::mypy 
-[gw0] [ 92%] PASSED ohnope/plugins/helpserv/__init__.py::mypy 
-ohnope/plugins/statserv/params.py::mypy 
-ohnope/plugins/operserv/plugin.py::mypy 
-[gw2] [ 94%] PASSED ohnope/plugins/hostserv/params.py::mypy 
-[gw1] [ 96%] PASSED ohnope/plugins/operserv/plugin.py::mypy 
-[gw3] [ 98%] PASSED ohnope/plugins/statserv/params.py::mypy 
+[gw0] [  3%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
+ohnope/execution/test/test_service.py::test_arguments 
+[gw0] [  5%] PASSED ohnope/execution/test/test_service.py::test_arguments 
 ohnope/ohnope/test/test_service.py::test_RobieService 
-[gw2] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
-
-=================================== FAILURES ===================================
-_________________________________ test_Ohnope __________________________________
-[gw0] linux -- Python 3.12.9 /home/runner/work/ohnope/ohnope/main/.venv-package/bin/python3
-
-ohnope = <ohnope.ohnope.ohnope.Ohnope object at 0x7f1cbf433f20>
-replaces = {'PROJECT': PosixPath('/home/runner/work/ohnope/ohnope/main/ohnope'), 'TMPPATH': PosixPath('/tmp/pytest-of-runner/pytest-0/popen-gw0/test_Ohnope0')}
-
-    def test_Ohnope(
-        ohnope: Ohnope,
-        replaces: DictStrAny,
-    ) -> None:
-        """
-        Perform various tests associated with relevant routines.
-    
-        :param ohnope: Primary class instance of project parent.
-        :param replaces: Mapping of what to replace in samples.
-        """
-    
-    
-        attrs = lattrs(ohnope)
-    
-        assert attrs == [
-            '_Ohnope__config',
-            '_Ohnope__robie']
-    
-    
-        assert inrepr(
-            'ohnope.Ohnope',
-            ohnope)
-    
-        assert isinstance(
-            hash(ohnope), int)
-    
-        assert instr(
-            'ohnope.Ohnope',
-            ohnope)
-    
-    
-        assert ohnope.config
-    
-        assert ohnope.robie
-    
-        assert ohnope.logger
-    
-        assert ohnope.params
-    
-        assert ohnope.client
-    
-    
-        assert ohnope is (
-            ohnope.robie.ohnope)
-    
-    
-        sample_path = (
-            SAMPLES / 'dumped.json')
-    
-        sample = load_sample(
-            path=sample_path,
-            update=ENPYRWS,
-            content=ohnope.dumped,
-            replace=replaces)
-    
-        expect = prep_sample(
-            content=ohnope.dumped,
-            replace=replaces)
-    
->       assert expect == sample
-E       assert '{\n  "enconf...ons": null\n}' == '{\n  "enconf...ons": null\n}'
-E         
-E           {
-E             "enconfig": null,
-E             "enlogger": {
-E               "stdo_level": "debug",
-E               "file_level": null,
-E               "file_path": null
-E             },
-E             "encrypts": null,
-E             "database": "sqlite:///:memory:",
-E             "printer": {
-E               "message": false,
-E               "command": false
-E             },
-E             "service": {
-E               "respite": {
-E                 "health": 3
-E               }
-E             },
-E             "clients": {
-E               "eponho": {
-E                 "name": "eponho",
-E                 "kind": "client",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "client": {
-E                     "server": "localhost",
-E                     "port": 6697,
-E                     "timeout": 30,
-E                     "operate": "normal",
-E                     "nickname": "ohnope",
-E                     "username": "ohnope",
-E                     "realname": "Oh-nope IRC Services",
-E                     "password": null,
-E                     "servername": "services.invalid",
-E                     "serverid": "42X",
-E                     "ssl_enable": true,
-E                     "ssl_verify": true,
-E                     "queue_size": 10000
-E                   },
-E                   "delay": 15,
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 },
-E                 "family": "irc"
-E               },
-E               "ohnope": {
-E                 "name": "ohnope",
-E                 "kind": "client",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "client": {
-E                     "server": "localhost",
-E                     "port": 6900,
-E                     "timeout": 30,
-E                     "operate": "service",
-E                     "nickname": "ircbot",
-E                     "username": "ircbot",
-E                     "realname": "Chatting Robie",
-E                     "password": null,
-E                     "servername": "services.invalid",
-E                     "serverid": "42X",
-E                     "ssl_enable": true,
-E                     "ssl_verify": true,
-E                     "queue_size": 10000
-E                   },
-E                   "delay": 15,
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 },
-E                 "family": "irc"
-E               }
-E             },
-E             "plugins": {
-E               "autojoin": {
-E                 "name": "autojoin",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "channels": [
-E                     {
-E                       "client": "eponho",
-E                       "channel": "#opers"
-E                     }
-E                   ],
-E                   "interval": 5,
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "autonick": {
-E                 "name": "autonick",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "clients": [
-E                     "eponho"
-E                   ],
-E                   "interval": 5,
-E         +         "services": null,
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "status": {
-E                 "name": "status",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "reports": null,
-E                   "command": {
-E                     "irc": "!status",
-E                     "dsc": "!status",
-E                     "mtm": "!status"
-E                   },
-E                   "icons": {
-E                     "pending": {
-E                       "irc": null,
-E                       "dsc": null,
-E                       "mtm": null
-E                     },
-E                     "normal": {
-E                       "irc": null,
-E                       "dsc": null,
-E                       "mtm": null
-E                     },
-E                     "failure": {
-E                       "irc": null,
-E                       "dsc": null,
-E                       "mtm": null
-E                     },
-E                     "unknown": {
-E                       "irc": null,
-E                       "dsc": null,
-E                       "mtm": null
-E                     }
-E                   },
-E                   "trusted": null
-E                 }
-E               },
-E               "rootserv": {
-E                 "name": "rootserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "RootServ",
-E                   "realname": "Network administration",
-E                   "unique": "ROOTS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "operserv": {
-E                 "name": "operserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "OperServ",
-E                   "realname": "Network administration",
-E                   "unique": "OPERS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "statserv": {
-E                 "name": "statserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "StatServ",
-E                   "realname": "Statistics and analysis",
-E                   "unique": "STATS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "nickserv": {
-E                 "name": "nickserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "NickServ",
-E                   "realname": "Nickname registration",
-E                   "unique": "NICKS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "chanserv": {
-E                 "name": "chanserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "ChanServ",
-E                   "realname": "Channel registration",
-E                   "unique": "CHANS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "memoserv": {
-E                 "name": "memoserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "MemoServ",
-E                   "realname": "Offline message sharing",
-E                   "unique": "MEMOS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "hostserv": {
-E                 "name": "hostserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "HostServ",
-E                   "realname": "Host cloak management",
-E                   "unique": "HOSTS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "helpserv": {
-E                 "name": "helpserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "HelpServ",
-E                   "realname": "Help about the services",
-E                   "unique": "HELPS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               },
-E               "chatserv": {
-E                 "name": "chatserv",
-E                 "kind": "plugin",
-E                 "params": {
-E                   "enable": true,
-E                   "locate": null,
-E                   "nickname": "ChatServ",
-E                   "realname": "Invitable LLM chatting",
-E                   "unique": "CHATS0",
-E                   "status": {
-E                     "irc": null,
-E                     "dsc": null,
-E                     "mtm": null
-E                   }
-E                 }
-E               }
-E             },
-E             "persons": null
-E           }
-
-ohnope/ohnope/test/test_ohnope.py:82: AssertionError
+[gw3] [  7%] PASSED ohnope/conftest.py::mypy 
+ohnope/__init__.py::mypy-status 
+[gw1] [  9%] PASSED ohnope/execution/test/__init__.py::mypy 
+[gw3] [ 11%] PASSED ohnope/__init__.py::mypy-status 
+ohnope/__init__.py::mypy 
+ohnope/execution/crypts.py::mypy 
+[gw1] [ 13%] PASSED ohnope/__init__.py::mypy 
+ohnope/ohnope/config.py::mypy 
+[gw3] [ 15%] PASSED ohnope/execution/crypts.py::mypy 
+[gw1] [ 17%] PASSED ohnope/ohnope/config.py::mypy 
+ohnope/ohnope/params/ohnope.py::mypy 
+ohnope/ohnope/__init__.py::mypy 
+[gw3] [ 19%] PASSED ohnope/ohnope/params/ohnope.py::mypy 
+[gw1] [ 21%] PASSED ohnope/ohnope/__init__.py::mypy 
+ohnope/ohnope/ohnope.py::mypy 
+ohnope/ohnope/test/test_config.py::mypy 
+[gw3] [ 23%] PASSED ohnope/ohnope/ohnope.py::mypy 
+[gw1] [ 25%] PASSED ohnope/ohnope/test/test_config.py::mypy 
+ohnope/ohnope/test/test_ohnope.py::mypy 
+ohnope/ohnope/test/test_service.py::mypy 
+[gw3] [ 27%] PASSED ohnope/ohnope/test/test_ohnope.py::mypy 
+[gw1] [ 29%] PASSED ohnope/ohnope/test/test_service.py::mypy 
+ohnope/plugins/chanserv/params.py::mypy 
+ohnope/plugins/operserv/params.py::mypy 
+[gw3] [ 31%] PASSED ohnope/plugins/chanserv/params.py::mypy 
+[gw1] [ 33%] PASSED ohnope/plugins/operserv/params.py::mypy 
+ohnope/plugins/nickserv/params.py::mypy 
+ohnope/plugins/memoserv/plugin.py::mypy 
+[gw3] [ 35%] PASSED ohnope/plugins/nickserv/params.py::mypy 
+[gw1] [ 37%] PASSED ohnope/plugins/memoserv/plugin.py::mypy 
+ohnope/plugins/nickserv/__init__.py::mypy 
+ohnope/plugins/statserv/__init__.py::mypy 
+[gw3] [ 39%] PASSED ohnope/plugins/nickserv/__init__.py::mypy 
+ohnope/plugins/statserv/params.py::mypy 
+[gw1] [ 41%] PASSED ohnope/plugins/statserv/__init__.py::mypy 
+[gw3] [ 43%] PASSED ohnope/plugins/statserv/params.py::mypy 
+ohnope/plugins/operserv/__init__.py::mypy 
+ohnope/plugins/chatserv/params.py::mypy 
+[gw1] [ 45%] PASSED ohnope/plugins/operserv/__init__.py::mypy 
+[gw2] [ 47%] PASSED ohnope/execution/__init__.py::mypy 
+ohnope/plugins/hostserv/__init__.py::mypy 
+ohnope/execution/service.py::mypy 
+[gw1] [ 49%] PASSED ohnope/plugins/hostserv/__init__.py::mypy 
+[gw2] [ 50%] PASSED ohnope/execution/service.py::mypy 
+ohnope/plugins/helpserv/__init__.py::mypy 
+ohnope/execution/test/test_crypts.py::mypy 
+[gw1] [ 52%] PASSED ohnope/plugins/helpserv/__init__.py::mypy 
+[gw2] [ 54%] PASSED ohnope/execution/test/test_crypts.py::mypy 
+ohnope/plugins/chatserv/__init__.py::mypy 
+ohnope/plugins/hostserv/plugin.py::mypy 
+[gw1] [ 56%] PASSED ohnope/plugins/chatserv/__init__.py::mypy 
+[gw2] [ 58%] PASSED ohnope/plugins/hostserv/plugin.py::mypy 
+ohnope/plugins/rootserv/plugin.py::mypy 
+ohnope/plugins/chatserv/plugin.py::mypy 
+[gw1] [ 60%] PASSED ohnope/plugins/rootserv/plugin.py::mypy 
+[gw2] [ 62%] PASSED ohnope/plugins/chatserv/plugin.py::mypy 
+ohnope/plugins/rootserv/params.py::mypy 
+[gw1] [ 64%] PASSED ohnope/plugins/rootserv/params.py::mypy 
+ohnope/plugins/helpserv/params.py::mypy 
+ohnope/plugins/rootserv/__init__.py::mypy 
+[gw2] [ 66%] PASSED ohnope/plugins/helpserv/params.py::mypy 
+[gw1] [ 68%] PASSED ohnope/plugins/rootserv/__init__.py::mypy 
+ohnope/plugins/helpserv/plugin.py::mypy 
+ohnope/plugins/memoserv/params.py::mypy 
+[gw2] [ 70%] PASSED ohnope/plugins/helpserv/plugin.py::mypy 
+[gw1] [ 72%] PASSED ohnope/plugins/memoserv/params.py::mypy 
+ohnope/plugins/statserv/plugin.py::mypy 
+ohnope/plugins/memoserv/__init__.py::mypy 
+[gw2] [ 74%] PASSED ohnope/plugins/statserv/plugin.py::mypy 
+[gw1] [ 76%] PASSED ohnope/plugins/memoserv/__init__.py::mypy 
+ohnope/plugins/chanserv/__init__.py::mypy 
+ohnope/plugins/hostserv/params.py::mypy 
+[gw2] [ 78%] PASSED ohnope/plugins/chanserv/__init__.py::mypy 
+[gw1] [ 80%] PASSED ohnope/plugins/hostserv/params.py::mypy 
+ohnope/plugins/__init__.py::mypy 
+ohnope/plugins/chanserv/plugin.py::mypy 
+[gw2] [ 82%] PASSED ohnope/plugins/__init__.py::mypy 
+[gw1] [ 84%] PASSED ohnope/plugins/chanserv/plugin.py::mypy 
+ohnope/plugins/operserv/plugin.py::mypy 
+ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+[gw2] [ 86%] PASSED ohnope/plugins/operserv/plugin.py::mypy 
+[gw3] [ 88%] PASSED ohnope/plugins/chatserv/params.py::mypy 
+ohnope/plugins/nickserv/plugin.py::mypy 
+[gw3] [ 90%] PASSED ohnope/plugins/nickserv/plugin.py::mypy 
+[gw1] [ 92%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+[gw0] [ 94%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
+ohnope/execution/test/test_service.py::mypy 
+[gw0] [ 96%] PASSED ohnope/execution/test/test_service.py::mypy 
+ohnope/ohnope/params/__init__.py::mypy 
+[gw0] [ 98%] PASSED ohnope/ohnope/params/__init__.py::mypy 
+ohnope/ohnope/test/__init__.py::mypy 
+[gw0] [100%] PASSED ohnope/ohnope/test/__init__.py::mypy 
 
 ---------- coverage: platform linux, python 3.12.9-final-0 -----------
 Name                                    Stmts   Miss  Cover
@@ -513,340 +138,40 @@ ohnope/ohnope/test/test_service.py         21      0   100%
 ohnope/plugins/__init__.py                 19      0   100%
 ohnope/plugins/chanserv/__init__.py         3      0   100%
 ohnope/plugins/chanserv/params.py          13      0   100%
-ohnope/plugins/chanserv/plugin.py          41      0   100%
+ohnope/plugins/chanserv/plugin.py          45      0   100%
 ohnope/plugins/chatserv/__init__.py         3      0   100%
 ohnope/plugins/chatserv/params.py          13      0   100%
-ohnope/plugins/chatserv/plugin.py          41      0   100%
+ohnope/plugins/chatserv/plugin.py          45      0   100%
 ohnope/plugins/helpserv/__init__.py         3      0   100%
 ohnope/plugins/helpserv/params.py          13      0   100%
-ohnope/plugins/helpserv/plugin.py          41      0   100%
+ohnope/plugins/helpserv/plugin.py          45      0   100%
 ohnope/plugins/hostserv/__init__.py         3      0   100%
 ohnope/plugins/hostserv/params.py          13      0   100%
-ohnope/plugins/hostserv/plugin.py          41      0   100%
+ohnope/plugins/hostserv/plugin.py          45      0   100%
 ohnope/plugins/memoserv/__init__.py         3      0   100%
 ohnope/plugins/memoserv/params.py          13      0   100%
-ohnope/plugins/memoserv/plugin.py          41      0   100%
+ohnope/plugins/memoserv/plugin.py          45      0   100%
 ohnope/plugins/nickserv/__init__.py         3      0   100%
 ohnope/plugins/nickserv/params.py          13      0   100%
-ohnope/plugins/nickserv/plugin.py          41      0   100%
+ohnope/plugins/nickserv/plugin.py          45      0   100%
 ohnope/plugins/operserv/__init__.py         3      0   100%
 ohnope/plugins/operserv/params.py          13      0   100%
-ohnope/plugins/operserv/plugin.py          41      0   100%
+ohnope/plugins/operserv/plugin.py          45      0   100%
 ohnope/plugins/rootserv/__init__.py         3      0   100%
 ohnope/plugins/rootserv/params.py          13      0   100%
-ohnope/plugins/rootserv/plugin.py          41      0   100%
+ohnope/plugins/rootserv/plugin.py          45      0   100%
 ohnope/plugins/statserv/__init__.py         3      0   100%
 ohnope/plugins/statserv/params.py          13      0   100%
-ohnope/plugins/statserv/plugin.py          41      0   100%
+ohnope/plugins/statserv/plugin.py          45      0   100%
 -----------------------------------------------------------
-TOTAL                                     942      0   100%
+TOTAL                                     978      0   100%
 
 ===================================== mypy =====================================
+
 Success: no issues found in 45 source files
-=========================== short test summary info ============================
-FAILED ohnope/ohnope/test/test_ohnope.py::test_Ohnope - assert '{\n  "enconf...ons": null\n}' == '{\n  "enconf...ons": null\n}'
-  
-    {
-      "enconfig": null,
-      "enlogger": {
-        "stdo_level": "debug",
-        "file_level": null,
-        "file_path": null
-      },
-      "encrypts": null,
-      "database": "sqlite:///:memory:",
-      "printer": {
-        "message": false,
-        "command": false
-      },
-      "service": {
-        "respite": {
-          "health": 3
-        }
-      },
-      "clients": {
-        "eponho": {
-          "name": "eponho",
-          "kind": "client",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "client": {
-              "server": "localhost",
-              "port": 6697,
-              "timeout": 30,
-              "operate": "normal",
-              "nickname": "ohnope",
-              "username": "ohnope",
-              "realname": "Oh-nope IRC Services",
-              "password": null,
-              "servername": "services.invalid",
-              "serverid": "42X",
-              "ssl_enable": true,
-              "ssl_verify": true,
-              "queue_size": 10000
-            },
-            "delay": 15,
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          },
-          "family": "irc"
-        },
-        "ohnope": {
-          "name": "ohnope",
-          "kind": "client",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "client": {
-              "server": "localhost",
-              "port": 6900,
-              "timeout": 30,
-              "operate": "service",
-              "nickname": "ircbot",
-              "username": "ircbot",
-              "realname": "Chatting Robie",
-              "password": null,
-              "servername": "services.invalid",
-              "serverid": "42X",
-              "ssl_enable": true,
-              "ssl_verify": true,
-              "queue_size": 10000
-            },
-            "delay": 15,
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          },
-          "family": "irc"
-        }
-      },
-      "plugins": {
-        "autojoin": {
-          "name": "autojoin",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "channels": [
-              {
-                "client": "eponho",
-                "channel": "#opers"
-              }
-            ],
-            "interval": 5,
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "autonick": {
-          "name": "autonick",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "clients": [
-              "eponho"
-            ],
-            "interval": 5,
-  +         "services": null,
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "status": {
-          "name": "status",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "reports": null,
-            "command": {
-              "irc": "!status",
-              "dsc": "!status",
-              "mtm": "!status"
-            },
-            "icons": {
-              "pending": {
-                "irc": null,
-                "dsc": null,
-                "mtm": null
-              },
-              "normal": {
-                "irc": null,
-                "dsc": null,
-                "mtm": null
-              },
-              "failure": {
-                "irc": null,
-                "dsc": null,
-                "mtm": null
-              },
-              "unknown": {
-                "irc": null,
-                "dsc": null,
-                "mtm": null
-              }
-            },
-            "trusted": null
-          }
-        },
-        "rootserv": {
-          "name": "rootserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "RootServ",
-            "realname": "Network administration",
-            "unique": "ROOTS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "operserv": {
-          "name": "operserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "OperServ",
-            "realname": "Network administration",
-            "unique": "OPERS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "statserv": {
-          "name": "statserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "StatServ",
-            "realname": "Statistics and analysis",
-            "unique": "STATS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "nickserv": {
-          "name": "nickserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "NickServ",
-            "realname": "Nickname registration",
-            "unique": "NICKS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "chanserv": {
-          "name": "chanserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "ChanServ",
-            "realname": "Channel registration",
-            "unique": "CHANS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "memoserv": {
-          "name": "memoserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "MemoServ",
-            "realname": "Offline message sharing",
-            "unique": "MEMOS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "hostserv": {
-          "name": "hostserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "HostServ",
-            "realname": "Host cloak management",
-            "unique": "HOSTS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "helpserv": {
-          "name": "helpserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "HelpServ",
-            "realname": "Help about the services",
-            "unique": "HELPS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        },
-        "chatserv": {
-          "name": "chatserv",
-          "kind": "plugin",
-          "params": {
-            "enable": true,
-            "locate": null,
-            "nickname": "ChatServ",
-            "realname": "Invitable LLM chatting",
-            "unique": "CHATS0",
-            "status": {
-              "irc": null,
-              "dsc": null,
-              "mtm": null
-            }
-          }
-        }
-      },
-      "persons": null
-    }
-======================== 1 failed, 50 passed in 29.51s =========================
+============================= 51 passed in 25.75s ==============================
+    DONE
+  ● Write coveragepy output to htmlcov..
+    DONE
+  ● Write coveragepy output to coverage.json..
+    DONE
