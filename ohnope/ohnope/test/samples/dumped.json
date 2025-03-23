@@ -109,6 +109,7 @@
           "eponho"
         ],
         "interval": 5,
+        "services": null,
         "status": {
           "irc": null,
           "dsc": null,

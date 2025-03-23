@@ -48,6 +48,25 @@ class OperServ(RobiePlugin):
         # Review the parameters
 
 
+    @property
+    def params(
+        self,
+    ) -> OperServParams:
+        """
+        Return the Pydantic model containing the configuration.
+
+        :returns: Pydantic model containing the configuration.
+        """
+
+        params = super().params
+
+        assert isinstance(
+            params,
+            OperServParams)
+
+        return params
+
+
     def operate(
         self,
     ) -> None:
@@ -68,9 +87,6 @@ class OperServ(RobiePlugin):
         member = thread.member
         mqueue = thread.mqueue
         params = self.params
-
-        assert isinstance(
-            params, OperServParams)
 
 
         if not self.__started:
@@ -108,14 +124,15 @@ class OperServ(RobiePlugin):
         :param status: One of several possible value for status.
         """
 
-        robie = self.robie
-        childs = robie.childs
-        plugins = childs.plugins
+        thread = self.thread
         params = self.params
 
-        assert isinstance(
-            params,
-            OperServParams)
+        if thread is None:
+            return None
+
+        plugins = (
+            thread.service
+            .plugins.childs)
 
         if 'status' not in plugins:
             return NCNone
@@ -123,8 +140,7 @@ class OperServ(RobiePlugin):
         plugin = plugins['status']
 
         assert isinstance(
-            plugin,
-            StatusPlugin)
+            plugin, StatusPlugin)
 
         (plugin.update(
             unique=self.name,
