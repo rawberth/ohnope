@@ -13,10 +13,10 @@ from typing import Callable
 from typing import Optional
 
 from encommon.config import Params
-from encommon.types import BaseModel
 
 from enrobie.plugins import StatusPluginIconParams
 from enrobie.plugins import StatusPluginParams
+from enrobie.robie.params import RobieParamsModel
 from enrobie.robie.params import RobiePrinterParams
 from enrobie.robie.params import RobieServiceParams
 
@@ -34,7 +34,7 @@ from ...plugins import StatServParams
 
 
 
-class OhnopeIRCParams(BaseModel, extra='forbid'):
+class OhnopeIRCParams(RobieParamsModel, extra='forbid'):
     """
     Process and validate the core configuration parameters.
     """
@@ -98,7 +98,7 @@ class OhnopeIRCParams(BaseModel, extra='forbid'):
 
 
 
-class OhnopeIRCSParams(BaseModel, extra='forbid'):
+class OhnopeIRCSParams(RobieParamsModel, extra='forbid'):
     """
     Process and validate the core configuration parameters.
     """
