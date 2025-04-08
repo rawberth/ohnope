@@ -85,6 +85,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "channels": [
           {
             "client": "eponho",
@@ -105,6 +106,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "clients": [
           "eponho"
         ],
@@ -123,6 +125,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "reports": null,
         "command": {
           "irc": "!status",
@@ -150,8 +153,7 @@
             "dsc": null,
             "mtm": null
           }
-        },
-        "trusted": null
+        }
       }
     },
     "rootserv": {
@@ -160,6 +162,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "RootServ",
         "realname": "Network administration",
         "unique": "ROOTS0",
@@ -176,6 +179,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "OperServ",
         "realname": "Network administration",
         "unique": "OPERS0",
@@ -192,6 +196,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "StatServ",
         "realname": "Statistics and analysis",
         "unique": "STATS0",
@@ -208,6 +213,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "NickServ",
         "realname": "Nickname registration",
         "unique": "NICKS0",
@@ -224,6 +230,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "ChanServ",
         "realname": "Channel registration",
         "unique": "CHANS0",
@@ -240,6 +247,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "MemoServ",
         "realname": "Offline message sharing",
         "unique": "MEMOS0",
@@ -256,6 +264,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "HostServ",
         "realname": "Host cloak management",
         "unique": "HOSTS0",
@@ -272,6 +281,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "HelpServ",
         "realname": "Help about the services",
         "unique": "HELPS0",
@@ -288,6 +298,7 @@
       "params": {
         "enable": true,
         "locate": null,
+        "trusted": null,
         "nickname": "ChatServ",
         "realname": "Invitable LLM chatting",
         "unique": "CHATS0",
