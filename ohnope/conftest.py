@@ -58,6 +58,14 @@ def config_factory(
           server: localhost
           port: 6697
 
+        persons:
+          hubert:
+            enable: true
+            first: Hubert
+            last: Farnsworth
+            matches:
+              - match: hubert!hubert@localhost
+
         status:
           enable: true
 

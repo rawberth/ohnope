@@ -8,8 +8,10 @@ is permitted, for more information consult the project license file.
 
 
 from .ohnope import OhnopeParams
+from .person import OhnopePersonParams
 
 
 
 __all__ = [
-    'OhnopeParams']
+    'OhnopeParams',
+    'OhnopePersonParams']
