@@ -3,7 +3,7 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.9, pytest-8.3.5, pluggy-1.5.0 -- /home/runner/work/ohnope/ohnope/main/.venv-package/bin/python3
 cachedir: .pytest_cache
-Using --randomly-seed=3707706119
+Using --randomly-seed=4250741034
 rootdir: /home/runner/work/ohnope/ohnope/main
 configfile: pyproject.toml
 plugins: cov-6.1.1, respx-0.22.0, mypy-1.0.1, sphinx-0.6.3, clarity-1.0.1, randomly-3.16.0, anyio-4.9.0, xdist-3.6.1, mock-3.14.0
@@ -12,107 +12,107 @@ created: 4/4 workers
 
 scheduling tests via LoadScheduling
 
-ohnope/execution/test/test_crypts.py::mypy 
-ohnope/conftest.py::mypy 
-ohnope/execution/__init__.py::mypy 
-ohnope/ohnope/__init__.py::mypy 
-[gw2] [  1%] PASSED ohnope/conftest.py::mypy 
-ohnope/__init__.py::mypy-status 
-[gw2] [  3%] PASSED ohnope/__init__.py::mypy-status 
-ohnope/execution/test/test_service.py::mypy 
-[gw2] [  5%] PASSED ohnope/execution/test/test_service.py::mypy 
-ohnope/ohnope/test/__init__.py::mypy 
-[gw2] [  7%] PASSED ohnope/ohnope/test/__init__.py::mypy 
-ohnope/ohnope/params/ohnope.py::mypy 
-[gw2] [  9%] PASSED ohnope/ohnope/params/ohnope.py::mypy 
-ohnope/ohnope/config.py::mypy 
-[gw2] [ 11%] PASSED ohnope/ohnope/config.py::mypy 
-ohnope/ohnope/ohnope.py::mypy 
-[gw2] [ 13%] PASSED ohnope/ohnope/ohnope.py::mypy 
-ohnope/ohnope/test/test_ohnope.py::mypy 
-[gw1] [ 15%] PASSED ohnope/execution/__init__.py::mypy 
-[gw2] [ 17%] PASSED ohnope/ohnope/test/test_ohnope.py::mypy 
-ohnope/execution/service.py::mypy 
-ohnope/ohnope/test/test_service.py::mypy 
-[gw1] [ 19%] PASSED ohnope/execution/service.py::mypy 
-ohnope/__init__.py::mypy 
-[gw1] [ 21%] PASSED ohnope/__init__.py::mypy 
-ohnope/plugins/helpserv/__init__.py::mypy 
-[gw1] [ 23%] PASSED ohnope/plugins/helpserv/__init__.py::mypy 
-ohnope/plugins/chanserv/__init__.py::mypy 
-[gw1] [ 25%] PASSED ohnope/plugins/chanserv/__init__.py::mypy 
-ohnope/plugins/helpserv/params.py::mypy 
-[gw1] [ 27%] PASSED ohnope/plugins/helpserv/params.py::mypy 
-ohnope/plugins/chatserv/params.py::mypy 
-[gw1] [ 29%] PASSED ohnope/plugins/chatserv/params.py::mypy 
-ohnope/plugins/operserv/params.py::mypy 
-[gw1] [ 31%] PASSED ohnope/plugins/operserv/params.py::mypy 
-ohnope/plugins/memoserv/params.py::mypy 
-[gw1] [ 33%] PASSED ohnope/plugins/memoserv/params.py::mypy 
-ohnope/plugins/rootserv/params.py::mypy 
-[gw1] [ 35%] PASSED ohnope/plugins/rootserv/params.py::mypy 
-ohnope/plugins/statserv/__init__.py::mypy 
-[gw1] [ 37%] PASSED ohnope/plugins/statserv/__init__.py::mypy 
-ohnope/plugins/chatserv/__init__.py::mypy 
-[gw0] [ 39%] PASSED ohnope/execution/test/test_crypts.py::mypy 
-[gw1] [ 41%] PASSED ohnope/plugins/chatserv/__init__.py::mypy 
-ohnope/execution/test/__init__.py::mypy 
-ohnope/plugins/nickserv/__init__.py::mypy 
-[gw0] [ 43%] PASSED ohnope/execution/test/__init__.py::mypy 
-ohnope/execution/crypts.py::mypy 
-[gw1] [ 45%] PASSED ohnope/plugins/nickserv/__init__.py::mypy 
-ohnope/plugins/memoserv/plugin.py::mypy 
-[gw0] [ 47%] PASSED ohnope/execution/crypts.py::mypy 
-ohnope/plugins/statserv/plugin.py::mypy 
-[gw1] [ 49%] PASSED ohnope/plugins/memoserv/plugin.py::mypy 
-ohnope/plugins/__init__.py::mypy 
-[gw0] [ 50%] PASSED ohnope/plugins/statserv/plugin.py::mypy 
-ohnope/plugins/statserv/params.py::mypy 
-[gw1] [ 52%] PASSED ohnope/plugins/__init__.py::mypy 
-ohnope/plugins/hostserv/__init__.py::mypy 
-[gw0] [ 54%] PASSED ohnope/plugins/statserv/params.py::mypy 
-ohnope/plugins/chanserv/params.py::mypy 
-[gw1] [ 56%] PASSED ohnope/plugins/hostserv/__init__.py::mypy 
-ohnope/plugins/hostserv/plugin.py::mypy 
-[gw0] [ 58%] PASSED ohnope/plugins/chanserv/params.py::mypy 
-ohnope/plugins/memoserv/__init__.py::mypy 
-[gw1] [ 60%] PASSED ohnope/plugins/hostserv/plugin.py::mypy 
-ohnope/plugins/chanserv/plugin.py::mypy 
-[gw0] [ 62%] PASSED ohnope/plugins/memoserv/__init__.py::mypy 
-ohnope/plugins/hostserv/params.py::mypy 
-[gw1] [ 64%] PASSED ohnope/plugins/chanserv/plugin.py::mypy 
-ohnope/plugins/nickserv/params.py::mypy 
-[gw0] [ 66%] PASSED ohnope/plugins/hostserv/params.py::mypy 
-ohnope/plugins/operserv/plugin.py::mypy 
-[gw1] [ 68%] PASSED ohnope/plugins/nickserv/params.py::mypy 
-ohnope/plugins/rootserv/__init__.py::mypy 
-[gw0] [ 70%] PASSED ohnope/plugins/operserv/plugin.py::mypy 
-ohnope/plugins/rootserv/plugin.py::mypy 
-[gw1] [ 72%] PASSED ohnope/plugins/rootserv/__init__.py::mypy 
-ohnope/plugins/chatserv/plugin.py::mypy 
-[gw0] [ 74%] PASSED ohnope/plugins/rootserv/plugin.py::mypy 
-[gw2] [ 76%] PASSED ohnope/ohnope/test/test_service.py::mypy 
-[gw1] [ 78%] PASSED ohnope/plugins/chatserv/plugin.py::mypy 
-ohnope/plugins/helpserv/plugin.py::mypy 
-ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-[gw2] [ 80%] PASSED ohnope/plugins/helpserv/plugin.py::mypy 
-ohnope/plugins/operserv/__init__.py::mypy 
-[gw2] [ 82%] PASSED ohnope/plugins/operserv/__init__.py::mypy 
-ohnope/plugins/nickserv/plugin.py::mypy 
-[gw2] [ 84%] PASSED ohnope/plugins/nickserv/plugin.py::mypy 
-ohnope/execution/test/test_crypts.py::test_arguments 
-[gw2] [ 86%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
-[gw3] [ 88%] PASSED ohnope/ohnope/__init__.py::mypy 
-ohnope/ohnope/test/test_config.py::mypy 
-[gw3] [ 90%] PASSED ohnope/ohnope/test/test_config.py::mypy 
-ohnope/ohnope/params/__init__.py::mypy 
-[gw3] [ 92%] PASSED ohnope/ohnope/params/__init__.py::mypy 
-[gw1] [ 94%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-ohnope/ohnope/test/test_service.py::test_RobieService 
-[gw0] [ 96%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
 ohnope/execution/test/test_service.py::test_arguments 
-[gw0] [ 98%] PASSED ohnope/execution/test/test_service.py::test_arguments 
+ohnope/execution/__init__.py::mypy 
+ohnope/__init__.py::mypy-status 
+ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
+[gw0] [  1%] PASSED ohnope/execution/test/test_service.py::test_arguments 
+ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+[gw0] [  3%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+ohnope/execution/test/test_crypts.py::test_arguments 
+[gw0] [  5%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
+ohnope/execution/test/test_service.py::mypy 
+[gw1] [  7%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
+ohnope/execution/test/__init__.py::mypy 
+[gw3] [  9%] PASSED ohnope/__init__.py::mypy-status 
+ohnope/execution/service.py::mypy 
+[gw1] [ 11%] PASSED ohnope/execution/test/__init__.py::mypy 
+[gw3] [ 13%] PASSED ohnope/execution/service.py::mypy 
+ohnope/execution/test/test_crypts.py::mypy 
+ohnope/__init__.py::mypy 
+[gw1] [ 15%] PASSED ohnope/execution/test/test_crypts.py::mypy 
+ohnope/ohnope/params/__init__.py::mypy 
+[gw1] [ 17%] PASSED ohnope/ohnope/params/__init__.py::mypy 
+ohnope/ohnope/__init__.py::mypy 
+[gw1] [ 19%] PASSED ohnope/ohnope/__init__.py::mypy 
+ohnope/ohnope/params/ohnope.py::mypy 
+[gw1] [ 21%] PASSED ohnope/ohnope/params/ohnope.py::mypy 
+ohnope/ohnope/test/test_service.py::mypy 
+[gw1] [ 23%] PASSED ohnope/ohnope/test/test_service.py::mypy 
+ohnope/plugins/helpserv/plugin.py::mypy 
+[gw1] [ 25%] PASSED ohnope/plugins/helpserv/plugin.py::mypy 
+ohnope/plugins/operserv/plugin.py::mypy 
+[gw2] [ 27%] PASSED ohnope/execution/__init__.py::mypy 
+[gw1] [ 29%] PASSED ohnope/plugins/operserv/plugin.py::mypy 
+ohnope/conftest.py::mypy 
+ohnope/plugins/rootserv/plugin.py::mypy 
+[gw2] [ 31%] PASSED ohnope/conftest.py::mypy 
+ohnope/execution/crypts.py::mypy 
+[gw1] [ 33%] PASSED ohnope/plugins/rootserv/plugin.py::mypy 
+ohnope/plugins/operserv/params.py::mypy 
+[gw2] [ 35%] PASSED ohnope/execution/crypts.py::mypy 
+ohnope/plugins/rootserv/__init__.py::mypy 
+[gw1] [ 37%] PASSED ohnope/plugins/operserv/params.py::mypy 
+ohnope/plugins/statserv/plugin.py::mypy 
+[gw2] [ 39%] PASSED ohnope/plugins/rootserv/__init__.py::mypy 
+ohnope/plugins/memoserv/__init__.py::mypy 
+[gw1] [ 41%] PASSED ohnope/plugins/statserv/plugin.py::mypy 
+ohnope/plugins/statserv/params.py::mypy 
+[gw2] [ 43%] PASSED ohnope/plugins/memoserv/__init__.py::mypy 
+[gw1] [ 45%] PASSED ohnope/plugins/statserv/params.py::mypy 
+ohnope/plugins/nickserv/__init__.py::mypy 
+ohnope/plugins/rootserv/params.py::mypy 
+[gw2] [ 47%] PASSED ohnope/plugins/nickserv/__init__.py::mypy 
+[gw1] [ 49%] PASSED ohnope/plugins/rootserv/params.py::mypy 
+ohnope/plugins/chanserv/params.py::mypy 
+ohnope/plugins/chatserv/__init__.py::mypy 
+[gw2] [ 50%] PASSED ohnope/plugins/chanserv/params.py::mypy 
+[gw1] [ 52%] PASSED ohnope/plugins/chatserv/__init__.py::mypy 
+ohnope/plugins/hostserv/plugin.py::mypy 
+ohnope/plugins/memoserv/params.py::mypy 
+[gw2] [ 54%] PASSED ohnope/plugins/hostserv/plugin.py::mypy 
+ohnope/plugins/nickserv/params.py::mypy 
+[gw1] [ 56%] PASSED ohnope/plugins/memoserv/params.py::mypy 
+ohnope/plugins/helpserv/params.py::mypy 
+[gw2] [ 58%] PASSED ohnope/plugins/nickserv/params.py::mypy 
+ohnope/plugins/hostserv/__init__.py::mypy 
+[gw1] [ 60%] PASSED ohnope/plugins/helpserv/params.py::mypy 
+ohnope/plugins/operserv/__init__.py::mypy 
+[gw2] [ 62%] PASSED ohnope/plugins/hostserv/__init__.py::mypy 
+ohnope/plugins/chatserv/params.py::mypy 
+[gw1] [ 64%] PASSED ohnope/plugins/operserv/__init__.py::mypy 
+ohnope/plugins/chatserv/plugin.py::mypy 
+[gw0] [ 66%] PASSED ohnope/execution/test/test_service.py::mypy 
+ohnope/ohnope/test/__init__.py::mypy 
+[gw1] [ 68%] PASSED ohnope/plugins/chatserv/plugin.py::mypy 
+ohnope/plugins/hostserv/params.py::mypy 
+[gw0] [ 70%] PASSED ohnope/ohnope/test/__init__.py::mypy 
+ohnope/ohnope/test/test_config.py::mypy 
+[gw1] [ 72%] PASSED ohnope/plugins/hostserv/params.py::mypy 
+ohnope/plugins/nickserv/plugin.py::mypy 
+[gw0] [ 74%] PASSED ohnope/ohnope/test/test_config.py::mypy 
+[gw3] [ 76%] PASSED ohnope/__init__.py::mypy 
+ohnope/plugins/statserv/__init__.py::mypy 
+[gw1] [ 78%] PASSED ohnope/plugins/nickserv/plugin.py::mypy 
+ohnope/ohnope/config.py::mypy 
+ohnope/plugins/memoserv/plugin.py::mypy 
+[gw0] [ 80%] PASSED ohnope/plugins/statserv/__init__.py::mypy 
+ohnope/plugins/helpserv/__init__.py::mypy 
+[gw1] [ 82%] PASSED ohnope/plugins/memoserv/plugin.py::mypy 
+ohnope/plugins/chanserv/__init__.py::mypy 
+[gw0] [ 84%] PASSED ohnope/plugins/helpserv/__init__.py::mypy 
+ohnope/plugins/chanserv/plugin.py::mypy 
+[gw1] [ 86%] PASSED ohnope/plugins/chanserv/__init__.py::mypy 
+ohnope/ohnope/test/test_service.py::test_RobieService 
+[gw0] [ 88%] PASSED ohnope/plugins/chanserv/plugin.py::mypy 
+[gw2] [ 90%] PASSED ohnope/plugins/chatserv/params.py::mypy 
+ohnope/plugins/__init__.py::mypy 
+[gw2] [ 92%] PASSED ohnope/plugins/__init__.py::mypy 
+[gw3] [ 94%] PASSED ohnope/ohnope/config.py::mypy 
+ohnope/ohnope/ohnope.py::mypy 
+[gw3] [ 96%] PASSED ohnope/ohnope/ohnope.py::mypy 
+ohnope/ohnope/test/test_ohnope.py::mypy 
+[gw3] [ 98%] PASSED ohnope/ohnope/test/test_ohnope.py::mypy 
 [gw1] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
 ===================================== mypy =====================================
 
@@ -169,7 +169,7 @@ ohnope/plugins/statserv/params.py          13      0   100%
 ohnope/plugins/statserv/plugin.py          45      0   100%
 -----------------------------------------------------------
 TOTAL                                     978      0   100%
-============================= 51 passed in 32.22s ==============================
+============================= 51 passed in 31.81s ==============================
     DONE
   ● Write coveragepy output to htmlcov..
     DONE
