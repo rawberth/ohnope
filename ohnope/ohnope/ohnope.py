@@ -25,7 +25,6 @@ from enrobie.robie import Robie as _Robie
 from enrobie.robie import RobieConfig
 from enrobie.robie.addons import RobieLogger
 from enrobie.robie.addons import RobieQueue
-from enrobie.robie.childs import RobieClient
 from enrobie.robie.models import RobieCommand
 
 from ..plugins import ChanServ
@@ -443,17 +442,22 @@ class Ohnope:
     @property
     def client(
         self,
-    ) -> RobieClient:
+    ) -> IRCClient:
         """
         Return the value for the attribute from class instance.
 
         :returns: Value for the attribute from class instance.
         """
 
-        return (
+        client = (
             self.robie
             .childs.clients
             ['ohnope'])
+
+        assert isinstance(
+            client, IRCClient)
+
+        return client
 
 
     @property
@@ -486,9 +490,6 @@ class Ohnope:
         """
 
         client = self.client
-
-        assert isinstance(
-            client, IRCClient)
 
         params = (
             self.params
