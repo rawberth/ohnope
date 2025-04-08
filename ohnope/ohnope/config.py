@@ -78,8 +78,18 @@ class OhnopeConfig(Config):
         self.merge_params()
 
 
+        insert: DictStrAny = {}
+
+        persons = (
+            self.params
+            .endumped['persons'])
+
+        if persons is not None:
+            insert = {'persons': persons}
+
+
         config = RobieConfig(
-            cargs=self.cargs,
+            cargs=self.cargs | insert,
             sargs=self.sargs)
 
         setattr(
