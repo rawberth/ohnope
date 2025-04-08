@@ -310,5 +310,21 @@
       }
     }
   },
-  "persons": null
+  "persons": {
+    "hubert": {
+      "enable": true,
+      "first": "Hubert",
+      "last": "Farnsworth",
+      "about": null,
+      "matches": [
+        {
+          "client": "eponho",
+          "match": [
+            "hubert!hubert@localhost"
+          ]
+        }
+      ],
+      "weight": 50
+    }
+  }
 }
