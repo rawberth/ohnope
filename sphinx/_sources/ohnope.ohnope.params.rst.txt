@@ -12,6 +12,14 @@ ohnope.ohnope.params.ohnope module
    :show-inheritance:
    :undoc-members:
 
+ohnope.ohnope.params.person module
+----------------------------------
+
+.. automodule:: ohnope.ohnope.params.person
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
 Module contents
 ---------------
 
