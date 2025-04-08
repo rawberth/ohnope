@@ -16,6 +16,18 @@
     "server": "localhost",
     "port": 6900
   },
+  "persons": {
+    "hubert": {
+      "enable": true,
+      "first": "Hubert",
+      "last": "Farnsworth",
+      "matches": [
+        {
+          "match": "hubert!hubert@localhost"
+        }
+      ]
+    }
+  },
   "status": {
     "enable": true
   }

@@ -22,6 +22,7 @@ from enrobie.robie.params import RobieServiceParams
 
 from pydantic import Field
 
+from .person import OhnopePersonParams
 from ...plugins import ChanServParams
 from ...plugins import ChatServParams
 from ...plugins import HelpServParams
@@ -193,6 +194,12 @@ class OhnopeParams(Params, extra='forbid'):
         Field(None,
               description='Server connection parameters')]
 
+    persons: Annotated[
+        Optional[dict[str, OhnopePersonParams]],
+        Field(None,
+              description='Parameters for Robie persons',
+              min_length=1)]
+
     status: Annotated[
         StatusPluginParams,
         Field(default_factory=StatusPluginParams,
@@ -258,11 +265,29 @@ class OhnopeParams(Params, extra='forbid'):
 
         if _parse is not None:
 
+            parsable = ['persons']
+
+            for key in parsable:
+
+                if not data.get(key):
+                    continue
+
+                values = (
+                    data[key]
+                    .values())
+
+                for item in values:
+                    item['_parse'] = _parse
+
+
+        if _parse is not None:
+
             parsable = [
                 'database',
                 'printer',
                 'service',
-                'peering']
+                'peering',
+                'client']
 
             for key in parsable:
 
