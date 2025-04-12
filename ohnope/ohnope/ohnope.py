@@ -118,6 +118,9 @@ class Ohnope:
 
         params = config.params
 
+        (config.jinja2
+         .set_static('ohnope', self))
+
 
         peering = (
             config.params
