@@ -164,6 +164,8 @@ class OhnopeConfig(Config):
         assert isinstance(
             params, OhnopeParams)
 
+        (jinja2
+         .set_static('source'))
 
         self.__params = params
 
