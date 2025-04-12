@@ -116,10 +116,13 @@ class Ohnope:
 
         self.__config = config
 
-        params = config.params
-
         (config.jinja2
          .set_static('ohnope', self))
+
+        (config.robie.jinja2
+         .set_static('ohnope', self))
+
+        params = config.params
 
 
         peering = (
