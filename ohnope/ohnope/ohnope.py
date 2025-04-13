@@ -102,7 +102,7 @@ class Ohnope:
     __robie: Robie
 
 
-    def __init__(  # noqa: CFQ001
+    def __init__(
         self,
         config: 'OhnopeConfig',
     ) -> None:
@@ -115,6 +115,22 @@ class Ohnope:
             status='initial')
 
         self.__config = config
+
+        self.__build_plugins()
+
+        config.logger.log_d(
+            base=clsname(self),
+            status='created')
+
+
+    def __build_plugins(  # noqa: CFQ001
+        self,
+    ) -> None:
+        """
+        Construct instances using the configuration parameters.
+        """
+
+        config = self.__config
 
         (config.jinja2
          .set_static('ohnope', self))
@@ -386,11 +402,6 @@ class Ohnope:
         self.robie.register(
             name='chatserv',
             plugin=ChatServ)
-
-
-        config.logger.log_d(
-            base=clsname(self),
-            status='created')
 
 
     @property
