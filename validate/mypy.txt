@@ -1,9 +1,7 @@
 >>> make mypy
   ● Executing mypy in ohnope..
-    DONE
-  ● Executing mypy in sphinx..
-    DONE
-  ● Executing mypy on makefile.py..
-    DONE
-  ● Executing mypy on makebadge.py..
-    DONE
+ohnope/ohnope/config.py:143: error: Incompatible return value type (got "Params | None", expected "OhnopeParams")  [return-value]
+ohnope/ohnope/config.py:186: error: Incompatible override of a setter type  [override]
+ohnope/ohnope/config.py:186: note:  (base class "Config" defined the type as "Params | None",
+ohnope/ohnope/config.py:186: note:  override has type "Params")
+ohnope/ohnope/config.py:186: note:  Setter types should behave contravariantly
