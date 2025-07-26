@@ -3,7 +3,7 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.11, pytest-8.4.1, pluggy-1.6.0 -- /home/runner/work/ohnope/ohnope/main/.venv-package/bin/python3
 cachedir: .pytest_cache
-Using --randomly-seed=1977208844
+Using --randomly-seed=855655646
 rootdir: /home/runner/work/ohnope/ohnope/main
 configfile: pyproject.toml
 plugins: cov-6.2.1, mypy-1.0.1, xdist-3.8.0, sphinx-0.6.3, randomly-3.16.0, anyio-4.9.0, mock-3.14.1, clarity-1.0.1, respx-0.22.0
@@ -12,16 +12,16 @@ created: 4/4 workers
 
 scheduling tests via LoadScheduling
 
+ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
 ohnope/execution/test/test_service.py::test_arguments 
 ohnope/execution/test/test_crypts.py::test_arguments 
 ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+[gw2] [ 20%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
+[gw0] [ 40%] PASSED ohnope/execution/test/test_service.py::test_arguments 
 ohnope/ohnope/test/test_service.py::test_RobieService 
-[gw1] [ 20%] PASSED ohnope/execution/test/test_service.py::test_arguments 
-[gw0] [ 40%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
-ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
 [gw3] [ 60%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-[gw0] [ 80%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-[gw2] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
+[gw1] [ 80%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
+[gw0] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
 
 ================================ tests coverage ================================
 _______________ coverage: platform linux, python 3.12.11-final-0 _______________
