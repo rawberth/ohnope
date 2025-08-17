@@ -36,7 +36,7 @@ generating indices... genindex py-modindex done
 writing additional pages... search done
 dumping search index in English (code: en)... done
 dumping object inventory... done
-build succeeded, 685 warnings.
+build succeeded, 684 warnings.
 
 The HTML pages are in sphinx/html.
     DONE
