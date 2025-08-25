@@ -140,7 +140,7 @@ class OhnopeConfig(Config):
 
         self.__params = params
 
-        return self.__params
+        return params
 
 
     def merge_params(
@@ -186,7 +186,7 @@ class OhnopeConfig(Config):
     @__params.setter
     def __params(
         self,
-        value: Params,
+        value: Params | None,
     ) -> None:
         """
         Update the value for the attribute from class instance.
