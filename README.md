@@ -1,6 +1,6 @@
 # rawberth Oh-nope IRC Services
 
-> :warning: This project has not released its first major version.
+> This project has not released its first major version.
 
 Ridiculous, waste of time, implementation of IRC services using Python.
 
@@ -27,6 +27,22 @@ Installing latest from GitHub repository
 pip install git+https://github.com/rawberth/ohnope
 ```
 
+## Running the service
+There are several command line arguments, see them all here.
+```
+python -m enrobie.execution.service --help
+```
+Here is an example of running the service from inside the project folder
+within the [Workspace](https://github.com/enasisnetwork/workspace) project.
+```
+python -m ohnope.execution.service \
+  --config ../../Persistent/ohnope-devel.yml \
+  --console \
+  --debug \
+  --print_command
+```
+Replace `../../Persistent/ohnope-devel.yml` with your configuration file.
+
 ## Quick start for local development
 Start by cloning the repository to your local machine.
 ```
@@ -52,22 +68,6 @@ information found in the `htmlcov` folder in the root of the project.
 ```
 make -s pytest
 ```
-
-## Running the service
-There are several command line arguments, see them all here.
-```
-python -m enrobie.execution.service --help
-```
-Here is an example of running the service from inside the project folder
-within the [Workspace](https://github.com/enasisnetwork/workspace) project.
-```
-python -m ohnope.execution.service \
-  --config ../../Persistent/ohnope-devel.yml \
-  --console \
-  --debug \
-  --print_command
-```
-Replace `../../Persistent/ohnope-devel.yml` with your configuration file.
 
 ## Version management
 > :warning: Ensure that no changes are pending.
