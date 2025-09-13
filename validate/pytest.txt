@@ -3,25 +3,25 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.11, pytest-8.4.2, pluggy-1.6.0 -- /home/runner/work/ohnope/ohnope/main/.venv-package/bin/python3
 cachedir: .pytest_cache
-Using --randomly-seed=2320262597
+Using --randomly-seed=2341005796
 rootdir: /home/runner/work/ohnope/ohnope/main
 configfile: pyproject.toml
-plugins: mock-3.15.0, mypy-1.0.1, sphinx-0.6.3, anyio-4.10.0, respx-0.22.0, cov-7.0.0, randomly-4.0.0, xdist-3.8.0, clarity-1.0.1
+plugins: mock-3.15.0, mypy-1.0.1, sphinx-0.6.3, anyio-4.10.0, respx-0.22.0, cov-7.0.0, randomly-4.0.1, xdist-3.8.0, clarity-1.0.1
 created: 4/4 workers
 4 workers [5 items]
 
 scheduling tests via LoadScheduling
 
-ohnope/execution/test/test_service.py::test_arguments 
+ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
 ohnope/execution/test/test_crypts.py::test_arguments 
 ohnope/ohnope/test/test_service.py::test_RobieService 
-ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-[gw0] [ 20%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
-[gw1] [ 40%] PASSED ohnope/execution/test/test_service.py::test_arguments 
-ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-[gw0] [ 60%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-[gw2] [ 80%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-[gw3] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
+[gw3] [ 20%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
+[gw1] [ 40%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+[gw0] [ 60%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
+ohnope/execution/test/test_service.py::test_arguments 
+[gw0] [ 80%] PASSED ohnope/execution/test/test_service.py::test_arguments 
+[gw2] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
 
 ================================ tests coverage ================================
 _______________ coverage: platform linux, python 3.12.11-final-0 _______________
@@ -76,7 +76,7 @@ ohnope/plugins/statserv/params.py          13      0   100%
 ohnope/plugins/statserv/plugin.py          45      0   100%
 -----------------------------------------------------------
 TOTAL                                    1000      0   100%
-============================== 5 passed in 23.12s ==============================
+============================== 5 passed in 23.00s ==============================
     DONE
   ● Write coveragepy output to htmlcov..
     DONE
