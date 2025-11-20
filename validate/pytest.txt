@@ -3,7 +3,7 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.12, pytest-9.0.1, pluggy-1.6.0 -- /home/runner/work/ohnope/ohnope/main/.venv-package/bin/python3
 cachedir: .pytest_cache
-Using --randomly-seed=2959549941
+Using --randomly-seed=223688670
 rootdir: /home/runner/work/ohnope/ohnope/main
 configfile: pyproject.toml
 plugins: anyio-4.11.0, randomly-4.0.1, sphinx-0.6.3, respx-0.22.0, cov-7.0.0, clarity-1.0.1, xdist-3.8.0, mock-3.15.1, mypy-1.0.1
@@ -12,16 +12,16 @@ created: 4/4 workers
 
 scheduling tests via LoadScheduling
 
-ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
-ohnope/execution/test/test_service.py::test_arguments 
-ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-ohnope/ohnope/test/test_service.py::test_RobieService 
-[gw3] [ 20%] PASSED ohnope/execution/test/test_service.py::test_arguments 
-[gw0] [ 40%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
 ohnope/execution/test/test_crypts.py::test_arguments 
-[gw0] [ 60%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
+ohnope/execution/test/test_service.py::test_arguments 
+ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
+ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
+[gw0] [ 20%] PASSED ohnope/execution/test/test_crypts.py::test_arguments 
+ohnope/ohnope/test/test_service.py::test_RobieService 
+[gw3] [ 40%] PASSED ohnope/execution/test/test_service.py::test_arguments 
+[gw1] [ 60%] PASSED ohnope/ohnope/test/test_config.py::test_OhnopeConfig 
 [gw2] [ 80%] PASSED ohnope/ohnope/test/test_ohnope.py::test_Ohnope 
-[gw1] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
+[gw0] [100%] PASSED ohnope/ohnope/test/test_service.py::test_RobieService 
 
 ================================ tests coverage ================================
 _______________ coverage: platform linux, python 3.12.12-final-0 _______________
@@ -76,7 +76,7 @@ ohnope/plugins/statserv/params.py          13      0   100%
 ohnope/plugins/statserv/plugin.py          45      0   100%
 -----------------------------------------------------------
 TOTAL                                    1000      0   100%
-============================== 5 passed in 23.06s ==============================
+============================== 5 passed in 23.35s ==============================
     DONE
   ● Write coveragepy output to htmlcov..
     DONE
