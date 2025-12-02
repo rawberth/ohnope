@@ -1,6 +1,6 @@
 >>> make sphinx
   ● Building Sphinx documentation..
-Running Sphinx v8.2.3
+Running Sphinx v9.0.1
 loading translations [en]... done
 making output directory... done
 loading intersphinx inventory 'encommon' from https://enasisnetwork.github.io/encommon/sphinx/objects.inv ...
@@ -36,7 +36,7 @@ generating indices... genindex py-modindex done
 writing additional pages... search done
 dumping search index in English (code: en)... done
 dumping object inventory... done
-build succeeded, 684 warnings.
+build succeeded, 660 warnings.
 
 The HTML pages are in sphinx/html.
     DONE
