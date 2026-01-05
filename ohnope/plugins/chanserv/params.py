@@ -85,4 +85,6 @@ class ChanServParams(RobiePluginParams, extra='forbid'):
                 data[key] = value
 
 
-        super().__init__(**data)
+        super().__init__(
+            _parse=_parse,
+            **data)
