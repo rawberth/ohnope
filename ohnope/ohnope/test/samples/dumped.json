@@ -19,6 +19,7 @@
   "clients": {
     "eponho": {
       "name": "eponho",
+      "enable": true,
       "kind": "client",
       "params": {
         "enable": true,
@@ -49,6 +50,7 @@
     },
     "ohnope": {
       "name": "ohnope",
+      "enable": true,
       "kind": "client",
       "params": {
         "enable": true,
@@ -81,6 +83,7 @@
   "plugins": {
     "autojoin": {
       "name": "autojoin",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -102,6 +105,7 @@
     },
     "autonick": {
       "name": "autonick",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -121,6 +125,7 @@
     },
     "status": {
       "name": "status",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -158,6 +163,7 @@
     },
     "rootserv": {
       "name": "rootserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -175,6 +181,7 @@
     },
     "operserv": {
       "name": "operserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -192,6 +199,7 @@
     },
     "statserv": {
       "name": "statserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -209,6 +217,7 @@
     },
     "nickserv": {
       "name": "nickserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -226,6 +235,7 @@
     },
     "chanserv": {
       "name": "chanserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -243,6 +253,7 @@
     },
     "memoserv": {
       "name": "memoserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -260,6 +271,7 @@
     },
     "hostserv": {
       "name": "hostserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -277,6 +289,7 @@
     },
     "helpserv": {
       "name": "helpserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
@@ -294,6 +307,7 @@
     },
     "chatserv": {
       "name": "chatserv",
+      "enable": true,
       "kind": "plugin",
       "params": {
         "enable": true,
