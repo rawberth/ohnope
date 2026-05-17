@@ -19,8 +19,8 @@ from encommon.types import DictStrAny
 
 from enrobie.robie import RobieService
 
-from ..ohnope import Ohnope
-from ..ohnope import OhnopeConfig
+from ..ohnope.config import OhnopeConfig
+from ..ohnope.ohnope import Ohnope
 
 
 

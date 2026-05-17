@@ -16,7 +16,7 @@ from encommon.utils.common import PATHABLE
 
 from enrobie.robie import RobieConfig
 
-from .params import OhnopeParams
+from .params.ohnope import OhnopeParams
 
 
 
@@ -72,7 +72,7 @@ class OhnopeConfig(Config):
             files=files,
             cargs=cargs,
             sargs=sargs,
-            model=OhnopeParams)
+            valid=OhnopeParams)
 
         self.merge_params()
 
@@ -81,7 +81,8 @@ class OhnopeConfig(Config):
 
         persons = (
             self.params
-            .endumped['persons'])
+            .model_dump()
+            ['persons'])
 
         if persons is not None:
             insert = {'persons': persons}
@@ -132,7 +133,7 @@ class OhnopeConfig(Config):
         basic = self.basic
 
         params = (
-            self.model(**basic))
+            self.valid(**basic))
 
         assert isinstance(
             params, OhnopeParams)
@@ -158,7 +159,7 @@ class OhnopeConfig(Config):
 
         parse = jinja2.parse
 
-        params = self.model(
+        params = self.valid(
             parse, **merge)
 
         assert isinstance(

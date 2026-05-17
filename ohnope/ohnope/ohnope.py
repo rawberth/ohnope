@@ -27,28 +27,28 @@ from enrobie.robie.addons import RobieLogger
 from enrobie.robie.addons import RobieQueue
 from enrobie.robie.models import RobieCommand
 
-from ..plugins import ChanServ
-from ..plugins import ChanServParams
-from ..plugins import ChatServ
-from ..plugins import ChatServParams
-from ..plugins import HelpServ
-from ..plugins import HelpServParams
-from ..plugins import HostServ
-from ..plugins import HostServParams
-from ..plugins import MemoServ
-from ..plugins import MemoServParams
-from ..plugins import NickServ
-from ..plugins import NickServParams
-from ..plugins import OperServ
-from ..plugins import OperServParams
-from ..plugins import RootServ
-from ..plugins import RootServParams
-from ..plugins import StatServ
-from ..plugins import StatServParams
+from ..plugins.chanserv.params import ChanServParams
+from ..plugins.chanserv.plugin import ChanServ
+from ..plugins.chatserv.params import ChatServParams
+from ..plugins.chatserv.plugin import ChatServ
+from ..plugins.helpserv.params import HelpServParams
+from ..plugins.helpserv.plugin import HelpServ
+from ..plugins.hostserv.params import HostServParams
+from ..plugins.hostserv.plugin import HostServ
+from ..plugins.memoserv.params import MemoServParams
+from ..plugins.memoserv.plugin import MemoServ
+from ..plugins.nickserv.params import NickServParams
+from ..plugins.nickserv.plugin import NickServ
+from ..plugins.operserv.params import OperServParams
+from ..plugins.operserv.plugin import OperServ
+from ..plugins.rootserv.params import RootServParams
+from ..plugins.rootserv.plugin import RootServ
+from ..plugins.statserv.params import StatServParams
+from ..plugins.statserv.plugin import StatServ
 
 if TYPE_CHECKING:
     from .config import OhnopeConfig
-    from .params import OhnopeParams
+    from .params.ohnope import OhnopeParams
 
 
 
@@ -147,7 +147,9 @@ class Ohnope:
 
         assert peering is not None
 
-        dumped = peering.endumped
+        dumped = (
+            peering
+            .model_dump())
 
         if 'name' in dumped:
 
@@ -192,7 +194,9 @@ class Ohnope:
 
         assert client is not None
 
-        dumped = client.endumped
+        dumped = (
+            client
+            .model_dump())
 
         if 'status' in dumped:
             del dumped['status']
@@ -241,7 +245,7 @@ class Ohnope:
 
         status = (
             params.status
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='status',
@@ -251,7 +255,7 @@ class Ohnope:
 
         rootserv = (
             params.rootserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='rootserv',
@@ -261,7 +265,7 @@ class Ohnope:
 
         operserv = (
             params.operserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='operserv',
@@ -271,7 +275,7 @@ class Ohnope:
 
         statserv = (
             params.statserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='statserv',
@@ -281,7 +285,7 @@ class Ohnope:
 
         nickserv = (
             params.nickserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='nickserv',
@@ -291,7 +295,7 @@ class Ohnope:
 
         chanserv = (
             params.chanserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='chanserv',
@@ -301,7 +305,7 @@ class Ohnope:
 
         memoserv = (
             params.memoserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='memoserv',
@@ -311,7 +315,7 @@ class Ohnope:
 
         hostserv = (
             params.hostserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='hostserv',
@@ -321,7 +325,7 @@ class Ohnope:
 
         helpserv = (
             params.helpserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='helpserv',
@@ -331,7 +335,7 @@ class Ohnope:
 
         chatserv = (
             params.chatserv
-            .endumped)
+            .model_dump())
 
         config.robie.register(
             name='chatserv',

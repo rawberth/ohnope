@@ -16,7 +16,7 @@ from encommon.types import DictStrAny
 from encommon.types.strings import SEMPTY
 from encommon.utils import print_ansi
 
-from ..ohnope import OhnopeConfig
+from ..ohnope.config import OhnopeConfig
 
 
 
