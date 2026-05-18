@@ -1,6 +1,6 @@
 Name                                    Stmts   Miss  Cover
 -----------------------------------------------------------
-ohnope/__init__.py                          5      0   100%
+ohnope/__init__.py                          7      0   100%
 ohnope/conftest.py                         27      0   100%
 ohnope/execution/__init__.py                0      0   100%
 ohnope/execution/crypts.py                 18      0   100%
@@ -15,7 +15,7 @@ ohnope/ohnope/params/__init__.py            3      0   100%
 ohnope/ohnope/params/ohnope.py             60      0   100%
 ohnope/ohnope/params/person.py              9      0   100%
 ohnope/ohnope/test/__init__.py              2      0   100%
-ohnope/ohnope/test/test_config.py          20      0   100%
+ohnope/ohnope/test/test_config.py          19      0   100%
 ohnope/ohnope/test/test_ohnope.py          25      0   100%
 ohnope/ohnope/test/test_service.py         21      0   100%
 ohnope/plugins/__init__.py                 19      0   100%
@@ -47,4 +47,4 @@ ohnope/plugins/statserv/__init__.py         3      0   100%
 ohnope/plugins/statserv/params.py          13      0   100%
 ohnope/plugins/statserv/plugin.py          45      0   100%
 -----------------------------------------------------------
-TOTAL                                    1000      0   100%
+TOTAL                                    1001      0   100%

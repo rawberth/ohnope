@@ -12,13 +12,13 @@ loading intersphinx inventory 'pydantic' from https://docs.pydantic.dev/latest/o
 loading intersphinx inventory 'pytest' from https://docs.pytest.org/latest/objects.inv ...
 loading intersphinx inventory 'python' from https://docs.python.org/3/objects.inv ...
 loading intersphinx inventory 'sqlalchemy' from https://docs.sqlalchemy.org/en/20/objects.inv ...
-intersphinx inventory has moved: https://docs.pydantic.dev/latest/objects.inv -> https://pydantic.dev/docs/validation/latest/objects.inv
 intersphinx inventory has moved: https://docs.pytest.org/latest/objects.inv -> https://docs.pytest.org/en/7.4.x/objects.inv
+intersphinx inventory has moved: https://docs.pydantic.dev/latest/objects.inv -> https://pydantic.dev/docs/validation/latest/objects.inv
 building [mo]: targets for 0 po files that are out of date
 writing output... 
-building [html]: targets for 18 source files that are out of date
-updating environment: [new config] 18 added, 0 changed, 0 removed
-reading sources... [  6%] indexreading sources... [ 11%] modulesreading sources... [ 17%] ohnopereading sources... [ 22%] ohnope.executionreading sources... [ 28%] ohnope.execution.testreading sources... [ 33%] ohnope.ohnopereading sources... [ 39%] ohnope.ohnope.paramsreading sources... [ 44%] ohnope.ohnope.testreading sources... [ 50%] ohnope.pluginsreading sources... [ 56%] ohnope.plugins.chanservreading sources... [ 61%] ohnope.plugins.chatservreading sources... [ 67%] ohnope.plugins.helpservreading sources... [ 72%] ohnope.plugins.hostservreading sources... [ 78%] ohnope.plugins.memoservreading sources... [ 83%] ohnope.plugins.nickservreading sources... [ 89%] ohnope.plugins.operservreading sources... [ 94%] ohnope.plugins.rootservreading sources... [100%] ohnope.plugins.statserv
+building [html]: targets for 16 source files that are out of date
+updating environment: [new config] 16 added, 0 changed, 0 removed
+reading sources... [  6%] indexreading sources... [ 12%] modulesreading sources... [ 19%] ohnopereading sources... [ 25%] ohnope.executionreading sources... [ 31%] ohnope.ohnopereading sources... [ 38%] ohnope.ohnope.paramsreading sources... [ 44%] ohnope.pluginsreading sources... [ 50%] ohnope.plugins.chanservreading sources... [ 56%] ohnope.plugins.chatservreading sources... [ 62%] ohnope.plugins.helpservreading sources... [ 69%] ohnope.plugins.hostservreading sources... [ 75%] ohnope.plugins.memoservreading sources... [ 81%] ohnope.plugins.nickservreading sources... [ 88%] ohnope.plugins.operservreading sources... [ 94%] ohnope.plugins.rootservreading sources... [100%] ohnope.plugins.statserv
 looking for now-outdated files... none found
 pickling environment... done
 checking consistency... done
@@ -32,12 +32,13 @@ copying static files: done
 copying extra files... 
 copying extra files: done
 copying assets: done
-writing output... [  6%] indexwriting output... [ 11%] moduleswriting output... [ 17%] ohnopewriting output... [ 22%] ohnope.executionwriting output... [ 28%] ohnope.execution.testwriting output... [ 33%] ohnope.ohnopewriting output... [ 39%] ohnope.ohnope.paramswriting output... [ 44%] ohnope.ohnope.testwriting output... [ 50%] ohnope.pluginswriting output... [ 56%] ohnope.plugins.chanservwriting output... [ 61%] ohnope.plugins.chatservwriting output... [ 67%] ohnope.plugins.helpservwriting output... [ 72%] ohnope.plugins.hostservwriting output... [ 78%] ohnope.plugins.memoservwriting output... [ 83%] ohnope.plugins.nickservwriting output... [ 89%] ohnope.plugins.operservwriting output... [ 94%] ohnope.plugins.rootservwriting output... [100%] ohnope.plugins.statserv
+writing output... [  6%] indexwriting output... [ 12%] moduleswriting output... [ 19%] ohnopewriting output... [ 25%] ohnope.executionwriting output... [ 31%] ohnope.ohnopewriting output... [ 38%] ohnope.ohnope.paramswriting output... [ 44%] ohnope.pluginswriting output... [ 50%] ohnope.plugins.chanservwriting output... [ 56%] ohnope.plugins.chatservwriting output... [ 62%] ohnope.plugins.helpservwriting output... [ 69%] ohnope.plugins.hostservwriting output... [ 75%] ohnope.plugins.memoservwriting output... [ 81%] ohnope.plugins.nickservwriting output... [ 88%] ohnope.plugins.operservwriting output... [ 94%] ohnope.plugins.rootservwriting output... [100%] ohnope.plugins.statserv
 generating indices... genindex py-modindex done
+highlighting module code... [  4%] enconnect.irc.test.helpershighlighting module code... [  8%] ohnope.execution.cryptshighlighting module code... [ 12%] ohnope.execution.servicehighlighting module code... [ 16%] ohnope.ohnope.confighighlighting module code... [ 20%] ohnope.ohnope.ohnopehighlighting module code... [ 24%] ohnope.ohnope.params.ohnopehighlighting module code... [ 28%] ohnope.ohnope.params.personhighlighting module code... [ 32%] ohnope.plugins.chanserv.paramshighlighting module code... [ 36%] ohnope.plugins.chanserv.pluginhighlighting module code... [ 40%] ohnope.plugins.chatserv.paramshighlighting module code... [ 44%] ohnope.plugins.chatserv.pluginhighlighting module code... [ 48%] ohnope.plugins.helpserv.paramshighlighting module code... [ 52%] ohnope.plugins.helpserv.pluginhighlighting module code... [ 56%] ohnope.plugins.hostserv.paramshighlighting module code... [ 60%] ohnope.plugins.hostserv.pluginhighlighting module code... [ 64%] ohnope.plugins.memoserv.paramshighlighting module code... [ 68%] ohnope.plugins.memoserv.pluginhighlighting module code... [ 72%] ohnope.plugins.nickserv.paramshighlighting module code... [ 76%] ohnope.plugins.nickserv.pluginhighlighting module code... [ 80%] ohnope.plugins.operserv.paramshighlighting module code... [ 84%] ohnope.plugins.operserv.pluginhighlighting module code... [ 88%] ohnope.plugins.rootserv.paramshighlighting module code... [ 92%] ohnope.plugins.rootserv.pluginhighlighting module code... [ 96%] ohnope.plugins.statserv.paramshighlighting module code... [100%] ohnope.plugins.statserv.plugin
 writing additional pages... search done
 dumping search index in English (code: en)... done
 dumping object inventory... done
-build succeeded, 660 warnings.
+build succeeded, 1023 warnings.
 
 The HTML pages are in sphinx/html.
     DONE
