@@ -1,14 +1,6 @@
 ohnope.execution package
 ========================
 
-Subpackages
------------
-
-.. toctree::
-   :maxdepth: 4
-
-   ohnope.execution.test
-
 Submodules
 ----------
 

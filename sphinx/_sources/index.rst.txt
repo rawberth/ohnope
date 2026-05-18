@@ -1,18 +1,36 @@
 Oh-nope IRC Services
 ====================
 
-Configuration Container
------------------------
+Documentation Welcome
+---------------------
 
-.. autoclass:: ohnope.ohnope.OhnopeConfig
+.. raw:: html
+
+   Welcome to the project documentation. Below you will find the most common
+   functions and classes within the library, but you may click your way further
+   into the project from there. You can also view the source code.
+
+Ohnope
+------
+
+.. automodule:: ohnope.ohnope
    :members:
+   :undoc-members:
    :show-inheritance:
-   :noindex:
+   :exclude-members: Robie
 
-Parameters Container
---------------------
+Ohnope Parameters
+----------------
 
-.. autopydantic_model:: ohnope.ohnope.params.OhnopeParams
+.. automodule:: ohnope.ohnope.params
    :members:
+   :undoc-members:
    :show-inheritance:
-   :noindex:
+
+Ohnope Plugins
+-------------
+
+.. automodule:: ohnope.plugins
+   :members:
+   :undoc-members:
+   :show-inheritance:
