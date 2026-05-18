@@ -17,8 +17,8 @@ from enconnect.fixtures import client_ircsock
 from pytest import fixture
 
 from . import PROJECT
-from .ohnope import Ohnope
-from .ohnope import OhnopeConfig
+from .ohnope.config import OhnopeConfig
+from .ohnope.ohnope import Ohnope
 
 
 

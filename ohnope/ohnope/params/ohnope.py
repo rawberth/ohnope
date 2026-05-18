@@ -23,15 +23,15 @@ from enrobie.robie.params import RobieServiceParams
 from pydantic import Field
 
 from .person import OhnopePersonParams
-from ...plugins import ChanServParams
-from ...plugins import ChatServParams
-from ...plugins import HelpServParams
-from ...plugins import HostServParams
-from ...plugins import MemoServParams
-from ...plugins import NickServParams
-from ...plugins import OperServParams
-from ...plugins import RootServParams
-from ...plugins import StatServParams
+from ...plugins.chanserv.params import ChanServParams
+from ...plugins.chatserv.params import ChatServParams
+from ...plugins.helpserv.params import HelpServParams
+from ...plugins.hostserv.params import HostServParams
+from ...plugins.memoserv.params import MemoServParams
+from ...plugins.nickserv.params import NickServParams
+from ...plugins.operserv.params import OperServParams
+from ...plugins.rootserv.params import RootServParams
+from ...plugins.statserv.params import StatServParams
 
 
 

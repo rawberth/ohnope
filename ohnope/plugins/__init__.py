@@ -7,24 +7,24 @@ is permitted, for more information consult the project license file.
 
 
 
-from .chanserv import ChanServ
-from .chanserv import ChanServParams
-from .chatserv import ChatServ
-from .chatserv import ChatServParams
-from .helpserv import HelpServ
-from .helpserv import HelpServParams
-from .hostserv import HostServ
-from .hostserv import HostServParams
-from .memoserv import MemoServ
-from .memoserv import MemoServParams
-from .nickserv import NickServ
-from .nickserv import NickServParams
-from .operserv import OperServ
-from .operserv import OperServParams
-from .rootserv import RootServ
-from .rootserv import RootServParams
-from .statserv import StatServ
-from .statserv import StatServParams
+from .chanserv.params import ChanServParams
+from .chanserv.plugin import ChanServ
+from .chatserv.params import ChatServParams
+from .chatserv.plugin import ChatServ
+from .helpserv.params import HelpServParams
+from .helpserv.plugin import HelpServ
+from .hostserv.params import HostServParams
+from .hostserv.plugin import HostServ
+from .memoserv.params import MemoServParams
+from .memoserv.plugin import MemoServ
+from .nickserv.params import NickServParams
+from .nickserv.plugin import NickServ
+from .operserv.params import OperServParams
+from .operserv.plugin import OperServ
+from .rootserv.params import RootServParams
+from .rootserv.plugin import RootServ
+from .statserv.params import StatServParams
+from .statserv.plugin import StatServ
 
 
 
