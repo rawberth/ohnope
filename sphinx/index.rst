@@ -20,7 +20,7 @@ Ohnope
    :exclude-members: Robie
 
 Ohnope Parameters
-----------------
+-----------------
 
 .. automodule:: ohnope.ohnope.params
    :members:
@@ -28,7 +28,7 @@ Ohnope Parameters
    :show-inheritance:
 
 Ohnope Plugins
--------------
+--------------
 
 .. automodule:: ohnope.plugins
    :members:
