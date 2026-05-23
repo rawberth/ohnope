@@ -42,7 +42,7 @@ def config_factory(
 
         enconfig:
           paths:
-            - {tmp_path}/homie
+            - {tmp_path}/robie
 
         enlogger:
           stdo_level: info

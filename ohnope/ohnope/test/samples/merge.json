@@ -6,7 +6,7 @@
   "database": "sqlite:///_/encommon_sample/TMPPATH/_/db",
   "enconfig": {
     "paths": [
-      "_/encommon_sample/TMPPATH/_/homie"
+      "_/encommon_sample/TMPPATH/_/robie"
     ]
   },
   "enlogger": {
