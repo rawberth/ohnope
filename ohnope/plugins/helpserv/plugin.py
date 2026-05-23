@@ -71,7 +71,7 @@ class HelpServ(RobiePlugin):
         self,
     ) -> None:
         """
-        Perform the operation related to Homie service threads.
+        Perform the operation related to Robie service threads.
         """
 
         from ...ohnope import Robie
