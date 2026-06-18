@@ -11,6 +11,7 @@ loading intersphinx inventory 'pytest' from https://docs.pytest.org/latest/objec
 loading intersphinx inventory 'python' from https://docs.python.org/3/objects.inv ...
 loading intersphinx inventory 'sphinx' from https://www.sphinx-doc.org/en/master/objects.inv ...
 intersphinx inventory has moved: https://docs.pydantic.dev/latest/objects.inv -> https://pydantic.dev/docs/validation/latest/objects.inv
+intersphinx inventory has moved: https://docs.pytest.org/latest/objects.inv -> https://docs.pytest.org/en/7.4.x/objects.inv
 building [mo]: targets for 0 po files that are out of date
 writing output... 
 building [html]: targets for 16 source files that are out of date
@@ -35,7 +36,7 @@ highlighting module code... [  4%] enconnect.irc.test.helpershighlighting modul
 writing additional pages... search done
 dumping search index in English (code: en)... done
 dumping object inventory... done
-build succeeded, 1022 warnings.
+build succeeded, 1021 warnings.
 
 The HTML pages are in sphinx/html.
     DONE
