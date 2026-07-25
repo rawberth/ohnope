@@ -1,5 +1,1842 @@
 >>> make ruff
   ● Executing ruff in ohnope..
-    DONE
-  ● Executing ruff in sphinx..
-    DONE
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/__init__.py:10:1
+   |
+10 | / from pathlib import Path
+11 | | from sys import flags
+   | |_____________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | PROJECT = Path(__file__).parent
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/conftest.py:10:1
+   |
+10 | / from pathlib import Path
+11 | |
+12 | | from encommon.types import DictStrAny
+13 | | from encommon.utils import save_text
+14 | |
+15 | | from enconnect.fixtures import client_ircsock
+16 | |
+17 | | from pytest import fixture
+18 | |
+19 | | from . import PROJECT
+20 | | from .ohnope.config import OhnopeConfig
+21 | | from .ohnope.ohnope import Ohnope
+   | |_________________________________^
+   |
+help: Organize imports
+   |
+13 | from encommon.utils import save_text
+   -
+14 | from enconnect.fixtures import client_ircsock
+   -
+15 | from pytest import fixture
+--------------------------------------------------------------------------------
+19 | from .ohnope.ohnope import Ohnope
+   -
+   -
+20 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/execution/crypts.py:10:1
+   |
+10 | / from argparse import ArgumentParser
+11 | | from sys import argv as sys_argv
+12 | | from sys import stdin
+13 | | from typing import Optional
+14 | |
+15 | | from encommon.types import DictStrAny
+16 | | from encommon.types.strings import SEMPTY
+17 | | from encommon.utils import print_ansi
+18 | |
+19 | | from ..ohnope.config import OhnopeConfig
+   | |________________________________________^
+   |
+help: Organize imports
+   |
+21 |
+   -
+22 | def arguments(
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/execution/crypts.py:24:11
+   |
+23 | def arguments(
+24 |     args: Optional[list[str]] = None,
+   |           ^^^^^^^^^^^^^^^^^^^
+25 | ) -> DictStrAny:
+26 |     """
+   |
+help: Convert to `X | None`
+   |
+23 | def arguments(
+   -     args: Optional[list[str]] = None,
+24 +     args: list[str] | None = None,
+25 | ) -> DictStrAny:
+   |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/execution/crypts.py:106:12
+    |
+104 |     dashes = '─' * 80
+105 |
+106 |     value: Optional[str] = None
+    |            ^^^^^^^^^^^^^
+    |
+help: Convert to `X | None`
+    |
+105 |
+    -     value: Optional[str] = None
+106 +     value: str | None = None
+107 |
+    |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/execution/crypts.py:153:11
+    |
+151 | def execution(
+152 |     # NOCVR
+153 |     args: Optional[list[str]] = None,
+    |           ^^^^^^^^^^^^^^^^^^^
+154 | ) -> None:
+155 |     """
+    |
+help: Convert to `X | None`
+    |
+152 |     # NOCVR
+    -     args: Optional[list[str]] = None,
+153 +     args: list[str] | None = None,
+154 | ) -> None:
+    |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/execution/service.py:10:1
+   |
+10 | / from argparse import ArgumentParser
+11 | | from signal import SIGHUP
+12 | | from signal import SIGINT
+13 | | from signal import SIGTERM
+14 | | from signal import signal
+15 | | from sys import argv as sys_argv
+16 | | from typing import Optional
+17 | |
+18 | | from encommon.types import DictStrAny
+19 | |
+20 | | from enrobie.robie import RobieService
+21 | |
+22 | | from ..ohnope.config import OhnopeConfig
+23 | | from ..ohnope.ohnope import Ohnope
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from argparse import ArgumentParser
+   - from signal import SIGHUP
+   - from signal import SIGINT
+   - from signal import SIGTERM
+   - from signal import signal
+11 + from signal import SIGHUP, SIGINT, SIGTERM, signal
+12 | from sys import argv as sys_argv
+13 | from typing import Optional
+14 |
+15 | from encommon.types import DictStrAny
+   -
+16 | from enrobie.robie import RobieService
+17 |
+18 | from ..ohnope.config import OhnopeConfig
+19 | from ..ohnope.ohnope import Ohnope
+   -
+20 |
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/execution/service.py:28:11
+   |
+27 | def arguments(
+28 |     args: Optional[list[str]] = None,
+   |           ^^^^^^^^^^^^^^^^^^^
+29 | ) -> DictStrAny:
+30 |     """
+   |
+help: Convert to `X | None`
+   |
+27 | def arguments(
+   -     args: Optional[list[str]] = None,
+28 +     args: list[str] | None = None,
+29 | ) -> DictStrAny:
+   |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/execution/service.py:100:11
+    |
+ 98 | def execution(
+ 99 |     # NOCVR
+100 |     args: Optional[list[str]] = None,
+    |           ^^^^^^^^^^^^^^^^^^^
+101 | ) -> None:
+102 |     """
+    |
+help: Convert to `X | None`
+    |
+99  |     # NOCVR
+    -     args: Optional[list[str]] = None,
+100 +     args: list[str] | None = None,
+101 | ) -> None:
+    |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/execution/test/test_crypts.py:10:1
+   |
+10 | from ..crypts import arguments
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Organize imports
+   |
+12 |
+   -
+13 | def test_arguments() -> None:
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/execution/test/test_service.py:10:1
+   |
+10 | from ..service import arguments
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Organize imports
+   |
+12 |
+   -
+13 | def test_arguments() -> None:
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/__init__.py:10:1
+   |
+10 | / from .config import OhnopeConfig
+11 | | from .ohnope import Ohnope
+12 | | from .ohnope import Robie
+   | |_________________________^
+   |
+help: Organize imports
+   |
+10 | from .config import OhnopeConfig
+   - from .ohnope import Ohnope
+   - from .ohnope import Robie
+   -
+   -
+11 + from .ohnope import Ohnope, Robie
+12 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/config.py:10:1
+   |
+10 | / from typing import Optional
+11 | |
+12 | | from encommon.config import Config
+13 | | from encommon.config import Params
+14 | | from encommon.types import DictStrAny
+15 | | from encommon.utils.common import PATHABLE
+16 | |
+17 | | from enrobie.robie import RobieConfig
+18 | |
+19 | | from .params.ohnope import OhnopeParams
+   | |_______________________________________^
+   |
+help: Organize imports
+   |
+11 |
+   - from encommon.config import Config
+   - from encommon.config import Params
+12 + from encommon.config import Config, Params
+13 | from encommon.types import DictStrAny
+14 | from encommon.utils.common import PATHABLE
+   -
+15 | from enrobie.robie import RobieConfig
+16 |
+17 | from .params.ohnope import OhnopeParams
+   -
+18 |
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/ohnope/config.py:38:16
+   |
+36 |     def __init__(
+37 |         self,
+38 |         sargs: Optional[DictStrAny] = None,
+   |                ^^^^^^^^^^^^^^^^^^^^
+39 |         files: Optional[PATHABLE] = None,
+40 |         cargs: Optional[DictStrAny] = None,
+   |
+help: Convert to `X | None`
+   |
+37 |         self,
+   -         sargs: Optional[DictStrAny] = None,
+38 +         sargs: DictStrAny | None = None,
+39 |         files: Optional[PATHABLE] = None,
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/ohnope/config.py:39:16
+   |
+37 |         self,
+38 |         sargs: Optional[DictStrAny] = None,
+39 |         files: Optional[PATHABLE] = None,
+   |                ^^^^^^^^^^^^^^^^^^
+40 |         cargs: Optional[DictStrAny] = None,
+41 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+38 |         sargs: Optional[DictStrAny] = None,
+   -         files: Optional[PATHABLE] = None,
+39 +         files: PATHABLE | None = None,
+40 |         cargs: Optional[DictStrAny] = None,
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/ohnope/config.py:40:16
+   |
+38 |         sargs: Optional[DictStrAny] = None,
+39 |         files: Optional[PATHABLE] = None,
+40 |         cargs: Optional[DictStrAny] = None,
+   |                ^^^^^^^^^^^^^^^^^^^^
+41 |     ) -> None:
+42 |         """
+   |
+help: Convert to `X | None`
+   |
+39 |         files: Optional[PATHABLE] = None,
+   -         cargs: Optional[DictStrAny] = None,
+40 +         cargs: DictStrAny | None = None,
+41 |     ) -> None:
+   |
+
+B010 [*] Do not call `setattr` with a constant attribute value. It is not any safer than normal property access.
+   --> ohnope/ohnope/config.py:95:9
+    |
+ 93 |               sargs=self.sargs)
+ 94 |
+ 95 | /         setattr(
+ 96 | |             config,
+ 97 | |             '_Config__logger',
+ 98 | |             self.logger)
+    | |________________________^
+ 99 |
+100 |           setattr(
+    |
+help: Replace `setattr` with assignment
+   |
+94 |
+   -         setattr(
+   -             config,
+   -             '_Config__logger',
+   -             self.logger)
+95 +         config._Config__logger = self.logger
+96 |
+   |
+
+B010 [*] Do not call `setattr` with a constant attribute value. It is not any safer than normal property access.
+   --> ohnope/ohnope/config.py:100:9
+    |
+ 98 |               self.logger)
+ 99 |
+100 | /         setattr(
+101 | |             config,
+102 | |             '_Config__crypts',
+103 | |             self.crypts)
+    | |________________________^
+104 |
+105 |           self.__robie = config
+    |
+help: Replace `setattr` with assignment
+    |
+99  |
+    -         setattr(
+    -             config,
+    -             '_Config__crypts',
+    -             self.crypts)
+100 +         config._Config__crypts = self.crypts
+101 |
+    |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/ohnope/config.py:177:10
+    |
+175 |     def __params(
+176 |         self,
+177 |     ) -> Optional[Params]:
+    |          ^^^^^^^^^^^^^^^^
+178 |         """
+179 |         Return the Pydantic model containing the configuration.
+    |
+help: Convert to `X | None`
+    |
+176 |         self,
+    -     ) -> Optional[Params]:
+177 +     ) -> Params | None:
+178 |         """
+    |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/ohnope.py:10:1
+   |
+10 | / from typing import TYPE_CHECKING
+11 | |
+12 | | from encommon.times import Time
+13 | | from encommon.types import DictStrAny
+14 | | from encommon.types import clsname
+15 | |
+16 | | from enrobie.clients import IRCClient
+17 | | from enrobie.clients import IRCClientParams
+18 | | from enrobie.plugins import AutoJoinPlugin
+19 | | from enrobie.plugins import AutoJoinPluginParams
+20 | | from enrobie.plugins import AutoNickPlugin
+21 | | from enrobie.plugins import AutoNickPluginParams
+22 | | from enrobie.plugins import StatusPlugin
+23 | | from enrobie.plugins import StatusPluginParams
+24 | | from enrobie.robie import Robie as _Robie
+25 | | from enrobie.robie import RobieConfig
+26 | | from enrobie.robie.addons import RobieLogger
+27 | | from enrobie.robie.addons import RobieQueue
+28 | | from enrobie.robie.models import RobieCommand
+29 | |
+30 | | from ..plugins.chanserv.params import ChanServParams
+31 | | from ..plugins.chanserv.plugin import ChanServ
+32 | | from ..plugins.chatserv.params import ChatServParams
+33 | | from ..plugins.chatserv.plugin import ChatServ
+34 | | from ..plugins.helpserv.params import HelpServParams
+35 | | from ..plugins.helpserv.plugin import HelpServ
+36 | | from ..plugins.hostserv.params import HostServParams
+37 | | from ..plugins.hostserv.plugin import HostServ
+38 | | from ..plugins.memoserv.params import MemoServParams
+39 | | from ..plugins.memoserv.plugin import MemoServ
+40 | | from ..plugins.nickserv.params import NickServParams
+41 | | from ..plugins.nickserv.plugin import NickServ
+42 | | from ..plugins.operserv.params import OperServParams
+43 | | from ..plugins.operserv.plugin import OperServ
+44 | | from ..plugins.rootserv.params import RootServParams
+45 | | from ..plugins.rootserv.plugin import RootServ
+46 | | from ..plugins.statserv.params import StatServParams
+47 | | from ..plugins.statserv.plugin import StatServ
+   | |______________________________________________^
+48 |
+49 |   if TYPE_CHECKING:
+   |
+help: Organize imports
+   |
+12 | from encommon.times import Time
+   - from encommon.types import DictStrAny
+   - from encommon.types import clsname
+   -
+   - from enrobie.clients import IRCClient
+   - from enrobie.clients import IRCClientParams
+   - from enrobie.plugins import AutoJoinPlugin
+   - from enrobie.plugins import AutoJoinPluginParams
+   - from enrobie.plugins import AutoNickPlugin
+   - from enrobie.plugins import AutoNickPluginParams
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginParams
+13 + from encommon.types import DictStrAny, clsname
+14 + from enrobie.clients import IRCClient, IRCClientParams
+15 + from enrobie.plugins import (
+16 +     AutoJoinPlugin,
+17 +     AutoJoinPluginParams,
+18 +     AutoNickPlugin,
+19 +     AutoNickPluginParams,
+20 +     StatusPlugin,
+21 +     StatusPluginParams,
+22 + )
+23 | from enrobie.robie import Robie as _Robie
+24 | from enrobie.robie import RobieConfig
+   - from enrobie.robie.addons import RobieLogger
+   - from enrobie.robie.addons import RobieQueue
+25 + from enrobie.robie.addons import RobieLogger, RobieQueue
+26 | from enrobie.robie.models import RobieCommand
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/params/__init__.py:10:1
+   |
+10 | / from .ohnope import OhnopeParams
+11 | | from .person import OhnopePersonParams
+   | |______________________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/params/ohnope.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from encommon.config import Params
+16 | |
+17 | | from enrobie.plugins import StatusPluginIconParams
+18 | | from enrobie.plugins import StatusPluginParams
+19 | | from enrobie.robie.params import RobieParamsModel
+20 | | from enrobie.robie.params import RobiePrinterParams
+21 | | from enrobie.robie.params import RobieServiceParams
+22 | |
+23 | | from pydantic import Field
+24 | |
+25 | | from .person import OhnopePersonParams
+26 | | from ...plugins.chanserv.params import ChanServParams
+27 | | from ...plugins.chatserv.params import ChatServParams
+28 | | from ...plugins.helpserv.params import HelpServParams
+29 | | from ...plugins.hostserv.params import HostServParams
+30 | | from ...plugins.memoserv.params import MemoServParams
+31 | | from ...plugins.nickserv.params import NickServParams
+32 | | from ...plugins.operserv.params import OperServParams
+33 | | from ...plugins.rootserv.params import RootServParams
+34 | | from ...plugins.statserv.params import StatServParams
+   | |_____________________________________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from encommon.config import Params
+   -
+   - from enrobie.plugins import StatusPluginIconParams
+   - from enrobie.plugins import StatusPluginParams
+   - from enrobie.robie.params import RobieParamsModel
+   - from enrobie.robie.params import RobiePrinterParams
+   - from enrobie.robie.params import RobieServiceParams
+   -
+13 + from enrobie.plugins import StatusPluginIconParams, StatusPluginParams
+14 + from enrobie.robie.params import (
+15 +     RobieParamsModel,
+16 +     RobiePrinterParams,
+17 +     RobieServiceParams,
+18 + )
+19 | from pydantic import Field
+20 |
+   - from .person import OhnopePersonParams
+21 | from ...plugins.chanserv.params import ChanServParams
+--------------------------------------------------------------------------------
+29 | from ...plugins.statserv.params import StatServParams
+   -
+30 + from .person import OhnopePersonParams
+31 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/ohnope/params/ohnope.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/ohnope/params/ohnope.py:126:9
+    |
+125 |     password: Annotated[
+126 |         Optional[str],
+    |         ^^^^^^^^^^^^^
+127 |         Field(None,
+128 |               description='Parameter for the integration',
+    |
+help: Convert to `X | None`
+    |
+125 |     password: Annotated[
+    -         Optional[str],
+126 +         str | None,
+127 |         Field(None,
+    |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/ohnope/params/ohnope.py:188:9
+    |
+187 |     peering: Annotated[
+188 |         Optional[OhnopeIRCSParams],
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+189 |         Field(None,
+190 |               description='Server connection parameters')]
+    |
+help: Convert to `X | None`
+    |
+187 |     peering: Annotated[
+    -         Optional[OhnopeIRCSParams],
+188 +         OhnopeIRCSParams | None,
+189 |         Field(None,
+    |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/ohnope/params/ohnope.py:193:9
+    |
+192 |     client: Annotated[
+193 |         Optional[OhnopeIRCParams],
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^
+194 |         Field(None,
+195 |               description='Server connection parameters')]
+    |
+help: Convert to `X | None`
+    |
+192 |     client: Annotated[
+    -         Optional[OhnopeIRCParams],
+193 +         OhnopeIRCParams | None,
+194 |         Field(None,
+    |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/ohnope/params/ohnope.py:198:9
+    |
+197 |     persons: Annotated[
+198 |         Optional[dict[str, OhnopePersonParams]],
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+199 |         Field(None,
+200 |               description='Parameters for Robie persons',
+    |
+help: Convert to `X | None`
+    |
+197 |     persons: Annotated[
+    -         Optional[dict[str, OhnopePersonParams]],
+198 +         dict[str, OhnopePersonParams] | None,
+199 |         Field(None,
+    |
+
+UP045 [*] Use `X | None` for type annotations
+   --> ohnope/ohnope/params/ohnope.py:258:17
+    |
+256 |         self,
+257 |         /,
+258 |         _parse: Optional[Callable[..., Any]] = None,
+    |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+259 |         **data: Any,
+260 |     ) -> None:
+    |
+help: Convert to `X | None`
+    |
+257 |         /,
+    -         _parse: Optional[Callable[..., Any]] = None,
+258 +         _parse: Callable[..., Any] | None = None,
+259 |         **data: Any,
+    |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/params/person.py:10:1
+   |
+10 | / from typing import Any
+11 | |
+12 | | from enrobie.robie.params import RobiePersonParams
+   | |__________________________________________________^
+   |
+help: Organize imports
+   |
+14 |
+   -
+15 | class OhnopePersonParams(RobiePersonParams, extra='forbid'):
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/test/__init__.py:10:1
+   |
+10 | from pathlib import Path
+   | ^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: Organize imports
+   |
+11 |
+   -
+   -
+12 | SAMPLES = (
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/test/test_config.py:10:1
+   |
+10 | / from encommon.types import DictStrAny
+11 | | from encommon.utils import load_sample
+12 | | from encommon.utils import prep_sample
+13 | | from encommon.utils.sample import ENPYRWS
+14 | |
+15 | | from . import SAMPLES
+16 | | from ..config import OhnopeConfig
+   | |_________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import DictStrAny
+   - from encommon.utils import load_sample
+   - from encommon.utils import prep_sample
+11 + from encommon.utils import load_sample, prep_sample
+12 | from encommon.utils.sample import ENPYRWS
+13 |
+   - from . import SAMPLES
+14 | from ..config import OhnopeConfig
+   -
+15 + from . import SAMPLES
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/test/test_ohnope.py:10:1
+   |
+10 | / from encommon.types import DictStrAny
+11 | | from encommon.types import inrepr
+12 | | from encommon.types import instr
+13 | | from encommon.types import lattrs
+14 | | from encommon.utils import load_sample
+15 | | from encommon.utils import prep_sample
+16 | | from encommon.utils.sample import ENPYRWS
+17 | |
+18 | | from . import SAMPLES
+19 | | from ..ohnope import Ohnope
+   | |___________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from encommon.types import DictStrAny
+   - from encommon.types import inrepr
+   - from encommon.types import instr
+   - from encommon.types import lattrs
+   - from encommon.utils import load_sample
+   - from encommon.utils import prep_sample
+10 + from encommon.types import DictStrAny, inrepr, instr, lattrs
+11 + from encommon.utils import load_sample, prep_sample
+12 | from encommon.utils.sample import ENPYRWS
+13 |
+   - from . import SAMPLES
+14 | from ..ohnope import Ohnope
+   -
+15 + from . import SAMPLES
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/ohnope/test/test_service.py:10:1
+   |
+10 | / from threading import Thread
+11 | | from time import sleep as block_sleep
+12 | |
+13 | | from enconnect.fixtures import IRCClientSocket
+14 | | from enconnect.irc.test import SVENTS
+15 | |
+16 | | from enrobie.robie import RobieService
+17 | |
+18 | | from ..ohnope import Ohnope
+   | |___________________________^
+   |
+help: Organize imports
+   |
+14 | from enconnect.irc.test import SVENTS
+   -
+15 | from enrobie.robie import RobieService
+16 |
+17 | from ..ohnope import Ohnope
+   -
+18 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/__init__.py:10:1
+   |
+10 | / from .chanserv.params import ChanServParams
+11 | | from .chanserv.plugin import ChanServ
+12 | | from .chatserv.params import ChatServParams
+13 | | from .chatserv.plugin import ChatServ
+14 | | from .helpserv.params import HelpServParams
+15 | | from .helpserv.plugin import HelpServ
+16 | | from .hostserv.params import HostServParams
+17 | | from .hostserv.plugin import HostServ
+18 | | from .memoserv.params import MemoServParams
+19 | | from .memoserv.plugin import MemoServ
+20 | | from .nickserv.params import NickServParams
+21 | | from .nickserv.plugin import NickServ
+22 | | from .operserv.params import OperServParams
+23 | | from .operserv.plugin import OperServ
+24 | | from .rootserv.params import RootServParams
+25 | | from .rootserv.plugin import RootServ
+26 | | from .statserv.params import StatServParams
+27 | | from .statserv.plugin import StatServ
+   | |_____________________________________^
+   |
+help: Organize imports
+   |
+28 |
+   -
+   -
+29 | __all__ = [
+   |
+
+RUF022 [*] `__all__` is not sorted
+  --> ohnope/plugins/__init__.py:31:11
+   |
+31 |   __all__ = [
+   |  ___________^
+32 | |     'RootServ',
+33 | |     'RootServParams',
+34 | |     'OperServ',
+35 | |     'OperServParams',
+36 | |     'StatServ',
+37 | |     'StatServParams',
+38 | |     'NickServ',
+39 | |     'NickServParams',
+40 | |     'ChanServ',
+41 | |     'ChanServParams',
+42 | |     'MemoServ',
+43 | |     'MemoServParams',
+44 | |     'HostServ',
+45 | |     'HostServParams',
+46 | |     'HelpServ',
+47 | |     'HelpServParams',
+48 | |     'ChatServ',
+49 | |     'ChatServParams']
+   | |_____________________^
+   |
+help: Apply an isort-style sorting to `__all__`
+   |
+31 | __all__ = [
+   -     'RootServ',
+   -     'RootServParams',
+   -     'OperServ',
+   -     'OperServParams',
+   -     'StatServ',
+   -     'StatServParams',
+   -     'NickServ',
+   -     'NickServParams',
+32 |     'ChanServ',
+33 |     'ChanServParams',
+   -     'MemoServ',
+   -     'MemoServParams',
+   -     'HostServ',
+   -     'HostServParams',
+34 +     'ChatServ',
+35 +     'ChatServParams',
+36 |     'HelpServ',
+37 |     'HelpServParams',
+   -     'ChatServ',
+   -     'ChatServParams']
+38 +     'HostServ',
+39 +     'HostServParams',
+40 +     'MemoServ',
+41 +     'MemoServParams',
+42 +     'NickServ',
+43 +     'NickServParams',
+44 +     'OperServ',
+45 +     'OperServParams',
+46 +     'RootServ',
+47 +     'RootServParams',
+48 +     'StatServ',
+49 +     'StatServParams',
+50 + ]
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/chanserv/__init__.py:10:1
+   |
+10 | / from .params import ChanServParams
+11 | | from .plugin import ChanServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/chanserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/chanserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/chanserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/chanserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import ChanServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import ChanServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/chatserv/__init__.py:10:1
+   |
+10 | / from .params import ChatServParams
+11 | | from .plugin import ChatServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/chatserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/chatserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/chatserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/chatserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import ChatServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import ChatServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/helpserv/__init__.py:10:1
+   |
+10 | / from .params import HelpServParams
+11 | | from .plugin import HelpServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/helpserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/helpserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/helpserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/helpserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import HelpServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import HelpServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/hostserv/__init__.py:10:1
+   |
+10 | / from .params import HostServParams
+11 | | from .plugin import HostServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/hostserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/hostserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/hostserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/hostserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import HostServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import HostServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/memoserv/__init__.py:10:1
+   |
+10 | / from .params import MemoServParams
+11 | | from .plugin import MemoServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/memoserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/memoserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/memoserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/memoserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import MemoServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import MemoServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/nickserv/__init__.py:10:1
+   |
+10 | / from .params import NickServParams
+11 | | from .plugin import NickServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/nickserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/nickserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/nickserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/nickserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import NickServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import NickServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/operserv/__init__.py:10:1
+   |
+10 | / from .params import OperServParams
+11 | | from .plugin import OperServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/operserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/operserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/operserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/operserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import OperServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import OperServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/rootserv/__init__.py:10:1
+   |
+10 | / from .params import RootServParams
+11 | | from .plugin import RootServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/rootserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/rootserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/rootserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/rootserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import RootServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import RootServParams
+   -
+16 |
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/statserv/__init__.py:10:1
+   |
+10 | / from .params import StatServParams
+11 | | from .plugin import StatServ
+   | |____________________________^
+   |
+help: Organize imports
+   |
+12 |
+   -
+   -
+13 | __all__ = [
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/statserv/params.py:10:1
+   |
+10 | / from typing import Annotated
+11 | | from typing import Any
+12 | | from typing import Callable
+13 | | from typing import Optional
+14 | |
+15 | | from enrobie.plugins import StatusPluginIconParams
+16 | | from enrobie.robie.params import RobiePluginParams
+17 | |
+18 | | from pydantic import Field
+   | |__________________________^
+   |
+help: Organize imports
+   |
+9  |
+   - from typing import Annotated
+   - from typing import Any
+   - from typing import Callable
+   - from typing import Optional
+10 + from typing import Annotated, Any, Callable, Optional
+11 |
+12 | from enrobie.plugins import StatusPluginIconParams
+13 | from enrobie.robie.params import RobiePluginParams
+   -
+14 | from pydantic import Field
+   -
+15 |
+   |
+
+UP035 [*] Import from `collections.abc` instead: `Callable`
+  --> ohnope/plugins/statserv/params.py:12:1
+   |
+10 | from typing import Annotated
+11 | from typing import Any
+12 | from typing import Callable
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+13 | from typing import Optional
+   |
+help: Import from `collections.abc`
+   |
+11 | from typing import Any
+   - from typing import Callable
+12 + from collections.abc import Callable
+13 | from typing import Optional
+   |
+
+UP045 [*] Use `X | None` for type annotations
+  --> ohnope/plugins/statserv/params.py:60:17
+   |
+58 |         self,
+59 |         /,
+60 |         _parse: Optional[Callable[..., Any]] = None,
+   |                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+61 |         **data: Any,
+62 |     ) -> None:
+   |
+help: Convert to `X | None`
+   |
+59 |         /,
+   -         _parse: Optional[Callable[..., Any]] = None,
+60 +         _parse: Callable[..., Any] | None = None,
+61 |         **data: Any,
+   |
+
+I001 [*] Import block is un-sorted or un-formatted
+  --> ohnope/plugins/statserv/plugin.py:10:1
+   |
+10 | / from encommon.types import NCNone
+11 | |
+12 | | from enrobie.clients.irc.message import IRCMessage
+13 | | from enrobie.plugins import StatusPlugin
+14 | | from enrobie.plugins import StatusPluginStates
+15 | | from enrobie.robie.childs import RobiePlugin
+16 | |
+17 | | from .params import StatServParams
+   | |__________________________________^
+   |
+help: Organize imports
+   |
+10 | from encommon.types import NCNone
+   -
+11 | from enrobie.clients.irc.message import IRCMessage
+   - from enrobie.plugins import StatusPlugin
+   - from enrobie.plugins import StatusPluginStates
+12 + from enrobie.plugins import StatusPlugin, StatusPluginStates
+13 | from enrobie.robie.childs import RobiePlugin
+14 |
+15 | from .params import StatServParams
+   -
+16 |
+   |
+
