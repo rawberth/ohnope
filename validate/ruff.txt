@@ -6,7 +6,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from pathlib import Path
 11 | | from sys import flags
    | |_____________________^
-   |
 help: Organize imports
    |
 12 |
@@ -31,7 +30,6 @@ I001 [*] Import block is un-sorted or un-formatted
 20 | | from .ohnope.config import OhnopeConfig
 21 | | from .ohnope.ohnope import Ohnope
    | |_________________________________^
-   |
 help: Organize imports
    |
 13 | from encommon.utils import save_text
@@ -60,7 +58,6 @@ I001 [*] Import block is un-sorted or un-formatted
 18 | |
 19 | | from ..ohnope.config import OhnopeConfig
    | |________________________________________^
-   |
 help: Organize imports
    |
 21 |
@@ -92,7 +89,6 @@ UP045 [*] Use `X | None` for type annotations
 105 |
 106 |     value: Optional[str] = None
     |            ^^^^^^^^^^^^^
-    |
 help: Convert to `X | None`
     |
 105 |
@@ -137,7 +133,6 @@ I001 [*] Import block is un-sorted or un-formatted
 22 | | from ..ohnope.config import OhnopeConfig
 23 | | from ..ohnope.ohnope import Ohnope
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from argparse import ArgumentParser
@@ -199,7 +194,6 @@ I001 [*] Import block is un-sorted or un-formatted
    |
 10 | from ..crypts import arguments
    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |
 help: Organize imports
    |
 12 |
@@ -212,7 +206,6 @@ I001 [*] Import block is un-sorted or un-formatted
    |
 10 | from ..service import arguments
    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-   |
 help: Organize imports
    |
 12 |
@@ -227,7 +220,6 @@ I001 [*] Import block is un-sorted or un-formatted
 11 | | from .ohnope import Ohnope
 12 | | from .ohnope import Robie
    | |_________________________^
-   |
 help: Organize imports
    |
 10 | from .config import OhnopeConfig
@@ -253,7 +245,6 @@ I001 [*] Import block is un-sorted or un-formatted
 18 | |
 19 | | from .params.ohnope import OhnopeParams
    | |_______________________________________^
-   |
 help: Organize imports
    |
 11 |
@@ -473,7 +464,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .ohnope import OhnopeParams
 11 | | from .person import OhnopePersonParams
    | |______________________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -511,7 +501,6 @@ I001 [*] Import block is un-sorted or un-formatted
 33 | | from ...plugins.rootserv.params import RootServParams
 34 | | from ...plugins.statserv.params import StatServParams
    | |_____________________________________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -656,7 +645,6 @@ I001 [*] Import block is un-sorted or un-formatted
 11 | |
 12 | | from enrobie.robie.params import RobiePersonParams
    | |__________________________________________________^
-   |
 help: Organize imports
    |
 14 |
@@ -669,7 +657,6 @@ I001 [*] Import block is un-sorted or un-formatted
    |
 10 | from pathlib import Path
    | ^^^^^^^^^^^^^^^^^^^^^^^^
-   |
 help: Organize imports
    |
 11 |
@@ -689,7 +676,6 @@ I001 [*] Import block is un-sorted or un-formatted
 15 | | from . import SAMPLES
 16 | | from ..config import OhnopeConfig
    | |_________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import DictStrAny
@@ -719,7 +705,6 @@ I001 [*] Import block is un-sorted or un-formatted
 18 | | from . import SAMPLES
 19 | | from ..ohnope import Ohnope
    | |___________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -753,7 +738,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from ..ohnope import Ohnope
    | |___________________________^
-   |
 help: Organize imports
    |
 14 | from enconnect.irc.test import SVENTS
@@ -787,7 +771,6 @@ I001 [*] Import block is un-sorted or un-formatted
 26 | | from .statserv.params import StatServParams
 27 | | from .statserv.plugin import StatServ
    | |_____________________________________^
-   |
 help: Organize imports
    |
 28 |
@@ -820,7 +803,6 @@ RUF022 [*] `__all__` is not sorted
 48 | |     'ChatServ',
 49 | |     'ChatServParams']
    | |_____________________^
-   |
 help: Apply an isort-style sorting to `__all__`
    |
 31 | __all__ = [
@@ -865,7 +847,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import ChanServParams
 11 | | from .plugin import ChanServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -887,7 +868,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -952,7 +932,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import ChanServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -974,7 +953,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import ChatServParams
 11 | | from .plugin import ChatServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -996,7 +974,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1061,7 +1038,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import ChatServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -1083,7 +1059,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import HelpServParams
 11 | | from .plugin import HelpServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -1105,7 +1080,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1170,7 +1144,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import HelpServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -1192,7 +1165,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import HostServParams
 11 | | from .plugin import HostServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -1214,7 +1186,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1279,7 +1250,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import HostServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -1301,7 +1271,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import MemoServParams
 11 | | from .plugin import MemoServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -1323,7 +1292,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1388,7 +1356,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import MemoServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -1410,7 +1377,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import NickServParams
 11 | | from .plugin import NickServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -1432,7 +1398,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1497,7 +1462,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import NickServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -1519,7 +1483,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import OperServParams
 11 | | from .plugin import OperServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -1541,7 +1504,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1606,7 +1568,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import OperServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -1628,7 +1589,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import RootServParams
 11 | | from .plugin import RootServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -1650,7 +1610,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1715,7 +1674,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import RootServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
@@ -1737,7 +1695,6 @@ I001 [*] Import block is un-sorted or un-formatted
 10 | / from .params import StatServParams
 11 | | from .plugin import StatServ
    | |____________________________^
-   |
 help: Organize imports
    |
 12 |
@@ -1759,7 +1716,6 @@ I001 [*] Import block is un-sorted or un-formatted
 17 | |
 18 | | from pydantic import Field
    | |__________________________^
-   |
 help: Organize imports
    |
 9  |
@@ -1824,7 +1780,6 @@ I001 [*] Import block is un-sorted or un-formatted
 16 | |
 17 | | from .params import StatServParams
    | |__________________________________^
-   |
 help: Organize imports
    |
 10 | from encommon.types import NCNone
