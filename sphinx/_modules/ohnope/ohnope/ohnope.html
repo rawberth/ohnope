@@ -293,12 +293,12 @@
                 <article class="bd-article">
                   
   <h1>Source code for ohnope.ohnope.ohnope</h1><div class="highlight"><pre>
-<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span></span><span class="sd">"""</span>
 <span class="sd">Functions and routines associated with rawberth Oh-nope IRC Services.</span>
 
 <span class="sd">This file is part of Enasis Network software eco-system. Distribution</span>
 <span class="sd">is permitted, for more information consult the project license file.</span>
-<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">"""</span>
 
 
 
@@ -350,23 +350,23 @@
 <div class="viewcode-block" id="Robie">
 <a class="viewcode-back" href="../../../ohnope.ohnope.html#ohnope.ohnope.Robie">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Robie</span><span class="p">(</span><span class="n">_Robie</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Interact with chat networks and integrate using plugins.</span>
 
 <span class="sd">    :param config: Primary class instance for configuration.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">__ohnope</span><span class="p">:</span> <span class="s1">&#39;Ohnope&#39;</span>
+    <span class="n">__ohnope</span><span class="p">:</span> <span class="s1">'Ohnope'</span>
 
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">ohnope</span><span class="p">:</span> <span class="s1">&#39;Ohnope&#39;</span><span class="p">,</span>
+        <span class="n">ohnope</span><span class="p">:</span> <span class="s1">'Ohnope'</span><span class="p">,</span>
         <span class="n">config</span><span class="p">:</span> <span class="n">RobieConfig</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Initialize instance for class using provided parameters.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">__ohnope</span> <span class="o">=</span> <span class="n">ohnope</span>
 
@@ -376,12 +376,12 @@
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">ohnope</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;Ohnope&#39;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">'Ohnope'</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Return the Ohnope instance to which the instance belongs.</span>
 
 <span class="sd">        :returns: Ohnope instance to which the instance belongs.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__ohnope</span></div>
 
@@ -391,28 +391,28 @@
 <div class="viewcode-block" id="Ohnope">
 <a class="viewcode-back" href="../../../ohnope.ohnope.html#ohnope.ohnope.Ohnope">[docs]</a>
 <span class="k">class</span><span class="w"> </span><span class="nc">Ohnope</span><span class="p">:</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Interact with chat networks and integrate using plugins.</span>
 
 <span class="sd">    :param config: Primary class instance for configuration.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
+<span class="sd">    """</span>
 
-    <span class="n">__config</span><span class="p">:</span> <span class="s1">&#39;OhnopeConfig&#39;</span>
+    <span class="n">__config</span><span class="p">:</span> <span class="s1">'OhnopeConfig'</span>
 
     <span class="n">__robie</span><span class="p">:</span> <span class="n">Robie</span>
 
 
     <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-        <span class="n">config</span><span class="p">:</span> <span class="s1">&#39;OhnopeConfig&#39;</span><span class="p">,</span>
+        <span class="n">config</span><span class="p">:</span> <span class="s1">'OhnopeConfig'</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Initialize instance for class using provided parameters.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">log_d</span><span class="p">(</span>
             <span class="n">base</span><span class="o">=</span><span class="n">clsname</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
-            <span class="n">status</span><span class="o">=</span><span class="s1">&#39;initial&#39;</span><span class="p">)</span>
+            <span class="n">status</span><span class="o">=</span><span class="s1">'initial'</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">__config</span> <span class="o">=</span> <span class="n">config</span>
 
@@ -420,23 +420,23 @@
 
         <span class="n">config</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">log_d</span><span class="p">(</span>
             <span class="n">base</span><span class="o">=</span><span class="n">clsname</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span>
-            <span class="n">status</span><span class="o">=</span><span class="s1">&#39;created&#39;</span><span class="p">)</span>
+            <span class="n">status</span><span class="o">=</span><span class="s1">'created'</span><span class="p">)</span>
 
 
     <span class="k">def</span><span class="w"> </span><span class="nf">__build_plugins</span><span class="p">(</span>  <span class="c1"># noqa: CFQ001</span>
         <span class="bp">self</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Construct instances using the configuration parameters.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">config</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">__config</span>
 
         <span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">jinja2</span>
-         <span class="o">.</span><span class="n">set_static</span><span class="p">(</span><span class="s1">&#39;ohnope&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
+         <span class="o">.</span><span class="n">set_static</span><span class="p">(</span><span class="s1">'ohnope'</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
 
         <span class="p">(</span><span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">jinja2</span>
-         <span class="o">.</span><span class="n">set_static</span><span class="p">(</span><span class="s1">&#39;ohnope&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
+         <span class="o">.</span><span class="n">set_static</span><span class="p">(</span><span class="s1">'ohnope'</span><span class="p">,</span> <span class="bp">self</span><span class="p">))</span>
 
         <span class="n">params</span> <span class="o">=</span> <span class="n">config</span><span class="o">.</span><span class="n">params</span>
 
@@ -451,39 +451,39 @@
             <span class="n">peering</span>
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
-        <span class="k">if</span> <span class="s1">&#39;name&#39;</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s1">'name'</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
 
-            <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;servername&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
-                <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
+            <span class="n">dumped</span><span class="p">[</span><span class="s1">'servername'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">dumped</span><span class="p">[</span><span class="s1">'name'</span><span class="p">])</span>
 
-            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]</span>
 
-        <span class="k">if</span> <span class="s1">&#39;unique&#39;</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s1">'unique'</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
 
-            <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;serverid&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
-                <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;unique&#39;</span><span class="p">])</span>
+            <span class="n">dumped</span><span class="p">[</span><span class="s1">'serverid'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">dumped</span><span class="p">[</span><span class="s1">'unique'</span><span class="p">])</span>
 
-            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;unique&#39;</span><span class="p">]</span>
+            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">'unique'</span><span class="p">]</span>
 
-        <span class="k">if</span> <span class="s1">&#39;about&#39;</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s1">'about'</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
 
-            <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;realname&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
-                <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;about&#39;</span><span class="p">])</span>
+            <span class="n">dumped</span><span class="p">[</span><span class="s1">'realname'</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">dumped</span><span class="p">[</span><span class="s1">'about'</span><span class="p">])</span>
 
-            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;about&#39;</span><span class="p">]</span>
+            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">'about'</span><span class="p">]</span>
 
-        <span class="k">if</span> <span class="s1">&#39;status&#39;</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
-            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="s1">'status'</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]</span>
 
-        <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;operate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;service&#39;</span>
+        <span class="n">dumped</span><span class="p">[</span><span class="s1">'operate'</span><span class="p">]</span> <span class="o">=</span> <span class="s1">'service'</span>
 
         <span class="n">source</span><span class="p">:</span> <span class="n">DictStrAny</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">&#39;enable&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-            <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="n">dumped</span><span class="p">,</span>
-            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="n">peering</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
+            <span class="s1">'enable'</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s1">'client'</span><span class="p">:</span> <span class="n">dumped</span><span class="p">,</span>
+            <span class="s1">'status'</span><span class="p">:</span> <span class="n">peering</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;ohnope&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'ohnope'</span><span class="p">,</span>
             <span class="n">client</span><span class="o">=</span><span class="n">IRCClientParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">)</span>
 
@@ -498,19 +498,19 @@
             <span class="n">client</span>
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
-        <span class="k">if</span> <span class="s1">&#39;status&#39;</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
-            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="s1">'status'</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]</span>
 
-        <span class="k">if</span> <span class="s1">&#39;channel&#39;</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
-            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">&#39;channel&#39;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="s1">'channel'</span> <span class="ow">in</span> <span class="n">dumped</span><span class="p">:</span>
+            <span class="k">del</span> <span class="n">dumped</span><span class="p">[</span><span class="s1">'channel'</span><span class="p">]</span>
 
         <span class="n">source</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">&#39;enable&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
-            <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="n">dumped</span><span class="p">,</span>
-            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
+            <span class="s1">'enable'</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+            <span class="s1">'client'</span><span class="p">:</span> <span class="n">dumped</span><span class="p">,</span>
+            <span class="s1">'status'</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;eponho&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'eponho'</span><span class="p">,</span>
             <span class="n">client</span><span class="o">=</span><span class="n">IRCClientParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">)</span>
 
@@ -518,27 +518,27 @@
         <span class="n">channel</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">channel</span>
 
         <span class="n">channels</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="p">{</span><span class="s1">&#39;channel&#39;</span><span class="p">:</span> <span class="n">channel</span><span class="p">,</span>
-             <span class="s1">&#39;client&#39;</span><span class="p">:</span> <span class="s1">&#39;eponho&#39;</span><span class="p">}]</span>
+            <span class="p">{</span><span class="s1">'channel'</span><span class="p">:</span> <span class="n">channel</span><span class="p">,</span>
+             <span class="s1">'client'</span><span class="p">:</span> <span class="s1">'eponho'</span><span class="p">}]</span>
 
         <span class="n">source</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">&#39;enable&#39;</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">client</span><span class="p">),</span>
-            <span class="s1">&#39;channels&#39;</span><span class="p">:</span> <span class="n">channels</span><span class="p">,</span>
-            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
+            <span class="s1">'enable'</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">client</span><span class="p">),</span>
+            <span class="s1">'channels'</span><span class="p">:</span> <span class="n">channels</span><span class="p">,</span>
+            <span class="s1">'status'</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autojoin&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'autojoin'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">AutoJoinPluginParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">)</span>
 
 
         <span class="n">source</span> <span class="o">=</span> <span class="p">{</span>
-            <span class="s1">&#39;enable&#39;</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">client</span><span class="p">),</span>
-            <span class="s1">&#39;clients&#39;</span><span class="p">:</span> <span class="s1">&#39;eponho&#39;</span><span class="p">,</span>
-            <span class="s1">&#39;status&#39;</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
+            <span class="s1">'enable'</span><span class="p">:</span> <span class="nb">bool</span><span class="p">(</span><span class="n">client</span><span class="p">),</span>
+            <span class="s1">'clients'</span><span class="p">:</span> <span class="s1">'eponho'</span><span class="p">,</span>
+            <span class="s1">'status'</span><span class="p">:</span> <span class="n">client</span><span class="o">.</span><span class="n">status</span><span class="p">}</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autonick&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'autonick'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">AutoNickPluginParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">)</span>
 
@@ -548,7 +548,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;status&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'status'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">StatusPluginParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">status</span><span class="p">)</span>
 
@@ -558,7 +558,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;rootserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'rootserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">RootServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">rootserv</span><span class="p">)</span>
 
@@ -568,7 +568,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;operserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'operserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">OperServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">operserv</span><span class="p">)</span>
 
@@ -578,7 +578,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;statserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'statserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">StatServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">statserv</span><span class="p">)</span>
 
@@ -588,7 +588,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;nickserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'nickserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">NickServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">nickserv</span><span class="p">)</span>
 
@@ -598,7 +598,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;chanserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'chanserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">ChanServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">chanserv</span><span class="p">)</span>
 
@@ -608,7 +608,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;memoserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'memoserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">MemoServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">memoserv</span><span class="p">)</span>
 
@@ -618,7 +618,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;hostserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'hostserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">HostServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">hostserv</span><span class="p">)</span>
 
@@ -628,7 +628,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;helpserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'helpserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">HelpServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">helpserv</span><span class="p">)</span>
 
@@ -638,7 +638,7 @@
             <span class="o">.</span><span class="n">model_dump</span><span class="p">())</span>
 
         <span class="n">config</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;chatserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'chatserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">ChatServParams</span><span class="p">,</span>
             <span class="n">source</span><span class="o">=</span><span class="n">chatserv</span><span class="p">)</span>
 
@@ -650,73 +650,73 @@
 
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;eponho&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'eponho'</span><span class="p">,</span>
             <span class="n">client</span><span class="o">=</span><span class="n">IRCClient</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;ohnope&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'ohnope'</span><span class="p">,</span>
             <span class="n">client</span><span class="o">=</span><span class="n">IRCClient</span><span class="p">)</span>
 
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autojoin&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'autojoin'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">AutoJoinPlugin</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;autonick&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'autonick'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">AutoNickPlugin</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;status&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'status'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">StatusPlugin</span><span class="p">)</span>
 
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;rootserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'rootserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">RootServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;operserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'operserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">OperServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;statserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'statserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">StatServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;nickserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'nickserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">NickServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;chanserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'chanserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">ChanServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;memoserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'memoserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">MemoServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;hostserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'hostserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">HostServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;helpserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'helpserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">HelpServ</span><span class="p">)</span>
 
         <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">register</span><span class="p">(</span>
-            <span class="n">name</span><span class="o">=</span><span class="s1">&#39;chatserv&#39;</span><span class="p">,</span>
+            <span class="n">name</span><span class="o">=</span><span class="s1">'chatserv'</span><span class="p">,</span>
             <span class="n">plugin</span><span class="o">=</span><span class="n">ChatServ</span><span class="p">)</span>
 
 
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">config</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;OhnopeConfig&#39;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">'OhnopeConfig'</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Return the Config instance containing the configuration.</span>
 
 <span class="sd">        :returns: Config instance containing the configuration.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__config</span>
 
@@ -725,11 +725,11 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">robie</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Robie</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Return the Robie instance to which the instance belongs.</span>
 
 <span class="sd">        :returns: Robie instance to which the instance belongs.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__robie</span>
 
@@ -738,11 +738,11 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">logger</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">RobieLogger</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Return the value for the attribute from class instance.</span>
 
 <span class="sd">        :returns: Value for the attribute from class instance.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">logger</span>
 
@@ -750,12 +750,12 @@
     <span class="nd">@property</span>
     <span class="k">def</span><span class="w"> </span><span class="nf">params</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
-    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">&#39;OhnopeParams&#39;</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="s1">'OhnopeParams'</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Return the Pydantic model containing the configuration.</span>
 
 <span class="sd">        :returns: Pydantic model containing the configuration.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">params</span>
 
@@ -764,16 +764,16 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">client</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">IRCClient</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Return the value for the attribute from class instance.</span>
 
 <span class="sd">        :returns: Value for the attribute from class instance.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">client</span> <span class="o">=</span> <span class="p">(</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">robie</span>
             <span class="o">.</span><span class="n">childs</span><span class="o">.</span><span class="n">clients</span>
-            <span class="p">[</span><span class="s1">&#39;ohnope&#39;</span><span class="p">])</span>
+            <span class="p">[</span><span class="s1">'ohnope'</span><span class="p">])</span>
 
         <span class="k">assert</span> <span class="nb">isinstance</span><span class="p">(</span>
             <span class="n">client</span><span class="p">,</span> <span class="n">IRCClient</span><span class="p">)</span>
@@ -785,11 +785,11 @@
     <span class="k">def</span><span class="w"> </span><span class="nf">dumped</span><span class="p">(</span>
         <span class="bp">self</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">DictStrAny</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Return the facts about the attributes from the instance.</span>
 
 <span class="sd">        :returns: Facts about the attributes from the instance.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">robie</span><span class="o">.</span><span class="n">dumped</span>
 
@@ -803,14 +803,14 @@
         <span class="n">realname</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
         <span class="n">unique</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
     <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">"""</span>
 <span class="sd">        Register the service as a client within the IRC network.</span>
 
 <span class="sd">        :param cqueue: Queue instance where the item is received.</span>
 <span class="sd">        :param nickname: Nickname that will be used for client.</span>
 <span class="sd">        :param realname: Realname that will be used for client.</span>
 <span class="sd">        :param unique: Unique identifer for the service client.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+<span class="sd">        """</span>
 
         <span class="n">client</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span>
 
@@ -824,16 +824,16 @@
 
         <span class="n">client</span><span class="o">.</span><span class="n">put_command</span><span class="p">(</span>
             <span class="n">cqueue</span><span class="p">,</span>
-            <span class="p">(</span><span class="sa">f</span><span class="s1">&#39;:</span><span class="si">{</span><span class="n">euqinu</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; UID </span><span class="si">{</span><span class="n">nickname</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; 0 </span><span class="si">{</span><span class="n">Time</span><span class="p">()</span><span class="o">.</span><span class="n">spoch</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">nickname</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">params</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">euqinu</span><span class="si">}{</span><span class="n">unique</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; 0 +Sio&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">params</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; </span><span class="si">{</span><span class="n">params</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">&#39;</span>
-             <span class="sa">f</span><span class="s1">&#39; * :</span><span class="si">{</span><span class="n">realname</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">))</span></div>
+            <span class="p">(</span><span class="sa">f</span><span class="s1">':</span><span class="si">{</span><span class="n">euqinu</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' UID </span><span class="si">{</span><span class="n">nickname</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' 0 </span><span class="si">{</span><span class="n">Time</span><span class="p">()</span><span class="o">.</span><span class="n">spoch</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="n">nickname</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="n">params</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="n">euqinu</span><span class="si">}{</span><span class="n">unique</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' 0 +Sio'</span>
+             <span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="n">params</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' </span><span class="si">{</span><span class="n">params</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s1">'</span>
+             <span class="sa">f</span><span class="s1">' * :</span><span class="si">{</span><span class="n">realname</span><span class="si">}</span><span class="s1">'</span><span class="p">))</span></div>
 </div>
 
 </pre></div>
