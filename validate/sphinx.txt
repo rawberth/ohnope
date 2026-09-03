@@ -36,7 +36,7 @@ highlighting module code... [  4%] enconnect.irc.test.helpershighlighting modul
 writing additional pages... search done
 dumping search index in English (code: en)... done
 dumping object inventory... done
-build succeeded, 1037 warnings.
+build succeeded, 1021 warnings.
 
 The HTML pages are in sphinx/html.
     DONE
